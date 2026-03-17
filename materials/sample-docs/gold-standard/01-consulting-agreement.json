@@ -1,0 +1,376 @@
+{
+  "document_id": "01-consulting-agreement",
+  "document_type": "legal_contract",
+  "extraction_timestamp": "2026-03-03T18:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "AlpenTech GmbH",
+        "role": "Client",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "representative": "DI Dr. Markus Reiter",
+        "representative_title": "Chief Executive Officer",
+        "vat_id": "ATU71483926",
+        "phone": "+43 664 412 7839",
+        "email": "markus.reiter@alpentech.at"
+      },
+      {
+        "name": "Danube Digital Consulting e.U.",
+        "role": "Consultant",
+        "registration_number": "FN 538741 w",
+        "address": "Anzengruberstrasse 6, 4020 Linz, Austria",
+        "representative": "Ing. Friedrich Müller",
+        "representative_title": "Managing Director",
+        "vat_id": "ATU82956314",
+        "phone": "+43 676 831 4502",
+        "email": "friedrich.mueller@danube-digital.at"
+      }
+    ],
+    "persons": [
+      {
+        "name": "DI Dr. Markus Reiter",
+        "title": "Chief Executive Officer",
+        "organization": "AlpenTech GmbH",
+        "email": "markus.reiter@alpentech.at"
+      },
+      {
+        "name": "Ing. Friedrich Müller",
+        "title": "Managing Director / Lead Consultant, Control Systems Engineering",
+        "organization": "Danube Digital Consulting e.U.",
+        "email": "friedrich.mueller@danube-digital.at"
+      },
+      {
+        "name": "DI Bernhard Steindl",
+        "title": "Senior Consultant, Industrial IoT",
+        "organization": "Danube Digital Consulting e.U."
+      },
+      {
+        "name": "Dr. Claudia Wallner",
+        "title": "Senior Consultant, ML & Data Engineering",
+        "organization": "Danube Digital Consulting e.U."
+      },
+      {
+        "name": "Dr. Katharina Moser",
+        "title": "Legal Counsel",
+        "organization": "Schönherr Rechtsanwälte",
+        "role": "Attorney-client privileged communication"
+      },
+      {
+        "name": "Thomas Wallner",
+        "title": null,
+        "organization": null,
+        "role": "Emergency contact (spouse of Dr. Claudia Wallner)"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-09-01",
+        "type": "effective_date",
+        "description": "Agreement effective date and signing date"
+      },
+      {
+        "date": "2026-08-31",
+        "type": "expiration_date",
+        "description": "Initial term expiration date"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 1850.00,
+        "currency": "EUR",
+        "type": "daily_rate",
+        "description": "Standard daily rate per consultant per day, exclusive of VAT"
+      },
+      {
+        "amount": 342250.00,
+        "currency": "EUR",
+        "type": "total_estimated_fee",
+        "description": "Total estimated fee for the Initial Term (185 consultant-days at EUR 1,850), exclusive of VAT"
+      },
+      {
+        "amount": 2500.00,
+        "currency": "EUR",
+        "type": "expense_cap",
+        "description": "Monthly travel expense cap without prior written approval"
+      },
+      {
+        "amount": 4200000.00,
+        "currency": "EUR",
+        "type": "valuation_low",
+        "description": "Low end of Danube Digital Consulting enterprise valuation (Project Edelweiss, KPMG Austria)"
+      },
+      {
+        "amount": 5800000.00,
+        "currency": "EUR",
+        "type": "valuation_high",
+        "description": "High end of Danube Digital Consulting enterprise valuation (Project Edelweiss, KPMG Austria)"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH"
+      },
+      {
+        "address": "Anzengruberstrasse 6, 4020 Linz, Austria",
+        "entity": "Danube Digital Consulting e.U."
+      },
+      {
+        "address": "Roseggergasse 14/3, 4020 Linz, Austria",
+        "entity": "Ing. Friedrich Müller",
+        "context": "Home address for courier delivery"
+      },
+      {
+        "location": "Graz, Austria",
+        "context": "Seat of arbitration"
+      }
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Agreement number is FCA-2025-0312",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "The agreement has an initial term of 12 months (September 1, 2025 to August 31, 2026)",
+      "source_section": "Article 2: Term and Renewal",
+      "confidence": "high"
+    },
+    {
+      "fact": "The agreement auto-renews for successive 6-month periods unless 60 days' written notice of non-renewal is given",
+      "source_section": "Article 2: Term and Renewal",
+      "confidence": "high"
+    },
+    {
+      "fact": "The daily rate is EUR 1,850.00 per consultant per day, exclusive of VAT",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "The total engagement is estimated at 185 consultant-days with a total estimated fee of EUR 342,250.00 exclusive of VAT",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "Invoices are submitted monthly by the 5th business day following month-end, with payment due within 30 calendar days",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "Late payment interest is 8 percentage points above the ECB base interest rate",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "Monthly travel expense cap is EUR 2,500.00 without prior written approval",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "Expense reimbursements paid to Friedrich Müller's account at Raiffeisenbank Oberösterreich, IBAN AT44 3400 0001 0827 4519",
+      "source_section": "Article 3: Payment Terms",
+      "confidence": "high"
+    },
+    {
+      "fact": "Confidentiality obligations survive for 3 years after termination",
+      "source_section": "Article 4: Confidentiality",
+      "confidence": "high"
+    },
+    {
+      "fact": "Attorney-client privileged note references potential acquisition of Danube Digital Consulting by AlpenTech (Project Edelweiss) with KPMG valuation of EUR 4.2-5.8 million",
+      "source_section": "Article 4: Confidentiality",
+      "confidence": "high"
+    },
+    {
+      "fact": "Work product becomes exclusive property of the Client upon full payment",
+      "source_section": "Article 5: Intellectual Property",
+      "confidence": "high"
+    },
+    {
+      "fact": "Consultant retains ownership of general tools and methodologies with a non-exclusive, perpetual, royalty-free license to the Client",
+      "source_section": "Article 5: Intellectual Property",
+      "confidence": "high"
+    },
+    {
+      "fact": "Termination for convenience requires 90 days' written notice",
+      "source_section": "Article 6: Termination",
+      "confidence": "high"
+    },
+    {
+      "fact": "Termination for cause requires 30-day cure period for material breach",
+      "source_section": "Article 6: Termination",
+      "confidence": "high"
+    },
+    {
+      "fact": "Force majeure termination is available after 60 continuous days",
+      "source_section": "Article 6: Termination",
+      "confidence": "high"
+    },
+    {
+      "fact": "Liability is capped at total fees paid in the 12 months preceding the claim",
+      "source_section": "Article 7: Liability",
+      "confidence": "high"
+    },
+    {
+      "fact": "Disputes are resolved by arbitration at VIAC (Vienna International Arbitral Centre) with a sole arbitrator, seat in Graz, in English",
+      "source_section": "Article 8: Governing Law and Dispute Resolution",
+      "confidence": "high"
+    },
+    {
+      "fact": "Governing law is Austrian law, excluding CISG and Austrian conflict of laws rules",
+      "source_section": "Article 8: Governing Law and Dispute Resolution",
+      "confidence": "high"
+    },
+    {
+      "fact": "The Client's customers have approximately 38 production lines across 5 manufacturing sites",
+      "source_section": "Article 1: Scope of Services",
+      "confidence": "high"
+    },
+    {
+      "fact": "Industrial sensor telemetry data amounts to approximately 1.8 terabytes per day",
+      "source_section": "Article 1: Scope of Services",
+      "confidence": "high"
+    },
+    {
+      "fact": "Training program targets 24 engineers with a minimum of 40 hours of instructor-led training",
+      "source_section": "Article 1: Scope of Services",
+      "confidence": "high"
+    },
+    {
+      "fact": "Key personnel cannot be replaced without prior written consent of the Client",
+      "source_section": "Article 1: Scope of Services",
+      "confidence": "high"
+    },
+    {
+      "fact": "Key personnel PII includes SV-Nr and passport numbers: Friedrich Müller (SV-Nr 3782 150673, Passport P 4821673), Bernhard Steindl (SV-Nr 5194 220885), Claudia Wallner (SV-Nr 6413 090791)",
+      "source_section": "Article 1: Scope of Services",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "agreement_number": "FCA-2025-0312",
+    "parties": {
+      "client": {
+        "name": "AlpenTech GmbH",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "vat_id": "ATU71483926",
+        "signatory": "DI Dr. Markus Reiter",
+        "signatory_title": "Chief Executive Officer"
+      },
+      "consultant": {
+        "name": "Danube Digital Consulting e.U.",
+        "registration_number": "FN 538741 w",
+        "address": "Anzengruberstrasse 6, 4020 Linz, Austria",
+        "vat_id": "ATU82956314",
+        "signatory": "Ing. Friedrich Müller",
+        "signatory_title": "Managing Director"
+      }
+    },
+    "term": {
+      "effective_date": "2025-09-01",
+      "initial_term_months": 12,
+      "expiration_date": "2026-08-31",
+      "auto_renewal": true,
+      "renewal_period_months": 6,
+      "non_renewal_notice_days": 60
+    },
+    "deliverables": [
+      {
+        "id": "a",
+        "title": "Industrial Control Systems Assessment and Modernization Strategy",
+        "description": "Comprehensive assessment of 38 production lines across 5 manufacturing sites with detailed modernization roadmap; written report of no fewer than 80 pages."
+      },
+      {
+        "id": "b",
+        "title": "Predictive Maintenance Data Pipeline Architecture",
+        "description": "Modern data pipeline architecture for processing 1.8 TB/day of industrial sensor telemetry data, supporting real-time streaming from edge gateways, batch processing, and data quality monitoring."
+      },
+      {
+        "id": "c",
+        "title": "Edge-Deployed ML Integration Framework",
+        "description": "Framework for integrating ML models into industrial edge devices, including model serving on industrial PCs, monitoring dashboards, A/B testing, and rollback procedures for predictive maintenance and anomaly detection."
+      },
+      {
+        "id": "d",
+        "title": "Knowledge Transfer and Training Program",
+        "description": "Training program for 24 engineers: minimum 40 hours of instructor-led sessions, hands-on workshops, and written documentation covering all architectures and frameworks."
+      }
+    ],
+    "payment_terms": {
+      "daily_rate_eur": 1850.00,
+      "estimated_consultant_days": 185,
+      "estimated_total_fee_eur": 342250.00,
+      "vat_excluded": true,
+      "invoicing_schedule": "Monthly, by the 5th business day following month-end",
+      "payment_due_days": 30,
+      "late_payment_interest": "8 percentage points above ECB base interest rate",
+      "expense_reimbursement": "At cost with receipts, pre-approved",
+      "monthly_expense_cap_eur": 2500.00
+    },
+    "key_personnel": [
+      {
+        "name": "Ing. Friedrich Müller",
+        "role": "Lead Consultant, Control Systems Engineering"
+      },
+      {
+        "name": "DI Bernhard Steindl",
+        "role": "Senior Consultant, Industrial IoT"
+      },
+      {
+        "name": "Dr. Claudia Wallner",
+        "role": "Senior Consultant, ML & Data Engineering"
+      }
+    ],
+    "termination_conditions": {
+      "for_convenience": {
+        "notice_period_days": 90,
+        "available_to": "Either Party"
+      },
+      "for_cause": {
+        "material_breach_cure_period_days": 30,
+        "insolvency": "Immediate termination",
+        "force_majeure_continuous_days": 60
+      },
+      "surviving_provisions": [
+        "Confidentiality (Article 4)",
+        "Intellectual Property (Article 5)",
+        "Liability (Article 7)",
+        "Governing Law (Article 8)"
+      ]
+    },
+    "confidentiality": {
+      "survival_period_years": 3,
+      "exceptions": [
+        "Publicly available information",
+        "Prior knowledge",
+        "Independently developed",
+        "Required by law with prompt notice"
+      ]
+    },
+    "liability": {
+      "cap": "Total fees paid in 12 months preceding the claim",
+      "exclusions": [
+        "Indirect, incidental, consequential, special, or punitive damages"
+      ],
+      "cap_exceptions": [
+        "Breaches of confidentiality",
+        "Willful misconduct or gross negligence",
+        "Liability that cannot be limited under applicable law"
+      ]
+    },
+    "governing_law": {
+      "law": "Republic of Austria",
+      "exclusions": ["CISG", "Austrian conflict of laws rules"],
+      "dispute_resolution": "Arbitration",
+      "arbitration_institution": "Vienna International Arbitral Centre (VIAC) of the Austrian Federal Economic Chamber",
+      "arbitrators": "Sole arbitrator",
+      "seat": "Graz, Austria",
+      "language": "English"
+    }
+  },
+  "summary": "A 12-month framework consulting agreement (FCA-2025-0312) between AlpenTech GmbH (Client, Graz) and Danube Digital Consulting e.U. (Consultant, Linz), effective September 1, 2025. The Consultant will provide industrial control systems assessment across 38 production lines, predictive maintenance data pipeline architecture for 1.8 TB/day sensor data, edge-deployed ML integration framework, and knowledge transfer training for 24 engineers. Compensation is EUR 1,850 per consultant-day (estimated 185 days, EUR 342,250 total excl. VAT) with monthly invoicing and 30-day payment terms. The agreement includes 90-day termination for convenience, 30-day cure period for material breach, 3-year confidentiality survival, and is governed by Austrian law with VIAC arbitration in Graz. Contains attorney-client privileged information regarding a potential acquisition of Danube Digital Consulting by AlpenTech (Project Edelweiss, valuation EUR 4.2-5.8M). PII present includes SV-Nr, passport numbers, IBANs, home addresses, and personal phone numbers."
+}

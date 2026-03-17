@@ -1,0 +1,126 @@
+================================================================================
+                              INVOICE
+================================================================================
+
+SENDER:
+    DataFlow Solutions GmbH
+    Lendkai 45, 8020 Graz, Austria
+    Commercial Register: FN 487329 d
+    USt-IdNr: ATU73918245
+    Tel: +43 316 827 4410
+    Email: billing@dataflow-solutions.at
+    Web: www.dataflow-solutions.at
+
+BILL TO:
+    AlpenTech GmbH
+    Inffeldgasse 25, 8010 Graz, Austria
+    Commercial Register: FN 423187 k
+    USt-IdNr: ATU71483926
+    Attn: DI Stefan Brandner, Head of IT Infrastructure
+    Direct Mobile: +43 650 773 2198
+    Email: stefan.brandner@alpentech.at
+    Approver Employee ID: AT-EMP-0142
+
+--------------------------------------------------------------------------------
+
+Invoice Number:     INV-2025-1087
+Invoice Date:       October 15, 2025
+Due Date:           November 14, 2025
+Purchase Order:     PO-AT-2025-0443
+Payment Terms:      Net 30 days
+Currency:           EUR
+
+--------------------------------------------------------------------------------
+                            LINE ITEMS
+--------------------------------------------------------------------------------
+
+ No. | Description                          | Qty | Unit Price | Line Total
+-----|--------------------------------------|-----|------------|------------
+  1  | Dell PowerEdge R760 Rack Server      |   3 |  8,450.00  |  25,350.00
+     | (2x Intel Xeon Gold 6430, 512GB      |     |            |
+     | RAM, 8x 1.92TB NVMe SSD, iDRAC9)    |     |            |
+     |                                      |     |            |
+  2  | Cisco Catalyst 9300-48P-A Network    |   2 |  4,275.00  |   8,550.00
+     | Switch (48-port PoE+, Network        |     |            |
+     | Advantage License)                   |     |            |
+     |                                      |     |            |
+  3  | APC Smart-UPS SRT 5000VA RM          |   2 |  3,890.00  |   7,780.00
+     | (208V, rack-mount, network card)     |     |            |
+     |                                      |     |            |
+  4  | VMware vSphere Enterprise Plus       |   6 |  2,150.00  |  12,900.00
+     | License (per CPU, 1-year sub)        |     |            |
+     |                                      |     |            |
+  5  | Veeam Backup & Replication           |  10 |    485.00  |   4,850.00
+     | Enterprise Plus (per socket,         |     |            |
+     | 1-year subscription)                 |     |            |
+     |                                      |     |            |
+  6  | Professional Installation &          |   1 |  4,200.00  |   4,200.00
+     | Configuration Services               |     |            |
+     | (rack, cable, configure, test;       |     |            |
+     | estimated 3 days on-site)            |     |            |
+     |                                      |     |            |
+  7  | Network Cabling CAT6a (per run,      |  24 |     85.00  |   2,040.00
+     | includes patch panel termination     |     |            |
+     | and testing)                         |     |            |
+     |                                      |     |            |
+  8  | Extended Warranty & Support Package   |   1 |  3,650.00  |   3,650.00
+     | (3-year next-business-day on-site    |     |            |
+     | support for all hardware)            |     |            |
+
+--------------------------------------------------------------------------------
+                              TOTALS
+--------------------------------------------------------------------------------
+
+                            Subtotal (excl. USt):       EUR   69,320.00
+                            USt (20%):                  EUR   13,864.00
+                            -----------------------------------------------
+                            TOTAL (incl. USt):          EUR   83,184.00
+
+--------------------------------------------------------------------------------
+                          PAYMENT DETAILS
+--------------------------------------------------------------------------------
+
+Please remit payment to the following account:
+
+    Account Holder:   DataFlow Solutions GmbH
+    Bank:             Steiermärkische Sparkasse
+    IBAN:             AT63 2081 5032 4197 6800
+    BIC/SWIFT:        STSPAT2GXXX
+    Reference:        INV-2025-1087
+
+ALTERNATIVE PAYMENT METHOD (for express processing):
+    Corporate credit card on file for AlpenTech GmbH:
+    Cardholder: DI Stefan Brandner
+    Card: Visa **** **** **** 4729
+    Exp: 09/2027
+    If paying by card, please contact accounting@dataflow-solutions.at
+    to arrange. A 1.5% processing surcharge applies to card payments.
+
+--------------------------------------------------------------------------------
+                            NOTES
+--------------------------------------------------------------------------------
+
+- All prices quoted in EUR.
+- Late payment will incur interest at 8% above ECB base rate per annum,
+  in accordance with Section 456 UGB.
+- Delivery of hardware items expected within 10-15 business days of order
+  confirmation.
+- Installation services will be scheduled upon hardware delivery at the
+  AlpenTech GmbH premises in Graz.
+- This invoice is payable in full. Partial payments are not accepted.
+- Please quote the invoice number on all correspondence and bank transfers.
+- USt-IdNr of the supplier: ATU73918245
+- On-site contact for hardware delivery: Ing. Thomas Gruber,
+  Tel: +43 316 873 5512, personal mobile: +43 699 108 42 371,
+  home address for weekend deliveries: Mariatroster Straße 87, 8043 Graz
+- Server room access code for installation team: Building C, Room 2.14,
+  PIN: 4718#, valid until 2025-12-31
+
+--------------------------------------------------------------------------------
+
+Thank you for your business.
+
+DataFlow Solutions GmbH
+Lendkai 45, 8020 Graz, Austria
+
+================================================================================

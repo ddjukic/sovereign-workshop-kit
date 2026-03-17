@@ -1,0 +1,534 @@
+{
+  "document_id": "03-quarterly-financial-report",
+  "document_type": "financial_report",
+  "extraction_timestamp": "2026-03-03T18:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "AlpenTech GmbH",
+        "role": "reporting_entity",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "vat_id": "ATU71483926"
+      },
+      {
+        "name": "Voestalpine Stahl GmbH",
+        "role": "customer",
+        "context": "Three-year framework agreement valued at EUR 1.8 million"
+      },
+      {
+        "name": "BMW Werk Steyr",
+        "role": "customer",
+        "context": "Expansion engagement worth EUR 720,000 annually"
+      },
+      {
+        "name": "Rosenbauer International AG",
+        "role": "customer",
+        "context": "New engagement signed for EUR 430,000 annually"
+      },
+      {
+        "name": "Siemens Austria",
+        "role": "customer",
+        "context": "Large consulting engagements concluded in Q2 2025"
+      },
+      {
+        "name": "SimuTech Salzburg GmbH",
+        "role": "acquisition_target",
+        "registration_number": "FN 612483 s",
+        "context": "Digital twin platform, preliminary valuation EUR 3.8 million"
+      },
+      {
+        "name": "TwinFlow Analytics OG",
+        "role": "acquisition_target",
+        "context": "Early-stage simulation startup, Vienna, preliminary valuation EUR 1.4 million"
+      }
+    ],
+    "persons": [
+      {
+        "name": "Mag. Sabine Egger",
+        "title": "Chief Financial Officer",
+        "organization": "AlpenTech GmbH",
+        "role": "Report approver; recused from SimuTech discussion due to personal relationship"
+      },
+      {
+        "name": "DI Maria Holzinger",
+        "title": "Account Lead",
+        "organization": "AlpenTech GmbH",
+        "email": "maria.holzinger@alpentech.at"
+      },
+      {
+        "name": "Dr. Johann Pichler",
+        "title": "Owner",
+        "organization": "SimuTech Salzburg GmbH"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-10-28",
+        "type": "report_date",
+        "description": "Date the report was prepared"
+      },
+      {
+        "date": "2025-07-01",
+        "type": "period_start",
+        "description": "Start of Q3 2025 reporting period"
+      },
+      {
+        "date": "2025-09-30",
+        "type": "period_end",
+        "description": "End of Q3 2025 reporting period"
+      },
+      {
+        "date": "2025-07-01",
+        "type": "product_launch",
+        "description": "AlpenPredict Edge product launch"
+      },
+      {
+        "date": "2025-08-01",
+        "type": "office_opening",
+        "description": "Munich representative office opened in August 2025"
+      },
+      {
+        "date": "2025-10-22",
+        "type": "board_meeting",
+        "description": "Beirat meeting discussing acquisition targets"
+      },
+      {
+        "date": "2026-03-31",
+        "type": "annual_report_deadline",
+        "description": "Full audited annual financial statements publication date"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 12400000,
+        "currency": "EUR",
+        "type": "revenue",
+        "period": "Q3 2025",
+        "description": "Total consolidated revenue"
+      },
+      {
+        "amount": 10700000,
+        "currency": "EUR",
+        "type": "revenue",
+        "period": "Q3 2024",
+        "description": "Total consolidated revenue (prior year)"
+      },
+      {
+        "amount": 2600000,
+        "currency": "EUR",
+        "type": "ebitda",
+        "period": "Q3 2025",
+        "description": "EBITDA"
+      },
+      {
+        "amount": 2100000,
+        "currency": "EUR",
+        "type": "ebitda",
+        "period": "Q3 2024",
+        "description": "EBITDA (prior year)"
+      },
+      {
+        "amount": 1500000,
+        "currency": "EUR",
+        "type": "net_income",
+        "period": "Q3 2025",
+        "description": "Net income"
+      },
+      {
+        "amount": 1200000,
+        "currency": "EUR",
+        "type": "net_income",
+        "period": "Q3 2024",
+        "description": "Net income (prior year)"
+      },
+      {
+        "amount": 8900000,
+        "currency": "EUR",
+        "type": "cash_position",
+        "period": "Q3 2025",
+        "description": "Cash and cash equivalents"
+      },
+      {
+        "amount": 6700000,
+        "currency": "EUR",
+        "type": "cash_position",
+        "period": "Q3 2024",
+        "description": "Cash and cash equivalents (prior year)"
+      },
+      {
+        "amount": 1800000,
+        "currency": "EUR",
+        "type": "contract_value",
+        "description": "Three-year framework agreement with Voestalpine Stahl GmbH"
+      },
+      {
+        "amount": 720000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "Annual expansion agreement with BMW Werk Steyr"
+      },
+      {
+        "amount": 430000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "Annual engagement with Rosenbauer International AG"
+      },
+      {
+        "amount": 850000,
+        "currency": "EUR",
+        "type": "product_revenue",
+        "period": "Q3 2025",
+        "description": "AlpenPredict Edge first-quarter revenue"
+      },
+      {
+        "amount": 3800000,
+        "currency": "EUR",
+        "type": "valuation",
+        "description": "Preliminary valuation of SimuTech Salzburg GmbH acquisition target"
+      },
+      {
+        "amount": 1400000,
+        "currency": "EUR",
+        "type": "valuation",
+        "description": "Preliminary valuation of TwinFlow Analytics OG acquisition target"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH"
+      },
+      {
+        "location": "Munich, Germany",
+        "context": "New representative office opened in August 2025"
+      }
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Q3 2025 consolidated revenue was EUR 12.4 million, up 15.8% YoY from EUR 10.7 million",
+      "source_section": "Executive Summary",
+      "confidence": "high"
+    },
+    {
+      "fact": "EBITDA was EUR 2.6 million (21.0% margin), up from EUR 2.1 million (19.6% margin) in Q3 2024",
+      "source_section": "Executive Summary",
+      "confidence": "high"
+    },
+    {
+      "fact": "Net income was EUR 1.5 million (12.1% margin), up from EUR 1.2 million (11.2% margin)",
+      "source_section": "Executive Summary",
+      "confidence": "high"
+    },
+    {
+      "fact": "Cash position was EUR 8.9 million as of September 30, 2025",
+      "source_section": "Executive Summary",
+      "confidence": "high"
+    },
+    {
+      "fact": "Industrial Automation revenue was EUR 5.6 million (45.2% of total), up 24.4% YoY",
+      "source_section": "Revenue Breakdown - Industrial Automation",
+      "confidence": "high"
+    },
+    {
+      "fact": "12 new enterprise clients onboarded in Q3, bringing total active customer count to 87",
+      "source_section": "Revenue Breakdown - Industrial Automation",
+      "confidence": "high"
+    },
+    {
+      "fact": "Predictive Maintenance & R&D revenue was EUR 4.2 million (33.9% of total), up 20.0% YoY",
+      "source_section": "Revenue Breakdown - Predictive Maintenance",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenPredict Edge product launched July 2025, generated EUR 850,000 in first quarter",
+      "source_section": "Revenue Breakdown - Predictive Maintenance",
+      "confidence": "high"
+    },
+    {
+      "fact": "9 new implementation projects with average project value of EUR 310,000",
+      "source_section": "Revenue Breakdown - Predictive Maintenance",
+      "confidence": "high"
+    },
+    {
+      "fact": "Implementation backlog was EUR 5.7 million (5.1 months revenue visibility)",
+      "source_section": "Revenue Breakdown - Predictive Maintenance",
+      "confidence": "high"
+    },
+    {
+      "fact": "Engineering Consulting revenue was EUR 2.6 million (20.9% of total), down 3.7% YoY",
+      "source_section": "Revenue Breakdown - Engineering Consulting",
+      "confidence": "high"
+    },
+    {
+      "fact": "Engineering Consulting gross margin improved to 39.4% from 32.1%, average daily rate up 12% to EUR 1,720",
+      "source_section": "Revenue Breakdown - Engineering Consulting",
+      "confidence": "high"
+    },
+    {
+      "fact": "R&D team expanded to 38 engineers from 31 in Q3 2024",
+      "source_section": "Cost Analysis",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total headcount was 197 FTE, up 17.3% from 168",
+      "source_section": "Key Financial Metrics",
+      "confidence": "high"
+    },
+    {
+      "fact": "DSO reduced to 44 days from 51 days in Q3 2024",
+      "source_section": "Cash Flow Summary",
+      "confidence": "high"
+    },
+    {
+      "fact": "Company evaluating acquisition targets in digital twin and simulation software, target range EUR 3.0-6.0 million",
+      "source_section": "Outlook for Q4 2025",
+      "confidence": "high"
+    },
+    {
+      "fact": "Full-year 2025 revenue guidance: EUR 47.0-49.0 million (lower end raised)",
+      "source_section": "Outlook for Q4 2025",
+      "confidence": "high"
+    },
+    {
+      "fact": "Average time-to-fill for technical positions increased to 72 days from 58 days, wage inflation at 7.2% YoY",
+      "source_section": "Risk Factors",
+      "confidence": "high"
+    },
+    {
+      "fact": "Top-5 clients represent approximately 38% of total revenue",
+      "source_section": "Risk Factors",
+      "confidence": "high"
+    },
+    {
+      "fact": "Estimated incremental compliance costs of EUR 250,000-400,000 annually beginning 2026 due to EU AI Act",
+      "source_section": "Risk Factors",
+      "confidence": "high"
+    },
+    {
+      "fact": "Manufacturing sector represents approximately 72% of customer base",
+      "source_section": "Risk Factors",
+      "confidence": "high"
+    },
+    {
+      "fact": "Report prepared under Austrian GAAP (UGB), not audited",
+      "source_section": "Disclaimer",
+      "confidence": "high"
+    },
+    {
+      "fact": "Confidential board minutes: Beirat voted 4-1 to proceed with due diligence on SimuTech and TwinFlow, target closing Q1 2026",
+      "source_section": "Outlook - Board Minutes Excerpt",
+      "confidence": "high"
+    },
+    {
+      "fact": "Confidential compensation data: CEO total compensation EUR 195,000, CFO EUR 162,000, average engineer EUR 68,400",
+      "source_section": "Key Financial Metrics",
+      "confidence": "high"
+    },
+    {
+      "fact": "PII present: DI Maria Holzinger employee ID AT-EMP-0078, personal mobile, email; Dr. Johann Pichler DOB and phone",
+      "source_section": "Various",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "company": {
+      "name": "AlpenTech GmbH",
+      "registration_number": "FN 423187 k",
+      "address": "Inffeldgasse 25, 8010 Graz, Austria",
+      "vat_id": "ATU71483926"
+    },
+    "reporting_period": {
+      "quarter": "Q3",
+      "year": 2025,
+      "start_date": "2025-07-01",
+      "end_date": "2025-09-30"
+    },
+    "report_date": "2025-10-28",
+    "approved_by": "Mag. Sabine Egger, Chief Financial Officer",
+    "accounting_standard": "Austrian GAAP (UGB)",
+    "audited": false,
+    "revenue_by_segment": [
+      {
+        "segment": "Industrial Automation & Engineering Consulting",
+        "revenue_q3_2025_eur": 5600000,
+        "revenue_q3_2024_eur": 4500000,
+        "yoy_growth_percent": 24.4,
+        "share_of_total_percent": 45.2,
+        "key_metrics": {
+          "active_customers": 87,
+          "new_customers_q3": 12
+        }
+      },
+      {
+        "segment": "Predictive Maintenance & R&D",
+        "revenue_q3_2025_eur": 4200000,
+        "revenue_q3_2024_eur": 3500000,
+        "yoy_growth_percent": 20.0,
+        "share_of_total_percent": 33.9,
+        "key_metrics": {
+          "new_projects_q3": 9,
+          "average_project_value_eur": 310000,
+          "implementation_backlog_eur": 5700000,
+          "backlog_months_visibility": 5.1,
+          "alpenpredict_edge_revenue_eur": 850000
+        }
+      },
+      {
+        "segment": "Engineering Consulting & Professional Services",
+        "revenue_q3_2025_eur": 2600000,
+        "revenue_q3_2024_eur": 2700000,
+        "yoy_growth_percent": -3.7,
+        "share_of_total_percent": 20.9,
+        "key_metrics": {
+          "gross_margin_q3_2025_percent": 39.4,
+          "gross_margin_q3_2024_percent": 32.1,
+          "average_daily_rate_eur": 1720,
+          "daily_rate_yoy_increase_percent": 12
+        }
+      }
+    ],
+    "key_metrics": {
+      "revenue_eur": 12400000,
+      "revenue_yoy_growth_percent": 15.8,
+      "gross_profit_eur": 6500000,
+      "gross_margin_percent": 52.4,
+      "ebitda_eur": 2600000,
+      "ebitda_margin_percent": 21.0,
+      "ebit_eur": 2200000,
+      "ebit_margin_percent": 17.7,
+      "net_income_eur": 1500000,
+      "net_margin_percent": 12.1,
+      "depreciation_amortization_eur": 400000,
+      "capex_eur": 900000,
+      "cash_and_equivalents_eur": 8900000,
+      "total_assets_eur": 29100000,
+      "total_equity_eur": 19400000,
+      "equity_ratio_percent": 66.7,
+      "headcount_fte": 197,
+      "revenue_per_employee_annualized_eur": 251800,
+      "dso_days": 44
+    },
+    "cost_analysis": {
+      "total_operating_costs_eur": 9800000,
+      "cost_of_revenue_eur": 5900000,
+      "operating_expenses_eur": 3900000,
+      "rd_engineers": 38
+    },
+    "cash_flow": {
+      "operating_cash_flow_eur": 2500000,
+      "investing_cash_flow_eur": -900000,
+      "financing_cash_flow_eur": -300000,
+      "net_change_in_cash_eur": 1300000
+    },
+    "yoy_changes": [
+      {
+        "metric": "Revenue",
+        "q3_2025": 12400000,
+        "q3_2024": 10700000,
+        "change_percent": 15.8
+      },
+      {
+        "metric": "EBITDA",
+        "q3_2025": 2600000,
+        "q3_2024": 2100000,
+        "change_percent": 23.8
+      },
+      {
+        "metric": "Net Income",
+        "q3_2025": 1500000,
+        "q3_2024": 1200000,
+        "change_percent": 25.0
+      },
+      {
+        "metric": "Cash & Cash Equivalents",
+        "q3_2025": 8900000,
+        "q3_2024": 6700000,
+        "change_percent": 32.8
+      },
+      {
+        "metric": "Headcount (FTE)",
+        "q3_2025": 197,
+        "q3_2024": 168,
+        "change_percent": 17.3
+      }
+    ],
+    "risk_factors": [
+      {
+        "risk": "Talent Acquisition and Retention",
+        "description": "Competitive labor market in DACH region for automation engineers, data scientists, and embedded systems specialists. Time-to-fill increased to 72 days (from 58). Wage inflation of 7.2% YoY.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Client Concentration",
+        "description": "Top-5 clients represent approximately 38% of total revenue. Target to reduce below 30% by Q4 2026.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Regulatory and Compliance",
+        "description": "EU AI Act, Machinery Regulation 2023/1230, and updated GDPR enforcement require ongoing investment. Estimated incremental compliance costs of EUR 250,000-400,000 annually from 2026.",
+        "severity": "medium"
+      },
+      {
+        "risk": "Macroeconomic Uncertainty",
+        "description": "Eurozone economic uncertainty could delay customer purchasing decisions. Manufacturing sector (72% of customer base) is particularly sensitive to economic cycles.",
+        "severity": "medium"
+      }
+    ],
+    "outlook": {
+      "full_year_revenue_guidance_eur": {
+        "low": 47000000,
+        "high": 49000000,
+        "change": "Lower end raised"
+      },
+      "full_year_ebitda_margin_guidance_percent": {
+        "low": 19.5,
+        "high": 21.5,
+        "change": "Unchanged"
+      },
+      "full_year_capex_guidance_eur": {
+        "low": 3000000,
+        "high": 4000000,
+        "change": "Unchanged"
+      },
+      "q4_drivers": [
+        "Seasonal strength in enterprise purchasing",
+        "Full-quarter contribution from AlpenPredict Edge product",
+        "Munich representative office fully operational",
+        "Two major predictive maintenance implementations completing (~EUR 1.2 million combined)"
+      ],
+      "acquisition_plans": {
+        "target_space": "Digital twin and simulation software",
+        "investment_range_eur": {
+          "low": 3000000,
+          "high": 6000000
+        },
+        "funding": "Existing cash reserves and debt facilities",
+        "status": "Due diligence initiated on two targets"
+      }
+    },
+    "key_customers": [
+      {
+        "name": "Voestalpine Stahl GmbH",
+        "contract_value_eur": 1800000,
+        "contract_term_years": 3,
+        "segment": "Industrial Automation"
+      },
+      {
+        "name": "BMW Werk Steyr",
+        "annual_value_eur": 720000,
+        "type": "Expansion engagement",
+        "segment": "Industrial Automation"
+      },
+      {
+        "name": "Rosenbauer International AG",
+        "annual_value_eur": 430000,
+        "type": "New engagement",
+        "segment": "Industrial Automation"
+      }
+    ]
+  },
+  "summary": "AlpenTech GmbH (Graz, Austria) Q3 2025 quarterly financial report showing strong performance with consolidated revenue of EUR 12.4 million (+15.8% YoY), EBITDA of EUR 2.6 million (21.0% margin), and net income of EUR 1.5 million (12.1% margin). Industrial Automation led growth at EUR 5.6 million (+24.4%) with 87 active customers. Predictive Maintenance grew 20.0% to EUR 4.2 million, bolstered by the AlpenPredict Edge product launch. Engineering Consulting declined 3.7% to EUR 2.6 million as part of strategic shift. Cash position reached EUR 8.9 million. Full-year revenue guidance EUR 47-49 million. Confidential board minutes reveal two acquisition targets (SimuTech EUR 3.8M, TwinFlow EUR 1.4M). Contains sensitive compensation benchmarks and employee PII. Marked DO NOT DISTRIBUTE."
+}

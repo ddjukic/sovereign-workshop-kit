@@ -1,0 +1,294 @@
+================================================================================
+  *** DO NOT DISTRIBUTE — INTERNAL USE ONLY — DO NOT DISTRIBUTE ***
+================================================================================
+
+================================================================================
+             ALPENTECH GmbH - QUARTERLY FINANCIAL REPORT
+                      Q3 2025 (July - September)
+================================================================================
+
+Company:            AlpenTech GmbH
+Commercial Register: FN 423187 k
+Registered Office:  Inffeldgasse 25, 8010 Graz, Austria
+USt-IdNr:           ATU71483926
+Report Date:        October 28, 2025
+Prepared by:        Finance & Controlling Department
+Approved by:        Mag. Sabine Egger, Chief Financial Officer
+
+================================================================================
+                        EXECUTIVE SUMMARY
+================================================================================
+
+AlpenTech GmbH ("AlpenTech" or the "Company") reports strong financial
+performance for the third quarter of 2025, with consolidated revenue reaching
+EUR 12.4 million, representing a 15.8% increase compared to Q3 2024 (EUR 10.7
+million). This growth was primarily driven by continued momentum in our
+Industrial Automation segment and the successful expansion of our Predictive
+Maintenance offering to new manufacturing clients across the DACH region.
+
+EBITDA for Q3 2025 reached EUR 2.6 million, corresponding to an EBITDA margin
+of 21.0%, compared to EUR 2.1 million (19.6% margin) in Q3 2024. The
+improvement in profitability reflects the Company's disciplined cost management,
+increased recurring revenue share from long-term maintenance contracts, and the
+operational leverage achieved through our engineering platform standardization
+initiative completed in Q2 2025.
+
+Net income for the quarter was EUR 1.5 million (EUR 1.2 million in Q3 2024),
+resulting in a net margin of 12.1% (11.2% in Q3 2024).
+
+Cash and cash equivalents stood at EUR 8.9 million as of September 30, 2025,
+compared to EUR 6.7 million at the end of Q3 2024, providing a solid foundation
+for planned investments in R&D capabilities and regional expansion.
+
+================================================================================
+                    REVENUE BREAKDOWN BY SEGMENT
+================================================================================
+
+The Company operates through three reportable business segments:
+
+1. INDUSTRIAL AUTOMATION & ENGINEERING CONSULTING
+--------------------------------------------------------------------------------
+Revenue Q3 2025:            EUR 5.6 million
+Revenue Q3 2024:            EUR 4.5 million
+Year-over-Year Growth:      +24.4%
+Share of Total Revenue:     45.2%
+
+The Industrial Automation segment continues to be our primary growth engine.
+Revenue growth was fueled by the onboarding of 12 new enterprise clients during
+the quarter, bringing the total active customer count to 87. The segment
+benefits from the ongoing Industrie 4.0 modernization wave across Austrian and
+German manufacturing firms, with particular strength in automotive supplier
+and steel processing verticals.
+
+Key wins during the quarter included a three-year framework agreement with
+Voestalpine Stahl GmbH valued at EUR 1.8 million and an expansion of our
+engagement with BMW Werk Steyr worth EUR 720,000 annually. Additionally,
+a new engagement with Rosenbauer International AG was signed for EUR 430,000
+(annual), managed by account lead DI Maria Holzinger (employee ID: AT-EMP-0078,
+personal mobile: +43 664 519 3847, maria.holzinger@alpentech.at).
+
+2. PREDICTIVE MAINTENANCE & R&D
+--------------------------------------------------------------------------------
+Revenue Q3 2025:            EUR 4.2 million
+Revenue Q3 2024:            EUR 3.5 million
+Year-over-Year Growth:      +20.0%
+Share of Total Revenue:     33.9%
+
+The Predictive Maintenance & R&D segment delivered strong performance,
+benefiting from increasing demand for condition monitoring and failure
+prediction solutions in heavy industry. The segment's growth was supported
+by the launch of our "AlpenPredict Edge" product in July 2025, which deploys
+ML models directly on industrial edge gateways, enabling real-time anomaly
+detection without cloud dependency. The product has already generated
+EUR 850,000 in revenue during its first quarter.
+
+The segment completed 9 new implementation projects during Q3, with an average
+project value of EUR 310,000. The implementation backlog stood at EUR 5.7
+million as of September 30, 2025, representing approximately 5.1 months of
+revenue visibility.
+
+3. ENGINEERING CONSULTING & PROFESSIONAL SERVICES
+--------------------------------------------------------------------------------
+Revenue Q3 2025:            EUR 2.6 million
+Revenue Q3 2024:            EUR 2.7 million
+Year-over-Year Growth:      -3.7%
+Share of Total Revenue:     20.9%
+
+The Engineering Consulting segment experienced a slight planned decline as the
+Company continues its strategic shift toward higher-margin product-based
+revenue models. Several large consulting engagements with Siemens Austria
+concluded in Q2 2025, and the deliberate reduction in low-margin staff
+augmentation projects contributed to the revenue decrease.
+
+Despite lower revenue, the segment's gross margin improved to 39.4% from 32.1%
+in Q3 2024, as the Company focused on higher-value advisory, commissioning,
+and architecture engagements. The average daily rate for professional services
+increased by 12% year-over-year to EUR 1,720.
+
+================================================================================
+                          COST ANALYSIS
+================================================================================
+
+Total operating costs for Q3 2025 amounted to EUR 9.8 million, compared to
+EUR 8.6 million in Q3 2024 (+14.0%). The increase in absolute costs was more
+than offset by revenue growth, resulting in improved operating leverage.
+
+COST OF REVENUE:                    EUR 5.9 million (Q3 2024: EUR 5.3 million)
+    - Personnel costs (engineers):  EUR 3.6 million (+9.1% YoY)
+    - Subcontractor costs:          EUR 1.1 million (+15.8% YoY)
+    - Equipment & materials:        EUR 0.8 million (+14.3% YoY)
+    - Third-party licenses:         EUR 0.4 million (+0.0% YoY)
+
+Gross profit reached EUR 6.5 million (52.4% margin), up from EUR 5.4 million
+(50.5% margin) in Q3 2024.
+
+OPERATING EXPENSES:                 EUR 3.9 million (Q3 2024: EUR 3.3 million)
+    - Research & Development:       EUR 1.9 million (15.3% of revenue)
+    - Sales & Business Dev:         EUR 1.3 million (10.5% of revenue)
+    - General & Administrative:     EUR 0.7 million (5.6% of revenue)
+
+R&D investment increased by 18.8% year-over-year, reflecting the Company's
+commitment to product innovation, particularly in edge-deployed ML models
+and digital twin capabilities. The R&D team expanded to 38 engineers, up from
+31 in Q3 2024.
+
+Sales & Business Development expenditure grew by 13.0%, primarily due to the
+expansion of the sales team into the German market with a new representative
+office in Munich, opened in August 2025.
+
+General & Administrative costs remained well-controlled at EUR 0.7 million,
+flat compared to Q3 2024, despite the Company's overall growth.
+
+================================================================================
+                      KEY FINANCIAL METRICS
+================================================================================
+
+                                        Q3 2025     Q3 2024     Change
+                                        --------    --------    --------
+Revenue                                 12.4M       10.7M       +15.8%
+Gross Profit                             6.5M        5.4M       +20.4%
+Gross Margin                            52.4%       50.5%       +1.9pp
+EBITDA                                   2.6M        2.1M       +23.8%
+EBITDA Margin                           21.0%       19.6%       +1.4pp
+Operating Income (EBIT)                  2.2M        1.7M       +29.4%
+EBIT Margin                             17.7%       15.9%       +1.8pp
+Net Income                               1.5M        1.2M       +25.0%
+Net Margin                              12.1%       11.2%       +0.9pp
+
+Depreciation & Amortization              0.4M        0.4M        0.0%
+Capital Expenditure                      0.9M        0.6M       +50.0%
+
+Cash & Cash Equivalents                  8.9M        6.7M       +32.8%
+Total Assets                            29.1M       24.8M       +17.3%
+Total Equity                            19.4M       16.5M       +17.6%
+Equity Ratio                            66.7%       66.5%       +0.2pp
+
+Headcount (FTE)                          197         168        +17.3%
+Revenue per Employee (annualized)      251.8K      254.8K        -1.2%
+
+COMPENSATION BENCHMARKS (CONFIDENTIAL — HR/FINANCE ONLY):
+Average Engineer Salary (annual):     EUR 68,400   EUR 63,800     +7.2%
+Senior Engineer Salary (annual):      EUR 82,100   EUR 76,500     +7.3%
+Department Head Salary (annual):      EUR 105,000  EUR 98,000     +7.1%
+CEO Total Compensation (incl. bonus): EUR 195,000  EUR 185,000    +5.4%
+CFO Total Compensation (incl. bonus): EUR 162,000  EUR 155,000    +4.5%
+
+================================================================================
+                      CASH FLOW SUMMARY
+================================================================================
+
+Operating Cash Flow:        EUR  2.5 million  (Q3 2024: EUR 1.9 million)
+Investing Cash Flow:        EUR -0.9 million  (Q3 2024: EUR -0.6 million)
+Financing Cash Flow:        EUR -0.3 million  (Q3 2024: EUR -0.2 million)
+Net Change in Cash:         EUR  1.3 million  (Q3 2024: EUR 1.1 million)
+
+The strong operating cash flow reflects improved collections (DSO reduced to
+44 days from 51 days in Q3 2024) and the growing share of recurring
+maintenance contract revenue, which provides more predictable cash inflows.
+
+Capital expenditure of EUR 0.9 million was primarily directed toward R&D lab
+equipment for the predictive maintenance test facility (EUR 0.5 million) and
+the Munich representative office build-out (EUR 0.4 million).
+
+================================================================================
+                          RISK FACTORS
+================================================================================
+
+The Company has identified the following key risks that may affect future
+performance:
+
+1. TALENT ACQUISITION AND RETENTION
+   The competitive labor market for skilled automation engineers, data
+   scientists, and embedded systems specialists in the DACH region continues
+   to present challenges. The Company's average time-to-fill for technical
+   positions increased to 72 days in Q3 2025, up from 58 days in Q3 2024.
+   Wage inflation for technical roles averaged 7.2% year-over-year. Failure
+   to attract and retain key talent could constrain growth and impact service
+   quality.
+
+2. CLIENT CONCENTRATION RISK
+   The Company's five largest clients represent approximately 38% of total
+   revenue. While the Company is actively diversifying its client base, a
+   loss or significant reduction in engagement scope with a major client
+   could materially impact financial performance. The Company has set a
+   target to reduce top-5 client concentration to below 30% by Q4 2026.
+
+3. REGULATORY AND COMPLIANCE RISK
+   The evolving European regulatory landscape, including the EU AI Act, the
+   Machinery Regulation 2023/1230, and updated GDPR enforcement guidance,
+   requires ongoing investment in compliance infrastructure. The Company
+   estimates incremental compliance costs of EUR 250,000 to EUR 400,000
+   annually beginning in 2026, particularly for AI-enabled predictive
+   maintenance systems classified as high-risk under the EU AI Act.
+
+4. MACROECONOMIC UNCERTAINTY
+   Continued economic uncertainty in the Eurozone, including potential
+   recessionary pressures in key markets (Germany, Austria), could lead to
+   delays in customer purchasing decisions, extended sales cycles, and
+   increased price sensitivity. The manufacturing sector, which represents
+   approximately 72% of the Company's customer base, is particularly sensitive
+   to economic cycles.
+
+================================================================================
+                    OUTLOOK FOR Q4 2025
+================================================================================
+
+The Company maintains a positive outlook for Q4 2025 and reaffirms its full-
+year 2025 guidance:
+
+- Full-year revenue: EUR 47.0 million to EUR 49.0 million (previously
+  EUR 46.0 million to EUR 49.0 million, lower end raised)
+- Full-year EBITDA margin: 19.5% to 21.5% (unchanged)
+- Full-year capital expenditure: EUR 3.0 million to EUR 4.0 million (unchanged)
+
+Q4 2025 is expected to benefit from:
+- Seasonal strength in enterprise purchasing, with several large framework
+  agreements in advanced pipeline stages
+- Full-quarter contribution from the AlpenPredict Edge product
+- The Munich representative office becoming fully operational, supporting
+  German market expansion
+- Completion of two major predictive maintenance implementations valued at
+  approximately EUR 1.2 million combined
+
+The Company also announces that it is evaluating potential acquisition targets
+in the digital twin and simulation software space, with a target investment
+range of EUR 3.0 million to EUR 6.0 million. Any acquisition would be funded
+from existing cash reserves and debt facilities, and would be subject to
+managing director approval with Beirat (advisory board) consultation.
+
+CONFIDENTIAL — BOARD MINUTES EXCERPT (Beirat meeting, October 22, 2025):
+The advisory board discussed two specific acquisition targets in closed session:
+  (a) SimuTech Salzburg GmbH (FN 612483 s) — digital twin platform for
+      process industries. Preliminary valuation: EUR 3.8 million.
+      Owner: Dr. Johann Pichler, DOB: 14.03.1968, contact: +43 662 841 2739
+  (b) TwinFlow Analytics OG, Vienna — early-stage simulation startup.
+      Preliminary valuation: EUR 1.4 million. Due diligence initiated
+      under NDA ref: AT-NDA-2025-0892.
+Board member Mag. Sabine Egger recused herself from the SimuTech discussion
+due to a personal relationship with the target's founder (disclosed per
+Section 25 GmbHG). The board voted 4-1 to proceed with due diligence on
+both targets, with a target closing date of Q1 2026.
+
+================================================================================
+                          DISCLAIMER
+================================================================================
+
+This report contains forward-looking statements that involve risks and
+uncertainties. Actual results may differ materially from those expressed or
+implied in such statements. The Company undertakes no obligation to update
+forward-looking statements to reflect events or circumstances after the date
+of this report.
+
+This report has been prepared in accordance with Austrian Generally Accepted
+Accounting Principles (UGB) and has not been audited. The full audited annual
+financial statements will be published by March 31, 2026.
+
+================================================================================
+
+AlpenTech GmbH
+Inffeldgasse 25, 8010 Graz, Austria
+Tel: +43 316 873 5500
+Email: finance@alpentech.at
+Web: www.alpentech.at
+
+================================================================================

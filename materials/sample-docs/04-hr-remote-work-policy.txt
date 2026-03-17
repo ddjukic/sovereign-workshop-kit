@@ -1,0 +1,428 @@
+================================================================================
+       REMOTE WORK & FLEXIBLE WORKING POLICY (DACH REGION)
+================================================================================
+
+Document ID:        POL-HR-2025-012
+Company:            AlpenTech GmbH
+Registered Office:  Inffeldgasse 25, 8010 Graz, Austria
+Commercial Register: FN 423187 k
+Effective Date:     July 1, 2025
+Last Revised:       September 15, 2025
+Policy Owner:       Human Resources Department
+Approved by:        Mag. Christina Wieser, Head of People & Organization
+Works Council
+Consultation:       Betriebsrat approval obtained June 12, 2025
+                    (per Section 97(1)(2) ArbVG)
+Classification:     Internal - All Employees
+
+================================================================================
+                    1. PURPOSE AND SCOPE
+================================================================================
+
+1.1 PURPOSE
+This Remote Work & Flexible Working Policy ("Policy") establishes the
+framework under which eligible employees of AlpenTech GmbH ("the Company")
+may perform their duties from locations outside the Company's office premises.
+This Policy aims to provide flexibility while maintaining operational
+efficiency, data security, and team collaboration, in compliance with the
+Austrian Working from Home Act (Homeoffice-Gesetz), the Working Hours Act
+(Arbeitszeitgesetz - AZG), and the Labour Constitution Act
+(Arbeitsverfassungsgesetz - ArbVG).
+
+1.2 SCOPE
+This Policy applies to all full-time and part-time employees of the Company
+across all departments and office locations, including the headquarters in
+Graz, the Linz engineering office, and the Munich representative office.
+It does not apply to contractors, temporary workers (Leiharbeitskrafte), or
+interns (Praktikanten), who are governed by the terms of their individual
+agreements.
+
+1.3 DACH-SPECIFIC PROVISIONS
+This Policy has been developed with consideration for the specific legal
+frameworks applicable across the DACH region:
+    - Austria: Homeoffice-Gesetz (BGBl. I Nr. 61/2021), AZG, ArbVG
+    - Germany: Applicable provisions of the Arbeitsschutzgesetz (ArbSchG)
+      and Arbeitszeitgesetz (ArbZG) for Munich-based employees
+    - Switzerland: Applicable provisions for any future Swiss engagements,
+      subject to separate Betriebsvereinbarung
+
+1.4 DEFINITIONS
+    - "Remote Work" (Homeoffice) refers to any arrangement where an employee
+      performs their regular duties from their home or another approved
+      location, in accordance with the Homeoffice-Gesetz.
+    - "Hybrid Work" refers to a schedule combining on-site and remote workdays.
+    - "Primary Work Location" refers to the employee's designated home office
+      or other approved remote location as agreed in the individual
+      Homeoffice-Vereinbarung.
+    - "Core Hours" (Kernarbeitszeit) refers to the mandatory availability
+      window during which all employees must be reachable.
+    - "Betriebsrat" refers to the Works Council as established under the ArbVG.
+
+================================================================================
+                    2. ELIGIBILITY CRITERIA
+================================================================================
+
+2.1 Eligible employees must meet ALL of the following criteria:
+    (a) Have completed their probation period (minimum 6 months of employment,
+        per the applicable Kollektivvertrag);
+    (b) Have received a performance rating of "Meets Expectations" or higher
+        in their most recent performance review;
+    (c) Hold a role that does not require continuous physical presence at
+        client sites or the Company's test laboratory (as determined by the
+        employee's department head in consultation with the Betriebsrat);
+    (d) Have a suitable home office environment that meets the requirements
+        outlined in Section 3 of this Policy;
+    (e) Have completed the mandatory "Secure Remote Work for Engineers"
+        training module (offered quarterly by the IT Security team).
+
+2.2 The following roles are EXCLUDED from remote work eligibility:
+    - On-site commissioning and field service engineers during active
+      deployment phases
+    - Lab technicians and test facility operators
+    - Employees in their first 6 months of employment (probation period)
+    - Employees currently on a Performance Improvement Plan (PIP)
+    - Employees whose background check (Strafregisterbescheinigung) has not
+      been renewed within the last 24 months, as required for personnel with
+      access to client critical infrastructure systems (per Beirat resolution
+      BR-2024-031). Current non-compliant employees: AT-EMP-0156 (DI Robert
+      Steiner, renewal overdue since April 2025), AT-EMP-0189 (Ing. Lisa
+      Mayr, pending since July 2025)
+
+2.3 Remote work arrangements must be documented in a written
+    Homeoffice-Vereinbarung (home office agreement), as required by the
+    Homeoffice-Gesetz, signed by the employee, their direct manager, AND
+    the HR Department. The agreement may be revoked by either party with
+    one month's written notice if performance standards are not maintained
+    or business needs change.
+
+2.4 HYBRID SCHEDULE
+    All remote-eligible employees are required to work from the office a
+    minimum of two (2) days per week ("Anchor Days"). Department heads shall
+    designate one common Anchor Day per week for their team to facilitate
+    in-person collaboration. The second Anchor Day may be chosen by the
+    employee in coordination with their manager.
+
+    Note: Engineers assigned to active client projects may have different
+    on-site requirements as defined in their project assignment letters.
+
+================================================================================
+                    3. EQUIPMENT AND WORKSPACE
+================================================================================
+
+3.1 COMPANY-PROVIDED EQUIPMENT
+    In accordance with Section 2(5) of the Homeoffice-Gesetz, the Company
+    shall provide the following equipment to approved remote workers:
+    - Laptop computer (standard Company-issued ThinkPad or equivalent)
+    - External monitor (24-inch, upon request)
+    - Keyboard and mouse
+    - Headset with microphone for video conferencing
+    - VPN hardware token for secure network access
+    - Company mobile phone (for engineers with on-call responsibilities)
+
+3.2 HOME OFFICE REQUIREMENTS
+    The employee's remote workspace must meet the following minimum standards
+    in accordance with the Arbeitnehmerschutzgesetz (ASchG) and applicable
+    workplace ergonomics guidelines (AUVA):
+    (a) A dedicated, quiet workspace with a door that can be closed;
+    (b) Ergonomic desk and chair (employee's responsibility; see Section 6
+        for reimbursement provisions);
+    (c) Stable internet connection with minimum speeds of 50 Mbps download
+        and 10 Mbps upload;
+    (d) Adequate lighting and ventilation;
+    (e) Compliance with applicable health and safety regulations.
+
+3.3 EQUIPMENT RETURN
+    All Company-provided equipment must be returned in good working condition
+    within five (5) business days of the termination of the remote work
+    arrangement or the employee's separation from the Company.
+
+================================================================================
+                4. WORKING HOURS AND AVAILABILITY
+================================================================================
+
+4.1 CORE HOURS
+    All remote employees must be available and responsive during Core Hours
+    (Kernarbeitszeit):
+    Monday through Friday, 09:30 to 15:30 CET (Central European Time).
+    During Core Hours, employees must be reachable via the Company's
+    communication tools (Microsoft Teams, email, and phone).
+
+    Note: Working hours must comply with the maximum limits set by the AZG,
+    including the 12-hour daily maximum and 48-hour weekly maximum, as well
+    as mandatory rest periods (minimum 11 hours uninterrupted rest between
+    working days).
+
+4.2 FLEXIBLE HOURS (GLEITZEIT)
+    Outside of Core Hours, employees may arrange their remaining working hours
+    flexibly under the Company's Gleitzeitvereinbarung, provided that they
+    fulfill their contractual weekly hours (38.5 hours per week for full-time
+    employees, as per the applicable Kollektivvertrag for the metal and
+    technology industry) and meet their deliverables and deadlines.
+
+4.3 RESPONSE TIME
+    During Core Hours, employees are expected to respond to messages and
+    requests within thirty (30) minutes. Outside Core Hours but within the
+    employee's working day, a response time of two (2) hours is acceptable.
+
+4.4 MEETINGS
+    Employees must be available for scheduled team meetings, client calls, and
+    other mandatory appointments, regardless of their remote or on-site status.
+    Cameras should be turned on during video meetings unless bandwidth
+    constraints prevent it.
+
+4.5 TIME TRACKING
+    All remote work hours must be accurately recorded in the Company's time
+    tracking system (currently: SAP SuccessFactors). Employees must log their
+    start time, end time, and any breaks exceeding 15 minutes, in compliance
+    with the AZG record-keeping requirements.
+
+================================================================================
+                5. DATA SECURITY REQUIREMENTS
+================================================================================
+
+5.1 GENERAL SECURITY OBLIGATIONS
+    Given the sensitive nature of the Company's client data, including
+    proprietary industrial process parameters, engineering designs, and
+    manufacturing telemetry, all remote workers must adhere to the following
+    data security requirements without exception:
+
+    (a) All work must be performed exclusively on Company-issued devices.
+        Personal devices may not be used for any work-related activities,
+        including checking work email.
+    (b) The Company-provided VPN must be active at all times when accessing
+        Company systems, regardless of the network being used.
+    (c) Full-disk encryption must remain enabled on all devices at all times.
+        Employees must not attempt to disable or circumvent encryption.
+    (d) Screen lock must engage automatically after no more than three (3)
+        minutes of inactivity.
+    (e) Work must not be performed on public Wi-Fi networks (e.g., cafes,
+        airports, hotels) unless the VPN is active and the employee is using
+        the Company-provided mobile hotspot as a fallback.
+
+5.2 DATA HANDLING
+    (a) Confidential client data and engineering documents must not be stored
+        locally on the laptop's hard drive. All data must reside on Company
+        cloud storage (currently: Azure Blob Storage with geo-redundancy
+        within the EU) or on-premises file servers.
+    (b) Printing of confidential documents at home is strictly prohibited.
+    (c) Employees must not use personal cloud storage services (Google Drive,
+        Dropbox, iCloud, etc.) for any work-related files.
+    (d) Video calls involving sensitive client information must be conducted
+        in a private setting where conversations cannot be overheard by
+        unauthorized persons.
+
+5.3 INCIDENT REPORTING
+    Any suspected or actual security incident, including lost or stolen
+    devices, unauthorized access, or data breaches, must be reported to the
+    IT Security team within one (1) hour of discovery via the dedicated
+    incident hotline: +43 316 873 5599 (available 24/7). Data breaches
+    involving personal data must also be reported to the Data Protection
+    Officer for assessment under GDPR Article 33 (72-hour notification to
+    the Austrian Data Protection Authority, Datenschutzbehoerde).
+
+5.4 COMPLIANCE AUDITS
+    The IT Security team reserves the right to conduct periodic audits of
+    remote work setups, including remote device inspections, to ensure
+    compliance with this Policy. Employees will receive at least 48 hours'
+    notice before any such audit.
+
+5.5 DATA SOVEREIGNTY
+    All Company and client data must remain within the European Economic
+    Area (EEA) at all times. Employees working remotely from locations
+    outside the EEA must obtain prior written approval from the Data
+    Protection Officer and must use additional security measures as specified
+    by the IT Security team. Remote work from outside the EEA is limited to
+    a maximum of ten (10) business days per calendar year.
+
+================================================================================
+                    6. EXPENSE REIMBURSEMENT
+================================================================================
+
+6.1 ONE-TIME HOME OFFICE SETUP ALLOWANCE
+    Upon initial approval of a remote work arrangement, employees are eligible
+    for a one-time home office setup allowance of up to EUR 750.00 to cover
+    the cost of an ergonomic desk, office chair, and other workspace
+    essentials. Claims must be submitted with original receipts within 90 days
+    of the remote work arrangement start date. This allowance is treated as
+    tax-exempt in accordance with Section 26 Z 9 EStG, provided the
+    conditions of the Homeoffice-Gesetz are met.
+
+6.2 MONTHLY REMOTE WORK STIPEND (HOMEOFFICE-PAUSCHALE)
+    Remote workers are entitled to a monthly stipend of EUR 60.00 to offset
+    ongoing costs associated with remote work, including internet service,
+    electricity, and heating. This stipend is paid automatically with the
+    monthly salary and is tax-exempt up to EUR 3.00 per home office day
+    (maximum EUR 300.00 per calendar year) in accordance with the
+    Homeoffice-Pauschale provisions of the EStG.
+
+6.3 NON-REIMBURSABLE EXPENSES
+    The following expenses are NOT eligible for reimbursement:
+    - Rent or mortgage payments
+    - Home renovation or decoration
+    - Furniture beyond the initial setup allowance
+    - Personal phone plans (unless specifically approved by management)
+    - Co-working space memberships (unless pre-approved by department head)
+
+6.4 TRAVEL TO OFFICE
+    Travel costs for commuting to the office on Anchor Days are the employee's
+    responsibility and are not reimbursed by the Company. Employees may claim
+    the Pendlerpauschale (commuter tax deduction) where applicable. However,
+    if an employee is called to the office on a non-scheduled day with less
+    than 48 hours' notice, reasonable travel costs will be reimbursed up to a
+    maximum of EUR 50.00 per occurrence.
+
+================================================================================
+                7. PERFORMANCE EVALUATION
+================================================================================
+
+7.1 Remote employees shall be evaluated based on the same performance criteria
+    and standards as on-site employees. Physical presence in the office shall
+    not be a factor in performance evaluations.
+
+7.2 Managers of remote employees must:
+    (a) Conduct weekly one-on-one check-in meetings (minimum 30 minutes);
+    (b) Set clear, measurable objectives with defined timelines;
+    (c) Provide written feedback at least quarterly;
+    (d) Address performance concerns promptly and document all discussions.
+
+7.3 Remote employees are expected to:
+    (a) Proactively communicate their progress and any blockers;
+    (b) Maintain visibility through regular status updates in team channels;
+    (c) Participate actively in team meetings and Company events;
+    (d) Complete all mandatory training and professional development activities.
+
+7.4 A decline in performance below "Meets Expectations" may result in:
+    (a) A mandatory return to full-time on-site work for a minimum of 90 days;
+    (b) Placement on a Performance Improvement Plan (PIP);
+    (c) In severe cases, disciplinary action up to and including termination,
+        subject to the applicable provisions of the ArbVG and consultation
+        with the Betriebsrat.
+
+================================================================================
+                8. EXCEPTIONS AND ESCALATION
+================================================================================
+
+8.1 EXCEPTION REQUESTS
+    Requests for exceptions to this Policy (e.g., full-time remote work,
+    extended remote work from outside the EEA, use of non-standard equipment,
+    disability accommodations under the Behinderteneinstellungsgesetz) must
+    be submitted in writing to the HR Department using Form HR-EXC-01.
+
+    Recent approved exceptions for reference:
+    - AT-EMP-0091 (Ing. Katharina Berger): Permanent full-time remote work
+      approved due to mobility impairment following workplace accident
+      (Arbeitsunfall, August 2024). Occupational medicine assessment ref:
+      AMZ-2024-0847. Modified workstation with standing desk and ergonomic
+      adaptations funded under AUVA case #GZ-2024-31847.
+    - AT-EMP-0134 (DI Markus Novak): Temporary full-time remote work
+      (October-December 2025) approved for ongoing chemotherapy treatment.
+      Medical certificate on file with HR (Dr. Elisabeth Kern, LKH Graz,
+      ref: MED-2025-4192). Employee to maintain reduced hours (30h/week)
+      per treating physician's recommendation.
+
+8.2 APPROVAL CHAIN
+    Exception requests shall be reviewed and approved through the following
+    chain:
+    (a) Direct Manager (initial review, 5 business days)
+    (b) Department Head (secondary review, 5 business days)
+    (c) HR Department (final review and compliance check, 5 business days)
+    (d) For exceptions involving data security: Data Protection Officer
+        (additional review, 5 business days)
+    (e) For matters affecting the Betriebsvereinbarung: Works Council
+        (Betriebsrat) consultation as required under ArbVG
+
+8.3 ESCALATION
+    Disputes or disagreements regarding remote work arrangements or the
+    application of this Policy may be escalated through the following
+    channels:
+    (a) Direct discussion with the employee's manager
+    (b) Mediation by the HR Department
+    (c) Works Council (Betriebsrat) involvement, as the Betriebsrat has
+        a co-determination right on matters of working conditions under
+        Section 97 ArbVG
+    (d) Formal grievance procedure as outlined in the Company's Employee
+        Handbook (Section 12.4)
+    (e) In accordance with the ArbVG, unresolved disputes may be referred
+        to the Schlichtungsstelle (conciliation board) or the
+        Arbeits- und Sozialgericht (Labour and Social Court)
+
+    WHISTLEBLOWER CHANNEL (per HinweisgeberInnenschutzgesetz — HSchG):
+    Note: On August 3, 2025, an anonymous report was received via the Company's
+    whistleblower platform (ref: WB-2025-0014) alleging that a department head
+    in the Engineering Consulting division pressured team members to falsify
+    time tracking records during remote work days, specifically by logging
+    overtime hours that were not actually worked, to meet billable-hours targets
+    for client projects. The investigation is ongoing under the direction of
+    the Compliance Officer (Mag. Peter Schuster, peter.schuster@alpentech.at,
+    +43 316 873 5501). The identity of the reporting person is protected under
+    the HSchG and must not be disclosed. Interim findings suggest the practice
+    may have affected Q2/Q3 2025 billing for client account Siemens Austria
+    (project code: SA-2025-PMI).
+
+8.4 EMERGENCY PROVISIONS
+    In the event of public health emergencies, natural disasters, or other
+    extraordinary circumstances, the Company may temporarily mandate remote
+    work for all employees, regardless of eligibility criteria. Such mandates
+    will be communicated by the Managing Director (Geschaeftsfuehrer) in
+    consultation with the Betriebsrat and will include specific terms and
+    duration.
+
+================================================================================
+                    9. REVISION HISTORY
+================================================================================
+
+Version   Date              Author                  Changes
+--------  ----------------  ----------------------  ---------------------------
+1.0       March 15, 2024    Mag. Christina Wieser    Initial policy creation,
+                                                    Betriebsrat consultation
+1.1       January 10, 2025  DI Robert Steiner       Added data sovereignty
+                                                    requirements (Section 5.5),
+                                                    DACH provisions
+1.2       July 1, 2025      Mag. Christina Wieser    Updated expense amounts per
+                                                    Homeoffice-Pauschale,
+                                                    revised eligibility criteria,
+                                                    added emergency provisions
+1.3       September 15,     Mag. Christina Wieser    Clarified Core Hours per
+          2025                                      AZG, updated security audit
+                                                    provisions, added escalation
+                                                    procedures with Betriebsrat
+
+================================================================================
+                    10. ACKNOWLEDGMENT
+================================================================================
+
+By signing below, the employee acknowledges that they have read, understood,
+and agree to comply with all provisions of this Remote Work & Flexible Working
+Policy. This acknowledgment forms part of the employee's individual
+Homeoffice-Vereinbarung as required by the Homeoffice-Gesetz.
+
+Employee Name:     Mag. Sandra Koller
+Employee ID:       AT-EMP-0163
+Department:        Predictive Maintenance & R&D
+Manager Name:      DI Dr. Andreas Hofer
+SV-Nr:             4827 120388
+Home Address:      Leonhardstraße 42/7, 8010 Graz, Austria
+Personal Email:    sandra.koller@gmx.at
+Date of Birth:     12.03.1988
+
+Employee Signature: ___________________________________
+Date:               ___________________________________
+
+Manager Signature:  ___________________________________
+Date:               ___________________________________
+
+HR Approval:        ___________________________________
+Date:               ___________________________________
+
+Betriebsrat
+Acknowledgment:     ___________________________________
+Date:               ___________________________________
+
+================================================================================
+
+AlpenTech GmbH
+Inffeldgasse 25, 8010 Graz, Austria
+Tel: +43 316 873 5500
+Email: hr@alpentech.at
+
+================================================================================

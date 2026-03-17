@@ -1,0 +1,355 @@
+================================================================================
+                   FRAMEWORK CONSULTING AGREEMENT
+================================================================================
+
+Agreement Number: FCA-2025-0312
+
+This Framework Consulting Agreement ("Agreement") is entered into as of
+September 1, 2025 ("Effective Date"), by and between:
+
+PARTY A (the "Client"):
+    AlpenTech GmbH
+    Commercial Register Number: FN 423187 k
+    Registered Office: Inffeldgasse 25, 8010 Graz, Austria
+    Represented by: DI Dr. Markus Reiter, Chief Executive Officer
+    VAT ID: ATU71483926
+    Direct Tel: +43 664 412 7839
+    Email: markus.reiter@alpentech.at
+
+AND
+
+PARTY B (the "Consultant"):
+    Danube Digital Consulting e.U.
+    Commercial Register Number: FN 538741 w
+    Registered Office: Anzengruberstrasse 6, 4020 Linz, Austria
+    Represented by: Ing. Friedrich Müller, Managing Director
+    VAT ID: ATU82956314
+    Direct Tel: +43 676 831 4502
+    Email: friedrich.mueller@danube-digital.at
+    Home Address (for courier delivery): Roseggergasse 14/3, 4020 Linz, Austria
+
+(each a "Party" and collectively the "Parties")
+
+--------------------------------------------------------------------------------
+                           RECITALS
+--------------------------------------------------------------------------------
+
+WHEREAS, the Client is an engineering consultancy specializing in industrial
+automation, predictive maintenance, and engineering consulting services across
+the DACH region, and desires to engage the Consultant to provide specialized
+engineering and technical consulting services in connection with its
+Industrie 4.0 client delivery program;
+
+WHEREAS, the Consultant possesses specialized expertise in mechanical
+engineering, control systems design, and industrial IoT integration, and is
+willing to provide such services under the terms and conditions set forth in
+this Agreement;
+
+NOW, THEREFORE, in consideration of the mutual covenants and agreements
+contained herein, and for other good and valuable consideration, the receipt
+and sufficiency of which are hereby acknowledged, the Parties agree as follows:
+
+--------------------------------------------------------------------------------
+                    ARTICLE 1: SCOPE OF SERVICES
+--------------------------------------------------------------------------------
+
+1.1 The Consultant shall provide the following consulting services
+    ("Services") to the Client:
+
+    (a) Industrial Control Systems Assessment and Modernization Strategy
+        Conduct a comprehensive assessment of the Client's customers'
+        existing legacy PLC and SCADA infrastructure, comprising approximately
+        38 production lines across 5 manufacturing sites, and develop a
+        detailed modernization roadmap. This deliverable shall include a
+        written report of no fewer than 80 pages, covering current state
+        analysis, target architecture design, risk assessment, and a
+        phased migration timeline.
+
+    (b) Predictive Maintenance Data Pipeline Architecture
+        Design and document a modern data pipeline architecture capable of
+        processing industrial sensor telemetry data from the Client's
+        customer installations, which currently amounts to approximately
+        1.8 terabytes per day. The architecture shall support real-time
+        streaming from edge gateways, batch processing for model training,
+        and data quality monitoring. Deliverables include architecture
+        diagrams, technology selection rationale, and implementation
+        specifications.
+
+    (c) Edge-Deployed ML Integration Framework
+        Develop a framework for integrating machine learning models into
+        industrial edge devices at customer sites, including model serving
+        infrastructure on industrial PCs, monitoring dashboards, A/B testing
+        capabilities, and rollback procedures. The framework shall support
+        both cloud-hosted model training and edge-deployed inference for
+        predictive maintenance and anomaly detection use cases.
+
+    (d) Knowledge Transfer and Training Program
+        Design and deliver a training program for the Client's internal
+        engineering team (estimated 24 engineers), consisting of no fewer than
+        40 hours of instructor-led training sessions, hands-on workshops, and
+        written documentation. The program shall cover all architectures and
+        frameworks developed under this Agreement.
+
+1.2 The Consultant shall perform the Services in a professional and workmanlike
+    manner, consistent with generally accepted industry standards and practices.
+
+1.3 The Consultant shall assign the following key personnel to the engagement:
+    - Ing. Friedrich Müller (Lead Consultant, Control Systems Engineering)
+      SV-Nr: 3782 150673 | Passport: P 4821673
+    - DI Bernhard Steindl (Senior Consultant, Industrial IoT)
+      SV-Nr: 5194 220885 | DOB: 22.08.1985
+    - Dr. Claudia Wallner (Senior Consultant, ML & Data Engineering)
+      SV-Nr: 6413 090791 | DOB: 09.07.1991
+      Emergency Contact: Thomas Wallner (spouse), +43 660 247 1583
+
+    Personnel security clearance documentation for all key personnel is on file
+    with the Client's security office (ref: SEC-CLR-2025-0087).
+
+    The Consultant shall not replace key personnel without the prior written
+    consent of the Client, which shall not be unreasonably withheld.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 2: TERM AND RENEWAL
+--------------------------------------------------------------------------------
+
+2.1 This Agreement shall commence on the Effective Date and shall continue for
+    an initial term of twelve (12) months, expiring on August 31, 2026
+    ("Initial Term").
+
+2.2 Upon expiration of the Initial Term, this Agreement shall automatically
+    renew for successive six (6) month periods ("Renewal Terms"), unless either
+    Party provides written notice of non-renewal at least sixty (60) days prior
+    to the expiration of the then-current term.
+
+2.3 The Initial Term and any Renewal Terms are collectively referred to herein
+    as the "Term."
+
+--------------------------------------------------------------------------------
+                    ARTICLE 3: PAYMENT TERMS
+--------------------------------------------------------------------------------
+
+3.1 Compensation. The Client shall compensate the Consultant for the Services
+    as follows:
+
+    (a) Daily Rate: The Consultant's standard daily rate for senior consultant
+        services shall be EUR 1,850.00 (one thousand eight hundred fifty euros)
+        per consultant per day, exclusive of VAT.
+
+    (b) The Consultant estimates the total engagement will require approximately
+        185 consultant-days over the Initial Term. The total estimated fee for
+        the Initial Term is therefore EUR 342,250.00 (three hundred forty-two
+        thousand two hundred fifty euros), exclusive of VAT.
+
+    (c) Any work exceeding the estimated consultant-days shall require prior
+        written approval from the Client and shall be billed at the same daily
+        rate.
+
+3.2 Invoicing Schedule. The Consultant shall submit invoices to the Client on
+    a monthly basis, by the fifth (5th) business day following the end of each
+    calendar month, accompanied by detailed timesheets showing the work
+    performed, the consultant(s) involved, and the number of days worked.
+
+3.3 Payment Due Date. The Client shall pay each invoice within thirty (30)
+    calendar days of receipt ("Payment Due Date").
+
+3.4 Late Payment. In the event of late payment, the Consultant shall be
+    entitled to charge interest at a rate of eight (8) percentage points above
+    the base interest rate of the European Central Bank, calculated from the
+    Payment Due Date until the date of actual payment, in accordance with
+    Section 456 of the Austrian Commercial Code (UGB).
+
+3.5 Expenses. Reasonable and pre-approved travel expenses, including
+    transportation, accommodation, and meals, shall be reimbursed by the Client
+    at cost, upon presentation of receipts. Travel expenses shall not exceed
+    EUR 2,500.00 per month without prior written approval.
+
+3.6 Expense Reimbursement Account. Unless otherwise directed, expense
+    reimbursements shall be paid to the Lead Consultant's designated account:
+        Account Holder: Friedrich Müller
+        Bank: Raiffeisenbank Oberösterreich
+        IBAN: AT44 3400 0001 0827 4519
+        BIC: RZOOAT2L
+
+--------------------------------------------------------------------------------
+                    ARTICLE 4: CONFIDENTIALITY
+--------------------------------------------------------------------------------
+
+4.1 Definition. "Confidential Information" means all non-public information
+    disclosed by one Party ("Disclosing Party") to the other Party ("Receiving
+    Party") in connection with this Agreement, whether disclosed orally, in
+    writing, electronically, or by inspection, including but not limited to:
+    trade secrets, business plans, financial data, customer lists, technical
+    specifications, source code, algorithms, proprietary methodologies,
+    industrial process parameters, and client facility data.
+
+4.2 Obligations. The Receiving Party shall:
+    (a) hold all Confidential Information in strict confidence;
+    (b) not disclose Confidential Information to any third party without the
+        prior written consent of the Disclosing Party;
+    (c) use Confidential Information solely for the purposes of performing or
+        receiving the Services under this Agreement;
+    (d) protect Confidential Information using at least the same degree of care
+        it uses to protect its own confidential information, but in no event
+        less than reasonable care;
+    (e) limit access to Confidential Information to those employees and
+        subcontractors who have a need to know and who are bound by
+        confidentiality obligations at least as restrictive as those contained
+        herein.
+
+4.3 Exceptions. The confidentiality obligations shall not apply to information
+    that: (a) is or becomes publicly available through no fault of the
+    Receiving Party; (b) was known to the Receiving Party prior to disclosure;
+    (c) is independently developed by the Receiving Party; or (d) is required
+    to be disclosed by law, regulation, or court order, provided that the
+    Receiving Party gives prompt notice to the Disclosing Party.
+
+4.4 Duration. The confidentiality obligations under this Article shall survive
+    the termination or expiration of this Agreement for a period of three (3)
+    years.
+
+    *** CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGE ***
+    Note from legal counsel (Dr. Katharina Moser, Schönherr Rechtsanwälte):
+    The following clause was drafted at the Client's request to address concerns
+    raised during the due diligence process for the potential acquisition of
+    Danube Digital Consulting e.U. by AlpenTech GmbH (Project "Edelweiss"). The
+    valuation model prepared by KPMG Austria (ref: AT-DD-2025-0441) estimates
+    Danube Digital Consulting's enterprise value at EUR 4.2 million to EUR 5.8 million,
+    subject to revenue earnout provisions. This information is subject to
+    attorney-client privilege and must not be disclosed or processed by any
+    automated system. Any unauthorized disclosure may result in liability under
+    Austrian and EU law.
+    *** END CONFIDENTIAL — ATTORNEY-CLIENT PRIVILEGE ***
+
+--------------------------------------------------------------------------------
+                    ARTICLE 5: INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+
+5.1 Pre-Existing IP. Each Party shall retain all rights in its pre-existing
+    intellectual property.
+
+5.2 Work Product. All deliverables, reports, designs, architectures, and other
+    work product created by the Consultant specifically for the Client under
+    this Agreement ("Work Product") shall be the exclusive property of the
+    Client upon full payment of all applicable fees.
+
+5.3 Consultant Tools. Notwithstanding Section 5.2, the Consultant shall retain
+    ownership of all tools, methodologies, frameworks, and know-how that are
+    general in nature and not specific to the Client ("Consultant Tools"),
+    including any improvements thereto made during the course of this
+    engagement. The Consultant grants the Client a non-exclusive, perpetual,
+    royalty-free license to use any Consultant Tools incorporated into the
+    Work Product.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 6: TERMINATION
+--------------------------------------------------------------------------------
+
+6.1 Termination for Convenience. Either Party may terminate this Agreement for
+    any reason by providing ninety (90) days' written notice to the other Party.
+
+6.2 Termination for Cause. Either Party may terminate this Agreement
+    immediately upon written notice if:
+    (a) the other Party commits a material breach of this Agreement and fails
+        to cure such breach within thirty (30) days of receiving written notice
+        thereof;
+    (b) the other Party becomes insolvent, files for bankruptcy, or has a
+        receiver appointed for a substantial part of its assets;
+    (c) the other Party is unable to perform its obligations due to force
+        majeure for a continuous period exceeding sixty (60) days.
+
+6.3 Effect of Termination. Upon termination:
+    (a) the Consultant shall deliver to the Client all completed and
+        in-progress Work Product;
+    (b) the Client shall pay the Consultant for all Services performed and
+        expenses incurred through the effective date of termination;
+    (c) the provisions of Articles 4 (Confidentiality), 5 (Intellectual
+        Property), 7 (Liability), and 8 (Governing Law) shall survive
+        termination.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 7: LIABILITY
+--------------------------------------------------------------------------------
+
+7.1 The Consultant's total aggregate liability under this Agreement shall not
+    exceed the total fees actually paid by the Client to the Consultant during
+    the twelve (12) months preceding the event giving rise to the claim.
+
+7.2 Neither Party shall be liable for any indirect, incidental, consequential,
+    special, or punitive damages, including loss of profits, loss of data, or
+    business interruption, regardless of the form of action.
+
+7.3 The limitations set forth in this Article 7 shall not apply to:
+    (a) breaches of Article 4 (Confidentiality); (b) willful misconduct or
+    gross negligence; or (c) liability that cannot be limited under applicable
+    law.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 8: GOVERNING LAW AND DISPUTE RESOLUTION
+--------------------------------------------------------------------------------
+
+8.1 This Agreement shall be governed by and construed in accordance with the
+    substantive laws of the Republic of Austria, excluding the United Nations
+    Convention on Contracts for the International Sale of Goods (CISG) and
+    Austrian conflict of laws rules.
+
+8.2 Any dispute, controversy, or claim arising out of or in connection with
+    this Agreement, or the breach, termination, or invalidity thereof, shall
+    be settled by arbitration administered by the Vienna International
+    Arbitral Centre (VIAC) of the Austrian Federal Economic Chamber in
+    accordance with its Rules of Arbitration then in effect.
+
+8.3 The arbitral tribunal shall consist of a sole arbitrator appointed in
+    accordance with the VIAC Rules. The seat of arbitration shall be Graz,
+    Austria. The language of the arbitration shall be English.
+
+8.4 The Parties agree that the arbitral award shall be final and binding, and
+    may be enforced in any court of competent jurisdiction.
+
+--------------------------------------------------------------------------------
+                    ARTICLE 9: GENERAL PROVISIONS
+--------------------------------------------------------------------------------
+
+9.1 Entire Agreement. This Agreement, together with any exhibits and schedules
+    attached hereto, constitutes the entire agreement between the Parties with
+    respect to the subject matter hereof.
+
+9.2 Amendments. No amendment or modification of this Agreement shall be valid
+    unless made in writing and signed by both Parties.
+
+9.3 Assignment. Neither Party may assign this Agreement without the prior
+    written consent of the other Party, except in connection with a merger,
+    acquisition, or sale of substantially all of its assets.
+
+9.4 Severability. If any provision of this Agreement is held invalid or
+    unenforceable, the remaining provisions shall remain in full force and
+    effect.
+
+9.5 Notices. All notices under this Agreement shall be in writing and shall be
+    deemed delivered when sent by registered mail or email with read receipt
+    to the addresses set forth in the preamble of this Agreement.
+
+9.6 Counterparts. This Agreement may be executed in counterparts, each of
+    which shall be deemed an original.
+
+--------------------------------------------------------------------------------
+                           SIGNATURES
+--------------------------------------------------------------------------------
+
+IN WITNESS WHEREOF, the Parties have caused this Agreement to be executed by
+their duly authorized representatives as of the Effective Date.
+
+
+FOR THE CLIENT:                         FOR THE CONSULTANT:
+
+AlpenTech GmbH                          Danube Digital Consulting e.U.
+
+
+_________________________________       _________________________________
+DI Dr. Markus Reiter                    Ing. Friedrich Müller
+Chief Executive Officer                 Managing Director
+Date: September 1, 2025                 Date: September 1, 2025
+
+
+================================================================================
+                          END OF AGREEMENT
+================================================================================

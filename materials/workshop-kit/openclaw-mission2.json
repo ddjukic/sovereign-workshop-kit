@@ -1,0 +1,29 @@
+{
+  "agents": {
+    "defaults": {
+      "verboseDefault": "on"
+    },
+    "list": [
+      {
+        "id": "analyst",
+        "default": true,
+        "name": "AlpenTech Document Auditor",
+        "model": "openrouter/stepfun/step-3.5-flash:free",
+        "workspace": "~/.openclaw-workshop/workspace",
+        "agentDir": "~/.openclaw-workshop",
+        "identity": {
+          "name": "AlpenTech Auditor",
+          "emoji": "lock"
+        },
+        "tools": {
+          "profile": "coding"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "fs": {
+      "workspaceOnly": true
+    }
+  }
+}

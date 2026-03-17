@@ -1,0 +1,332 @@
+{
+  "document_id": "05-research-paper-abstract",
+  "document_type": "technical_whitepaper",
+  "extraction_timestamp": "2026-03-03T18:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "AlpenTech GmbH, R&D Division",
+        "role": "primary_affiliation",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria"
+      },
+      {
+        "name": "Institute for Applied AI Research, TU Graz",
+        "role": "secondary_affiliation",
+        "address": "Inffeldgasse 16c, 8010 Graz, Austria"
+      },
+      {
+        "name": "Voestalpine Stahl GmbH",
+        "role": "benchmark_data_source",
+        "context": "12 assets (rolling mill drives, hydraulic systems) in Linz"
+      },
+      {
+        "name": "BMW Werk Steyr",
+        "role": "benchmark_data_source",
+        "context": "8 assets (CNC machining centers, robotic cells)"
+      },
+      {
+        "name": "Andritz AG",
+        "role": "benchmark_data_source",
+        "context": "7 assets (industrial compressors, pump systems) in Graz"
+      },
+      {
+        "name": "Liebherr-Werk Bischofshofen",
+        "role": "benchmark_data_source",
+        "context": "9 assets (hydraulic excavator components, conveyor drives)"
+      },
+      {
+        "name": "Rheinmetall MAN Military Vehicles",
+        "role": "benchmark_data_source",
+        "context": "6 assets (precision machining and assembly systems) in Vienna"
+      }
+    ],
+    "persons": [
+      {
+        "name": "DI Dr. Andreas Hofer",
+        "title": "Head of R&D, Corresponding Author",
+        "organization": "AlpenTech GmbH",
+        "email": "a.hofer@alpentech.at",
+        "orcid": "0000-0002-7341-8629",
+        "affiliations": [1]
+      },
+      {
+        "name": "Dr. Elena Kovar",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "affiliations": [1]
+      },
+      {
+        "name": "MSc. Florian Ertl",
+        "title": null,
+        "organization": "AlpenTech GmbH; Institute for Applied AI Research, TU Graz",
+        "affiliations": [1, 2]
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-10-01",
+        "type": "publication_date",
+        "description": "AlpenTech Technical Whitepaper Series publication date (October 2025)"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 250,
+        "currency": "EUR",
+        "type": "hardware_cost",
+        "description": "Cost of NVIDIA Jetson Orin Nano edge device for on-premises inference"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH, R&D Division"
+      },
+      {
+        "address": "Inffeldgasse 16c, 8010 Graz, Austria",
+        "entity": "Institute for Applied AI Research, TU Graz"
+      },
+      {
+        "location": "Linz, Austria",
+        "entity": "Voestalpine Stahl GmbH",
+        "context": "Benchmark data source location"
+      },
+      {
+        "location": "Steyr, Austria",
+        "entity": "BMW Werk Steyr",
+        "context": "Benchmark data source location"
+      },
+      {
+        "location": "Graz, Austria",
+        "entity": "Andritz AG",
+        "context": "Benchmark data source location"
+      },
+      {
+        "location": "Bischofshofen, Austria",
+        "entity": "Liebherr-Werk Bischofshofen",
+        "context": "Benchmark data source location"
+      },
+      {
+        "location": "Vienna, Austria",
+        "entity": "Rheinmetall MAN Military Vehicles",
+        "context": "Benchmark data source location"
+      }
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Document ID is WP-R&D-2025-007, AlpenTech Technical Whitepaper Series",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Classification is Public Release",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Seven ML model architectures evaluated ranging from 2.1M to 12.8M parameters",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "Models evaluated: 1D-CNN, ResNet-1D-18, LSTM-Attention, TCN, Transformer-TS, AlpenPredict-Edge-v1, AlpenPredict-Edge-v2",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "Four quantization levels tested: FP32, FP16, INT8, and TFLite-INT8",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenTech Industrial Benchmark (AIB-42) comprises 2.1 million labeled sensor windows from 42 industrial assets across 5 client installations",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "Data collection spans 18 months (January 2024 to June 2025)",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "INT8-quantized AlpenPredict-Edge-v2 achieves 94.2% of cloud baseline's Anomaly Detection F1",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenPredict-Edge-v2 INT8 achieves F1 0.912 for anomaly detection and 0.867 for RUL classification",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "Cloud baseline (FP32): Anomaly F1 0.968, Fault F1 0.943, RUL Acc 0.921",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "INT8 quantization reduces memory by 73.9% (1,580MB to 412MB) and latency by 65.4% (520ms to 180ms)",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "Power consumption reduced by 42.3% with INT8 (14.2W to 8.2W)",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "Vibration-based anomaly detection shows only 1.9% F1 degradation with INT8; temperature-based shows 4.1%",
+      "source_section": "Key Results",
+      "confidence": "high"
+    },
+    {
+      "fact": "Edge experiments conducted on NVIDIA Jetson Orin Nano (8GB RAM) and Siemens SIMATIC IPC227G",
+      "source_section": "Methodology Overview",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenPredict Edge platform processes over 3.2 billion sensor readings per day at five client sites",
+      "source_section": "Conclusion",
+      "confidence": "high"
+    },
+    {
+      "fact": "Accuracy gap between cloud and edge models narrowed to less than 6 percentage points",
+      "source_section": "Conclusion",
+      "confidence": "high"
+    },
+    {
+      "fact": "Internal note contains proprietary distillation parameters and Gabor filter bank configuration filed as trade secret ref TS-2025-0019",
+      "source_section": "Methodology Overview (internal note)",
+      "confidence": "high"
+    },
+    {
+      "fact": "Deployment note contains staging environment credentials: Azure Container Registry, MLflow API key, fleet manager admin token",
+      "source_section": "Deployment Note",
+      "confidence": "high"
+    },
+    {
+      "fact": "Corresponding author personal email and mobile number exposed: andreas.hofer.priv@gmail.com, +43 660 482 9173",
+      "source_section": "Author Information",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "title": "Predictive Maintenance Using Edge-Deployed ML Models",
+    "authors": [
+      {
+        "name": "DI Dr. Andreas Hofer",
+        "affiliations": ["AlpenTech GmbH, R&D Division"],
+        "corresponding": true,
+        "email": "a.hofer@alpentech.at",
+        "orcid": "0000-0002-7341-8629"
+      },
+      {
+        "name": "Dr. Elena Kovar",
+        "affiliations": ["AlpenTech GmbH, R&D Division"],
+        "corresponding": false
+      },
+      {
+        "name": "MSc. Florian Ertl",
+        "affiliations": [
+          "AlpenTech GmbH, R&D Division",
+          "Institute for Applied AI Research, TU Graz"
+        ],
+        "corresponding": false
+      }
+    ],
+    "publication": {
+      "venue": "AlpenTech Technical Whitepaper Series",
+      "paper_id": "WP-2025-007"
+    },
+    "keywords": [
+      "predictive maintenance",
+      "edge AI",
+      "industrial IoT",
+      "model quantization",
+      "condition monitoring",
+      "Industrie 4.0",
+      "data sovereignty"
+    ],
+    "key_findings": [
+      "INT8-quantized lightweight transformer models achieve 94.2% of full-precision cloud-hosted model accuracy on edge devices",
+      "AlpenPredict-Edge-v2 (INT8) achieves F1 0.912 for anomaly detection and 0.867 for RUL classification on NVIDIA Jetson Orin Nano",
+      "INT8 quantization reduces memory by 73.9%, latency by 65.4%, and power by 42.3% compared to FP32",
+      "Vibration-based anomaly detection is more robust to quantization (1.9% degradation) than temperature-based (4.1%)",
+      "Sovereign on-premises predictive maintenance is practically viable with accuracy gap under 6 percentage points",
+      "AlpenPredict Edge processes 3.2 billion sensor readings per day at five production client sites"
+    ],
+    "methodology": {
+      "benchmark": {
+        "name": "AlpenTech Industrial Benchmark (AIB-42)",
+        "total_assets": 42,
+        "total_sensor_windows": 2100000,
+        "data_collection_period": "18 months (January 2024 to June 2025)",
+        "client_installations": [
+          {"name": "Voestalpine Stahl GmbH, Linz", "assets": 12, "types": "rolling mill drives, hydraulic systems"},
+          {"name": "BMW Werk Steyr", "assets": 8, "types": "CNC machining centers, robotic cells"},
+          {"name": "Andritz AG, Graz", "assets": 7, "types": "industrial compressors, pump systems"},
+          {"name": "Liebherr-Werk Bischofshofen", "assets": 9, "types": "hydraulic excavator components, conveyor drives"},
+          {"name": "Rheinmetall MAN Military Vehicles, Vienna", "assets": 6, "types": "precision machining and assembly systems"}
+        ],
+        "sensor_sampling": {
+          "vibration": "1 kHz",
+          "temperature": "10 Hz",
+          "current": "100 Hz"
+        },
+        "window_size": "10 seconds"
+      },
+      "models_evaluated": [
+        "1D-CNN (2.1M params)",
+        "ResNet-1D-18 (11.2M params)",
+        "LSTM-Attention (8.4M params)",
+        "TCN (5.7M params)",
+        "Transformer-TS (12.8M params)",
+        "AlpenPredict-Edge-v1 (4.2M params, TCN+Attention hybrid)",
+        "AlpenPredict-Edge-v2 (3.8M params, distilled Transformer-TS)"
+      ],
+      "quantization_levels": ["FP32", "FP16", "INT8", "TFLite-INT8"],
+      "hardware": {
+        "edge_devices": ["NVIDIA Jetson Orin Nano (8GB RAM)", "Siemens SIMATIC IPC227G"]
+      },
+      "evaluation_metrics": [
+        "Anomaly Detection F1 (binary)",
+        "Fault Classification F1 (5-class, macro-averaged)",
+        "RUL Classification Accuracy (5-class)",
+        "Inference Latency (ms per sensor window)",
+        "Peak Memory Usage (MB)",
+        "Power Consumption (Watts)"
+      ]
+    },
+    "quantitative_results": {
+      "best_edge_model": {
+        "model": "AlpenPredict-Edge-v2 INT8",
+        "anomaly_f1": 0.912,
+        "fault_f1": 0.891,
+        "rul_accuracy": 0.867,
+        "memory_mb": 412,
+        "latency_ms": 180,
+        "power_watts": 8.2
+      },
+      "cloud_baseline": {
+        "model": "Cloud Baseline (FP32)",
+        "anomaly_f1": 0.968,
+        "fault_f1": 0.943,
+        "rul_accuracy": 0.921
+      },
+      "quantization_impact": {
+        "memory_reduction_percent": 73.9,
+        "latency_reduction_percent": 65.4,
+        "power_reduction_percent": 42.3,
+        "anomaly_f1_loss_pp": 2.8
+      }
+    },
+    "contributions": [
+      "Comprehensive evaluation of 7 ML architectures across 4 quantization levels on industrial predictive maintenance using real-world AIB-42 benchmark",
+      "Detailed analysis showing quantization impact is highly task- and sensor-type-dependent",
+      "Production-ready AlpenPredict Edge framework for automated training, quantization, and OTA deployment to industrial edge gateways"
+    ],
+    "references_count": 7
+  },
+  "summary": "AlpenTech GmbH R&D Division technical whitepaper (WP-2025-007) presenting edge-deployed ML models for sovereign predictive maintenance. Seven architectures evaluated across four quantization levels on AIB-42 benchmark (2.1M labeled sensor windows from 42 industrial assets at 5 DACH client sites). Key finding: INT8-quantized AlpenPredict-Edge-v2 achieves 94.2% of cloud baseline accuracy (F1 0.912 anomaly detection) on NVIDIA Jetson Orin Nano with 73.9% memory reduction and 65.4% latency reduction. AlpenPredict Edge platform processes 3.2B sensor readings/day at five production sites. Contains sensitive internal notes with proprietary model parameters (trade secret TS-2025-0019), staging environment credentials (Azure ACR, MLflow API key, fleet admin JWT), and author personal contact information."
+}

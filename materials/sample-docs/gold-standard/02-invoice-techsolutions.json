@@ -1,0 +1,300 @@
+{
+  "document_id": "02-invoice-techsolutions",
+  "document_type": "commercial_invoice",
+  "extraction_timestamp": "2026-03-03T18:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "DataFlow Solutions GmbH",
+        "role": "sender",
+        "registration_number": "FN 487329 d",
+        "address": "Lendkai 45, 8020 Graz, Austria",
+        "vat_id": "ATU73918245",
+        "phone": "+43 316 827 4410",
+        "email": "billing@dataflow-solutions.at",
+        "website": "www.dataflow-solutions.at"
+      },
+      {
+        "name": "AlpenTech GmbH",
+        "role": "recipient",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "vat_id": "ATU71483926",
+        "contact_person": "DI Stefan Brandner",
+        "contact_title": "Head of IT Infrastructure"
+      }
+    ],
+    "persons": [
+      {
+        "name": "DI Stefan Brandner",
+        "title": "Head of IT Infrastructure",
+        "organization": "AlpenTech GmbH",
+        "email": "stefan.brandner@alpentech.at"
+      },
+      {
+        "name": "Ing. Thomas Gruber",
+        "title": "On-site contact for hardware delivery",
+        "organization": "AlpenTech GmbH"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-10-15",
+        "type": "invoice_date",
+        "description": "Date the invoice was issued"
+      },
+      {
+        "date": "2025-11-14",
+        "type": "due_date",
+        "description": "Payment due date"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 25350.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Dell PowerEdge R760 Rack Server (3 units)"
+      },
+      {
+        "amount": 8550.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Cisco Catalyst 9300-48P-A Network Switch (2 units)"
+      },
+      {
+        "amount": 7780.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "APC Smart-UPS SRT 5000VA RM (2 units)"
+      },
+      {
+        "amount": 12900.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "VMware vSphere Enterprise Plus License (6 units)"
+      },
+      {
+        "amount": 4850.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Veeam Backup & Replication Enterprise Plus (10 units)"
+      },
+      {
+        "amount": 4200.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Professional Installation & Configuration Services (1 unit)"
+      },
+      {
+        "amount": 2040.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Network Cabling CAT6a (24 runs)"
+      },
+      {
+        "amount": 3650.00,
+        "currency": "EUR",
+        "type": "line_item_total",
+        "description": "Extended Warranty & Support Package (1 unit)"
+      },
+      {
+        "amount": 69320.00,
+        "currency": "EUR",
+        "type": "subtotal",
+        "description": "Subtotal excluding VAT"
+      },
+      {
+        "amount": 13864.00,
+        "currency": "EUR",
+        "type": "vat",
+        "description": "VAT at 20%"
+      },
+      {
+        "amount": 83184.00,
+        "currency": "EUR",
+        "type": "total",
+        "description": "Total including VAT"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Lendkai 45, 8020 Graz, Austria",
+        "entity": "DataFlow Solutions GmbH"
+      },
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH"
+      },
+      {
+        "address": "Mariatroster Straße 87, 8043 Graz",
+        "entity": "Ing. Thomas Gruber",
+        "context": "Home address for weekend deliveries"
+      }
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Invoice number is INV-2025-1087",
+      "source_section": "Invoice Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Purchase order number is PO-AT-2025-0443",
+      "source_section": "Invoice Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Payment terms are Net 30 days",
+      "source_section": "Invoice Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Currency is EUR",
+      "source_section": "Invoice Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Subtotal is EUR 69,320.00 and VAT (20%) is EUR 13,864.00 for a total of EUR 83,184.00",
+      "source_section": "Totals",
+      "confidence": "high"
+    },
+    {
+      "fact": "Payment is to Steiermärkische Sparkasse, IBAN AT63 2081 5032 4197 6800, BIC STSPAT2GXXX",
+      "source_section": "Payment Details",
+      "confidence": "high"
+    },
+    {
+      "fact": "Late payment incurs interest at 8% above ECB base rate per annum",
+      "source_section": "Notes",
+      "confidence": "high"
+    },
+    {
+      "fact": "Hardware delivery expected within 10-15 business days of order confirmation",
+      "source_section": "Notes",
+      "confidence": "high"
+    },
+    {
+      "fact": "Partial payments are not accepted",
+      "source_section": "Notes",
+      "confidence": "high"
+    },
+    {
+      "fact": "Alternative payment via corporate credit card: Visa **** 4729, cardholder DI Stefan Brandner, exp 09/2027, with 1.5% surcharge",
+      "source_section": "Payment Details",
+      "confidence": "high"
+    },
+    {
+      "fact": "Server room access code for installation: Building C, Room 2.14, PIN 4718#, valid until 2025-12-31",
+      "source_section": "Notes",
+      "confidence": "high"
+    },
+    {
+      "fact": "Approver employee ID is AT-EMP-0142",
+      "source_section": "Bill To",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "invoice_number": "INV-2025-1087",
+    "invoice_date": "2025-10-15",
+    "due_date": "2025-11-14",
+    "purchase_order": "PO-AT-2025-0443",
+    "payment_terms": "Net 30 days",
+    "currency": "EUR",
+    "sender": {
+      "name": "DataFlow Solutions GmbH",
+      "registration_number": "FN 487329 d",
+      "address": "Lendkai 45, 8020 Graz, Austria",
+      "vat_id": "ATU73918245",
+      "phone": "+43 316 827 4410",
+      "email": "billing@dataflow-solutions.at",
+      "website": "www.dataflow-solutions.at"
+    },
+    "recipient": {
+      "name": "AlpenTech GmbH",
+      "registration_number": "FN 423187 k",
+      "address": "Inffeldgasse 25, 8010 Graz, Austria",
+      "vat_id": "ATU71483926",
+      "attention": "DI Stefan Brandner, Head of IT Infrastructure"
+    },
+    "line_items": [
+      {
+        "line_number": 1,
+        "description": "Dell PowerEdge R760 Rack Server (2x Intel Xeon Gold 6430, 512GB RAM, 8x 1.92TB NVMe SSD, iDRAC9)",
+        "quantity": 3,
+        "unit_price": 8450.00,
+        "line_total": 25350.00
+      },
+      {
+        "line_number": 2,
+        "description": "Cisco Catalyst 9300-48P-A Network Switch (48-port PoE+, Network Advantage License)",
+        "quantity": 2,
+        "unit_price": 4275.00,
+        "line_total": 8550.00
+      },
+      {
+        "line_number": 3,
+        "description": "APC Smart-UPS SRT 5000VA RM (208V, rack-mount, network card)",
+        "quantity": 2,
+        "unit_price": 3890.00,
+        "line_total": 7780.00
+      },
+      {
+        "line_number": 4,
+        "description": "VMware vSphere Enterprise Plus License (per CPU, 1-year subscription)",
+        "quantity": 6,
+        "unit_price": 2150.00,
+        "line_total": 12900.00
+      },
+      {
+        "line_number": 5,
+        "description": "Veeam Backup & Replication Enterprise Plus (per socket, 1-year subscription)",
+        "quantity": 10,
+        "unit_price": 485.00,
+        "line_total": 4850.00
+      },
+      {
+        "line_number": 6,
+        "description": "Professional Installation & Configuration Services (rack, cable, configure, test; estimated 3 days on-site)",
+        "quantity": 1,
+        "unit_price": 4200.00,
+        "line_total": 4200.00
+      },
+      {
+        "line_number": 7,
+        "description": "Network Cabling CAT6a (per run, includes patch panel termination and testing)",
+        "quantity": 24,
+        "unit_price": 85.00,
+        "line_total": 2040.00
+      },
+      {
+        "line_number": 8,
+        "description": "Extended Warranty & Support Package (3-year next-business-day on-site support for all hardware)",
+        "quantity": 1,
+        "unit_price": 3650.00,
+        "line_total": 3650.00
+      }
+    ],
+    "subtotal": 69320.00,
+    "vat_rate_percent": 20,
+    "vat_amount": 13864.00,
+    "total": 83184.00,
+    "payment_details": {
+      "account_holder": "DataFlow Solutions GmbH",
+      "bank": "Steiermärkische Sparkasse",
+      "iban": "AT63 2081 5032 4197 6800",
+      "bic_swift": "STSPAT2GXXX",
+      "payment_reference": "INV-2025-1087"
+    },
+    "notes": [
+      "Late payment will incur interest at 8% above ECB base rate per annum",
+      "Delivery of hardware items expected within 10-15 business days of order confirmation",
+      "Installation services will be scheduled upon hardware delivery at AlpenTech GmbH premises in Graz",
+      "Invoice is payable in full; partial payments are not accepted",
+      "Alternative payment via corporate credit card (Visa **** 4729, 1.5% surcharge)"
+    ]
+  },
+  "summary": "Commercial invoice INV-2025-1087 dated October 15, 2025 from DataFlow Solutions GmbH (Graz) to AlpenTech GmbH (Graz) for IT infrastructure equipment and services. The invoice covers 8 line items including 3 Dell PowerEdge servers, 2 Cisco network switches, 2 APC UPS units, VMware and Veeam licenses, installation services, network cabling, and a 3-year warranty package. Subtotal EUR 69,320.00, VAT (20%) EUR 13,864.00, total EUR 83,184.00. Payment due November 14, 2025 via bank transfer to Steiermärkische Sparkasse (IBAN AT63 2081 5032 4197 6800). Purchase order PO-AT-2025-0443. PII present includes personal mobile numbers, home address, employee IDs, credit card details (partial), and physical access codes."
+}

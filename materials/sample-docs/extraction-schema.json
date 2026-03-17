@@ -1,0 +1,870 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sovereign-agentic-systems.workshop/extraction-schema.json",
+  "title": "Document Extraction Output Schema",
+  "description": "Common extraction format for evaluating LLM document extraction capabilities. All models should produce output conforming to this schema.",
+  "type": "object",
+  "required": [
+    "document_id",
+    "document_type",
+    "extraction_timestamp",
+    "extracted_by",
+    "entities",
+    "key_facts",
+    "structured_data",
+    "summary"
+  ],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "description": "Unique identifier for the document, matching the source filename without extension.",
+      "pattern": "^[a-z0-9][a-z0-9\\-]+$",
+      "examples": ["01-consulting-agreement", "02-invoice-techsolutions"]
+    },
+    "document_type": {
+      "type": "string",
+      "description": "The category of the document.",
+      "enum": [
+        "legal_contract",
+        "commercial_invoice",
+        "financial_report",
+        "hr_policy",
+        "research_paper"
+      ]
+    },
+    "extraction_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp of when the extraction was performed."
+    },
+    "extracted_by": {
+      "type": "string",
+      "description": "Identifier for the model or system that performed the extraction.",
+      "examples": [
+        "claude-opus-4-6-gold-standard",
+        "qwen2.5-7b-gptq-4bit",
+        "llama-3.1-8b-instruct"
+      ]
+    },
+    "entities": {
+      "type": "object",
+      "description": "Named entities extracted from the document, organized by category.",
+      "required": ["parties", "dates", "monetary_values", "locations"],
+      "properties": {
+        "parties": {
+          "type": "array",
+          "description": "Organizations or companies mentioned in the document.",
+          "items": {
+            "type": "object",
+            "required": ["name", "role"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Full legal name of the party."
+              },
+              "role": {
+                "type": "string",
+                "description": "Role of the party in the document context (e.g., 'Client', 'Consultant', 'sender', 'recipient', 'reporting_entity')."
+              },
+              "registration_number": {
+                "type": "string",
+                "description": "Company registration or commercial register number."
+              },
+              "address": {
+                "type": "string",
+                "description": "Full registered or business address."
+              },
+              "vat_id": {
+                "type": "string",
+                "description": "VAT identification number."
+              },
+              "representative": {
+                "type": "string",
+                "description": "Name of the authorized representative."
+              },
+              "representative_title": {
+                "type": "string",
+                "description": "Title of the authorized representative."
+              },
+              "phone": {
+                "type": "string",
+                "description": "Phone number."
+              },
+              "email": {
+                "type": "string",
+                "format": "email",
+                "description": "Email address."
+              },
+              "website": {
+                "type": "string",
+                "description": "Website URL."
+              },
+              "contact_person": {
+                "type": "string",
+                "description": "Named contact person at the organization."
+              },
+              "contact_title": {
+                "type": "string",
+                "description": "Title of the contact person."
+              },
+              "context": {
+                "type": "string",
+                "description": "Additional context about the party's role or mention in the document."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "persons": {
+          "type": "array",
+          "description": "Individual persons mentioned in the document.",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": {
+                "type": "string",
+                "description": "Full name of the person."
+              },
+              "title": {
+                "type": ["string", "null"],
+                "description": "Professional title or role."
+              },
+              "organization": {
+                "type": "string",
+                "description": "Organization the person is affiliated with."
+              },
+              "email": {
+                "type": "string",
+                "format": "email",
+                "description": "Email address."
+              },
+              "orcid": {
+                "type": "string",
+                "description": "ORCID identifier for researchers."
+              },
+              "role": {
+                "type": "string",
+                "description": "Role in the document context."
+              },
+              "affiliations": {
+                "type": "array",
+                "items": { "type": "integer" },
+                "description": "Affiliation indices (for research papers)."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "dates": {
+          "type": "array",
+          "description": "Significant dates mentioned in the document.",
+          "items": {
+            "type": "object",
+            "required": ["date", "type", "description"],
+            "properties": {
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "The date in ISO 8601 format (YYYY-MM-DD)."
+              },
+              "type": {
+                "type": "string",
+                "description": "Category of the date (e.g., 'effective_date', 'due_date', 'invoice_date', 'report_date')."
+              },
+              "description": {
+                "type": "string",
+                "description": "Human-readable description of what this date represents."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "monetary_values": {
+          "type": "array",
+          "description": "All monetary amounts mentioned in the document.",
+          "items": {
+            "type": "object",
+            "required": ["amount", "currency", "type", "description"],
+            "properties": {
+              "amount": {
+                "type": "number",
+                "description": "The monetary amount as a number."
+              },
+              "currency": {
+                "type": "string",
+                "description": "ISO 4217 currency code.",
+                "pattern": "^[A-Z]{3}$"
+              },
+              "type": {
+                "type": "string",
+                "description": "Category of the monetary value (e.g., 'daily_rate', 'total', 'subtotal', 'vat', 'revenue')."
+              },
+              "description": {
+                "type": "string",
+                "description": "Human-readable description of what this amount represents."
+              },
+              "period": {
+                "type": "string",
+                "description": "Time period the amount relates to (e.g., 'Q3 2025')."
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "locations": {
+          "type": "array",
+          "description": "Geographic locations and addresses mentioned in the document.",
+          "items": {
+            "type": "object",
+            "properties": {
+              "address": {
+                "type": "string",
+                "description": "Full street address."
+              },
+              "location": {
+                "type": "string",
+                "description": "City, region, or country name (when full address is not available)."
+              },
+              "entity": {
+                "type": "string",
+                "description": "Organization or entity associated with this location."
+              },
+              "context": {
+                "type": "string",
+                "description": "Context in which the location is mentioned."
+              }
+            },
+            "additionalProperties": false,
+            "anyOf": [
+              { "required": ["address"] },
+              { "required": ["location"] }
+            ]
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "key_facts": {
+      "type": "array",
+      "description": "Key facts extracted from the document, each attributed to a source section.",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["fact", "source_section", "confidence"],
+        "properties": {
+          "fact": {
+            "type": "string",
+            "description": "A clearly stated fact extracted from the document."
+          },
+          "source_section": {
+            "type": "string",
+            "description": "The section or part of the document where this fact is found."
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["high", "medium", "low"],
+            "description": "Confidence level of the extraction. 'high' for directly stated facts, 'medium' for inferred facts, 'low' for uncertain extractions."
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "structured_data": {
+      "type": "object",
+      "description": "Document-type-specific structured extraction. The shape of this object varies by document_type. See the oneOf definitions below.",
+      "oneOf": [
+        { "$ref": "#/$defs/legal_contract_data" },
+        { "$ref": "#/$defs/commercial_invoice_data" },
+        { "$ref": "#/$defs/financial_report_data" },
+        { "$ref": "#/$defs/hr_policy_data" },
+        { "$ref": "#/$defs/research_paper_data" }
+      ]
+    },
+    "summary": {
+      "type": "string",
+      "description": "A comprehensive summary of the document in 2-5 sentences.",
+      "minLength": 50,
+      "maxLength": 2000
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "legal_contract_data": {
+      "type": "object",
+      "description": "Structured data specific to legal contracts.",
+      "required": ["parties", "term", "deliverables", "payment_terms", "termination_conditions", "governing_law"],
+      "properties": {
+        "agreement_number": { "type": "string" },
+        "parties": {
+          "type": "object",
+          "description": "Detailed party information.",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "registration_number": { "type": "string" },
+              "address": { "type": "string" },
+              "vat_id": { "type": "string" },
+              "signatory": { "type": "string" },
+              "signatory_title": { "type": "string" }
+            }
+          }
+        },
+        "term": {
+          "type": "object",
+          "required": ["effective_date", "initial_term_months"],
+          "properties": {
+            "effective_date": { "type": "string", "format": "date" },
+            "initial_term_months": { "type": "integer" },
+            "expiration_date": { "type": "string", "format": "date" },
+            "auto_renewal": { "type": "boolean" },
+            "renewal_period_months": { "type": "integer" },
+            "non_renewal_notice_days": { "type": "integer" }
+          },
+          "additionalProperties": false
+        },
+        "deliverables": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["title", "description"],
+            "properties": {
+              "id": { "type": "string" },
+              "title": { "type": "string" },
+              "description": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "payment_terms": {
+          "type": "object",
+          "required": ["daily_rate_eur", "payment_due_days"],
+          "properties": {
+            "daily_rate_eur": { "type": "number" },
+            "estimated_consultant_days": { "type": "integer" },
+            "estimated_total_fee_eur": { "type": "number" },
+            "vat_excluded": { "type": "boolean" },
+            "invoicing_schedule": { "type": "string" },
+            "payment_due_days": { "type": "integer" },
+            "late_payment_interest": { "type": "string" },
+            "expense_reimbursement": { "type": "string" },
+            "monthly_expense_cap_eur": { "type": "number" }
+          },
+          "additionalProperties": false
+        },
+        "key_personnel": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "role"],
+            "properties": {
+              "name": { "type": "string" },
+              "role": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "termination_conditions": {
+          "type": "object",
+          "required": ["for_convenience", "for_cause"],
+          "properties": {
+            "for_convenience": {
+              "type": "object",
+              "properties": {
+                "notice_period_days": { "type": "integer" },
+                "available_to": { "type": "string" }
+              },
+              "additionalProperties": false
+            },
+            "for_cause": {
+              "type": "object",
+              "properties": {
+                "material_breach_cure_period_days": { "type": "integer" },
+                "insolvency": { "type": "string" },
+                "force_majeure_continuous_days": { "type": "integer" }
+              },
+              "additionalProperties": false
+            },
+            "surviving_provisions": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "confidentiality": {
+          "type": "object",
+          "properties": {
+            "survival_period_years": { "type": "integer" },
+            "exceptions": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "liability": {
+          "type": "object",
+          "properties": {
+            "cap": { "type": "string" },
+            "exclusions": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "cap_exceptions": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "governing_law": {
+          "type": "object",
+          "required": ["law", "dispute_resolution"],
+          "properties": {
+            "law": { "type": "string" },
+            "exclusions": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "dispute_resolution": { "type": "string" },
+            "arbitration_institution": { "type": "string" },
+            "arbitrators": { "type": "string" },
+            "seat": { "type": "string" },
+            "language": { "type": "string" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "commercial_invoice_data": {
+      "type": "object",
+      "description": "Structured data specific to commercial invoices.",
+      "required": ["invoice_number", "invoice_date", "due_date", "currency", "sender", "recipient", "line_items", "subtotal", "vat_rate_percent", "vat_amount", "total", "payment_details"],
+      "properties": {
+        "invoice_number": { "type": "string" },
+        "invoice_date": { "type": "string", "format": "date" },
+        "due_date": { "type": "string", "format": "date" },
+        "purchase_order": { "type": "string" },
+        "payment_terms": { "type": "string" },
+        "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+        "sender": {
+          "type": "object",
+          "required": ["name", "address"],
+          "properties": {
+            "name": { "type": "string" },
+            "registration_number": { "type": "string" },
+            "address": { "type": "string" },
+            "vat_id": { "type": "string" },
+            "phone": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "website": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "recipient": {
+          "type": "object",
+          "required": ["name", "address"],
+          "properties": {
+            "name": { "type": "string" },
+            "registration_number": { "type": "string" },
+            "address": { "type": "string" },
+            "vat_id": { "type": "string" },
+            "attention": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "line_items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["line_number", "description", "quantity", "unit_price", "line_total"],
+            "properties": {
+              "line_number": { "type": "integer" },
+              "description": { "type": "string" },
+              "quantity": { "type": "number" },
+              "unit_price": { "type": "number" },
+              "line_total": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "subtotal": { "type": "number" },
+        "vat_rate_percent": { "type": "number" },
+        "vat_amount": { "type": "number" },
+        "total": { "type": "number" },
+        "payment_details": {
+          "type": "object",
+          "required": ["account_holder", "iban", "bic_swift"],
+          "properties": {
+            "account_holder": { "type": "string" },
+            "bank": { "type": "string" },
+            "iban": { "type": "string" },
+            "bic_swift": { "type": "string" },
+            "payment_reference": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "notes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "financial_report_data": {
+      "type": "object",
+      "description": "Structured data specific to financial reports.",
+      "required": ["company", "reporting_period", "revenue_by_segment", "key_metrics", "risk_factors", "outlook"],
+      "properties": {
+        "company": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": { "type": "string" },
+            "registration_number": { "type": "string" },
+            "address": { "type": "string" },
+            "vat_id": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "reporting_period": {
+          "type": "object",
+          "required": ["quarter", "year"],
+          "properties": {
+            "quarter": { "type": "string" },
+            "year": { "type": "integer" },
+            "start_date": { "type": "string", "format": "date" },
+            "end_date": { "type": "string", "format": "date" }
+          },
+          "additionalProperties": false
+        },
+        "report_date": { "type": "string", "format": "date" },
+        "approved_by": { "type": "string" },
+        "accounting_standard": { "type": "string" },
+        "audited": { "type": "boolean" },
+        "shares_outstanding": { "type": "integer" },
+        "revenue_by_segment": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["segment"],
+            "properties": {
+              "segment": { "type": "string" },
+              "revenue_q3_2025_eur": { "type": "number" },
+              "revenue_q3_2024_eur": { "type": "number" },
+              "yoy_growth_percent": { "type": "number" },
+              "share_of_total_percent": { "type": "number" },
+              "key_metrics": { "type": "object" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "key_metrics": {
+          "type": "object",
+          "description": "Key financial metrics for the reporting period."
+        },
+        "cost_analysis": {
+          "type": "object",
+          "description": "Breakdown of operating costs."
+        },
+        "cash_flow": {
+          "type": "object",
+          "description": "Cash flow summary."
+        },
+        "yoy_changes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["metric", "q3_2025", "q3_2024", "change_percent"],
+            "properties": {
+              "metric": { "type": "string" },
+              "q3_2025": { "type": "number" },
+              "q3_2024": { "type": "number" },
+              "change_percent": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "risk_factors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["risk", "description"],
+            "properties": {
+              "risk": { "type": "string" },
+              "description": { "type": "string" },
+              "severity": {
+                "type": "string",
+                "enum": ["low", "medium", "high", "critical"]
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "outlook": {
+          "type": "object",
+          "description": "Forward-looking guidance and plans."
+        },
+        "key_customers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "properties": {
+              "name": { "type": "string" },
+              "contract_value_eur": { "type": "number" },
+              "annual_value_eur": { "type": "number" },
+              "contract_term_years": { "type": "number" },
+              "type": { "type": "string" },
+              "segment": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "hr_policy_data": {
+      "type": "object",
+      "description": "Structured data specific to HR policies.",
+      "required": ["policy_id", "company", "effective_date", "eligibility_rules", "equipment_provisions", "security_requirements", "expense_limits"],
+      "properties": {
+        "policy_id": { "type": "string" },
+        "company": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": { "type": "string" },
+            "registration_number": { "type": "string" },
+            "address": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "effective_date": { "type": "string", "format": "date" },
+        "last_revised": { "type": "string", "format": "date" },
+        "current_version": { "type": "string" },
+        "policy_owner": { "type": "string" },
+        "approved_by": { "type": "string" },
+        "classification": { "type": "string" },
+        "eligibility_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "excluded_roles": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "hybrid_requirements": {
+          "type": "object",
+          "properties": {
+            "minimum_office_days_per_week": { "type": "integer" },
+            "anchor_day_policy": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "equipment_provisions": {
+          "type": "object",
+          "properties": {
+            "company_provided": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "employee_responsibility": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "equipment_return_deadline_business_days": { "type": "integer" }
+          },
+          "additionalProperties": false
+        },
+        "working_hours": {
+          "type": "object",
+          "properties": {
+            "core_hours": { "type": "string" },
+            "full_time_weekly_hours": { "type": "number" },
+            "response_time_core_hours_minutes": { "type": "integer" },
+            "response_time_outside_core_hours": { "type": "string" },
+            "time_tracking_system": { "type": "string" },
+            "break_logging_threshold_minutes": { "type": "integer" },
+            "camera_policy": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "security_requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["requirement", "description"],
+            "properties": {
+              "requirement": { "type": "string" },
+              "description": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "expense_limits": {
+          "type": "object",
+          "required": ["one_time_setup_allowance_eur", "monthly_stipend_eur"],
+          "properties": {
+            "one_time_setup_allowance_eur": { "type": "number" },
+            "setup_allowance_covers": { "type": "string" },
+            "setup_receipt_deadline_days": { "type": "integer" },
+            "monthly_stipend_eur": { "type": "number" },
+            "monthly_stipend_covers": { "type": "string" },
+            "unscheduled_travel_reimbursement_max_eur": { "type": "number" },
+            "unscheduled_travel_notice_threshold_hours": { "type": "integer" },
+            "non_reimbursable": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "performance_evaluation": {
+          "type": "object",
+          "properties": {
+            "manager_obligations": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "employee_obligations": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "performance_decline_consequences": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "exceptions": {
+          "type": "object",
+          "properties": {
+            "request_form": { "type": "string" },
+            "examples": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "approval_chain": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["level", "approver", "review_period_business_days"],
+                "properties": {
+                  "level": { "type": "integer" },
+                  "approver": { "type": "string" },
+                  "review_period_business_days": { "type": "integer" },
+                  "condition": { "type": "string" }
+                },
+                "additionalProperties": false
+              }
+            },
+            "escalation_channels": {
+              "type": "array",
+              "items": { "type": "string" }
+            },
+            "emergency_provisions": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "revision_history": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["version", "date", "author", "changes"],
+            "properties": {
+              "version": { "type": "string" },
+              "date": { "type": "string", "format": "date" },
+              "author": { "type": "string" },
+              "changes": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "research_paper_data": {
+      "type": "object",
+      "description": "Structured data specific to research papers.",
+      "required": ["title", "authors", "key_findings", "methodology", "quantitative_results"],
+      "properties": {
+        "title": { "type": "string" },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["name", "affiliations"],
+            "properties": {
+              "name": { "type": "string" },
+              "affiliations": {
+                "type": "array",
+                "items": { "type": "string" }
+              },
+              "corresponding": { "type": "boolean" },
+              "email": { "type": "string", "format": "email" },
+              "orcid": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "publication": {
+          "type": "object",
+          "properties": {
+            "venue": { "type": "string" },
+            "location": { "type": "string" },
+            "dates": { "type": "string" },
+            "paper_id": { "type": "string" },
+            "doi": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "key_findings": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "methodology": {
+          "type": "object",
+          "description": "Description of the research methodology, including benchmark, models, and evaluation metrics."
+        },
+        "quantitative_results": {
+          "type": "object",
+          "description": "Numerical results including model comparisons and performance metrics."
+        },
+        "contributions": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "open_source": {
+          "type": "object",
+          "properties": {
+            "repository": { "type": "string", "format": "uri" },
+            "license": { "type": "string" },
+            "includes": {
+              "type": "array",
+              "items": { "type": "string" }
+            }
+          },
+          "additionalProperties": false
+        },
+        "references_count": { "type": "integer" }
+      },
+      "additionalProperties": false
+    }
+  }
+}

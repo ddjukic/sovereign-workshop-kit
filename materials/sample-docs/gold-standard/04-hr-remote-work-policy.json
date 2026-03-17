@@ -1,0 +1,424 @@
+{
+  "document_id": "04-hr-remote-work-policy",
+  "document_type": "hr_policy",
+  "extraction_timestamp": "2026-03-03T18:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "AlpenTech GmbH",
+        "role": "employer",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria"
+      }
+    ],
+    "persons": [
+      {
+        "name": "Mag. Christina Wieser",
+        "title": "Head of People & Organization",
+        "organization": "AlpenTech GmbH",
+        "role": "Policy approver and author"
+      },
+      {
+        "name": "DI Robert Steiner",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "role": "Policy contributor (data sovereignty requirements, v1.1); background check overdue (AT-EMP-0156)"
+      },
+      {
+        "name": "Ing. Lisa Mayr",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "role": "Background check pending (AT-EMP-0189)"
+      },
+      {
+        "name": "Ing. Katharina Berger",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "role": "Permanent full-time remote work exception (AT-EMP-0091, mobility impairment)"
+      },
+      {
+        "name": "DI Markus Novak",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "role": "Temporary full-time remote work exception (AT-EMP-0134, chemotherapy treatment)"
+      },
+      {
+        "name": "Mag. Peter Schuster",
+        "title": "Compliance Officer",
+        "organization": "AlpenTech GmbH",
+        "email": "peter.schuster@alpentech.at",
+        "role": "Directing whistleblower investigation WB-2025-0014"
+      },
+      {
+        "name": "Mag. Sandra Koller",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "role": "Employee signing acknowledgment (AT-EMP-0163, Predictive Maintenance & R&D)"
+      },
+      {
+        "name": "DI Dr. Andreas Hofer",
+        "title": "Manager",
+        "organization": "AlpenTech GmbH",
+        "role": "Manager of Sandra Koller"
+      },
+      {
+        "name": "Dr. Elisabeth Kern",
+        "title": "Physician",
+        "organization": "LKH Graz",
+        "role": "Treating physician for DI Markus Novak"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2025-07-01",
+        "type": "effective_date",
+        "description": "Policy effective date"
+      },
+      {
+        "date": "2025-09-15",
+        "type": "last_revised",
+        "description": "Date of most recent revision (Version 1.3)"
+      },
+      {
+        "date": "2024-03-15",
+        "type": "initial_creation",
+        "description": "Version 1.0 initial policy creation date"
+      },
+      {
+        "date": "2025-01-10",
+        "type": "revision",
+        "description": "Version 1.1 revision date (data sovereignty requirements)"
+      },
+      {
+        "date": "2025-06-12",
+        "type": "betriebsrat_approval",
+        "description": "Works Council (Betriebsrat) approval obtained"
+      },
+      {
+        "date": "2025-08-03",
+        "type": "whistleblower_report",
+        "description": "Anonymous whistleblower report received (WB-2025-0014)"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 750.00,
+        "currency": "EUR",
+        "type": "one_time_allowance",
+        "description": "One-time home office setup allowance"
+      },
+      {
+        "amount": 60.00,
+        "currency": "EUR",
+        "type": "monthly_stipend",
+        "description": "Monthly remote work stipend for internet, electricity, and heating"
+      },
+      {
+        "amount": 50.00,
+        "currency": "EUR",
+        "type": "travel_reimbursement",
+        "description": "Maximum travel reimbursement for unscheduled office visits with less than 48 hours' notice"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH",
+        "context": "Headquarters"
+      },
+      {
+        "location": "Linz, Austria",
+        "entity": "AlpenTech GmbH",
+        "context": "Engineering office"
+      },
+      {
+        "location": "Munich, Germany",
+        "entity": "AlpenTech GmbH",
+        "context": "Representative office"
+      },
+      {
+        "address": "Leonhardstraße 42/7, 8010 Graz, Austria",
+        "entity": "Mag. Sandra Koller",
+        "context": "Employee home address in acknowledgment section"
+      }
+    ]
+  },
+  "key_facts": [
+    {
+      "fact": "Policy document ID is POL-HR-2025-012",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Betriebsrat approval obtained June 12, 2025 per Section 97(1)(2) ArbVG",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "Policy applies to all employees across headquarters in Graz, Linz engineering office, and Munich representative office",
+      "source_section": "Section 1: Purpose and Scope",
+      "confidence": "high"
+    },
+    {
+      "fact": "Employees must have completed a minimum 6-month probation period to be eligible for remote work",
+      "source_section": "Section 2: Eligibility Criteria",
+      "confidence": "high"
+    },
+    {
+      "fact": "Two employees have overdue background checks: AT-EMP-0156 (DI Robert Steiner) and AT-EMP-0189 (Ing. Lisa Mayr)",
+      "source_section": "Section 2: Eligibility Criteria",
+      "confidence": "high"
+    },
+    {
+      "fact": "Remote-eligible employees must work from office minimum 2 days per week (Anchor Days)",
+      "source_section": "Section 2: Eligibility Criteria",
+      "confidence": "high"
+    },
+    {
+      "fact": "Core Hours are Monday through Friday, 09:30 to 15:30 CET",
+      "source_section": "Section 4: Working Hours and Availability",
+      "confidence": "high"
+    },
+    {
+      "fact": "Full-time contractual weekly hours are 38.5 hours per week per the Kollektivvertrag for metal and technology industry",
+      "source_section": "Section 4: Working Hours and Availability",
+      "confidence": "high"
+    },
+    {
+      "fact": "Security incidents must be reported within 1 hour via hotline +43 316 873 5599 (24/7)",
+      "source_section": "Section 5: Data Security Requirements",
+      "confidence": "high"
+    },
+    {
+      "fact": "All Company data must remain within the EEA at all times",
+      "source_section": "Section 5: Data Security Requirements",
+      "confidence": "high"
+    },
+    {
+      "fact": "One-time home office setup allowance is up to EUR 750.00",
+      "source_section": "Section 6: Expense Reimbursement",
+      "confidence": "high"
+    },
+    {
+      "fact": "Monthly remote work stipend is EUR 60.00, tax-exempt up to EUR 3.00 per day (max EUR 300/year)",
+      "source_section": "Section 6: Expense Reimbursement",
+      "confidence": "high"
+    },
+    {
+      "fact": "Whistleblower report WB-2025-0014 alleges falsified time tracking in Engineering Consulting division affecting Siemens Austria billing (project SA-2025-PMI)",
+      "source_section": "Section 8: Exceptions and Escalation",
+      "confidence": "high"
+    },
+    {
+      "fact": "Approved exception: Ing. Katharina Berger (AT-EMP-0091) permanent remote work due to mobility impairment from workplace accident, AUVA case GZ-2024-31847",
+      "source_section": "Section 8: Exceptions and Escalation",
+      "confidence": "high"
+    },
+    {
+      "fact": "Approved exception: DI Markus Novak (AT-EMP-0134) temporary remote work for ongoing chemotherapy, medical certificate ref MED-2025-4192",
+      "source_section": "Section 8: Exceptions and Escalation",
+      "confidence": "high"
+    },
+    {
+      "fact": "PII in acknowledgment section: Sandra Koller SV-Nr 4827 120388, DOB 12.03.1988, home address, personal email sandra.koller@gmx.at",
+      "source_section": "Section 10: Acknowledgment",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "policy_id": "POL-HR-2025-012",
+    "company": {
+      "name": "AlpenTech GmbH",
+      "registration_number": "FN 423187 k",
+      "address": "Inffeldgasse 25, 8010 Graz, Austria"
+    },
+    "effective_date": "2025-07-01",
+    "last_revised": "2025-09-15",
+    "current_version": "1.3",
+    "policy_owner": "Human Resources Department",
+    "approved_by": "Mag. Christina Wieser, Head of People & Organization",
+    "classification": "Internal - All Employees",
+    "eligibility_rules": [
+      "Completed probation period (minimum 6 months per Kollektivvertrag)",
+      "Performance rating of 'Meets Expectations' or higher",
+      "Role does not require continuous physical presence (determined by department head with Betriebsrat consultation)",
+      "Suitable home office environment meeting Section 3 requirements",
+      "Completed mandatory 'Secure Remote Work for Engineers' training module",
+      "Background check (Strafregisterbescheinigung) renewed within last 24 months"
+    ],
+    "excluded_roles": [
+      "On-site commissioning and field service engineers during active deployment phases",
+      "Lab technicians and test facility operators",
+      "Employees in first 6 months of employment (probation period)",
+      "Employees on Performance Improvement Plan (PIP)",
+      "Employees with overdue background checks"
+    ],
+    "hybrid_requirements": {
+      "minimum_office_days_per_week": 2,
+      "anchor_day_policy": "One common Anchor Day per team designated by department head; second chosen by employee in coordination with manager"
+    },
+    "equipment_provisions": {
+      "company_provided": [
+        "Laptop computer (standard Company-issued ThinkPad or equivalent)",
+        "External monitor (24-inch, upon request)",
+        "Keyboard and mouse",
+        "Headset with microphone for video conferencing",
+        "VPN hardware token for secure network access",
+        "Company mobile phone (for engineers with on-call responsibilities)"
+      ],
+      "employee_responsibility": [
+        "Ergonomic desk and chair (see expense reimbursement)",
+        "Dedicated quiet workspace with closable door",
+        "Internet connection (minimum 50 Mbps down / 10 Mbps up)",
+        "Adequate lighting and ventilation"
+      ],
+      "equipment_return_deadline_business_days": 5
+    },
+    "working_hours": {
+      "core_hours": "Monday-Friday, 09:30-15:30 CET",
+      "full_time_weekly_hours": 38.5,
+      "response_time_core_hours_minutes": 30,
+      "response_time_outside_core_hours": "2 hours",
+      "time_tracking_system": "SAP SuccessFactors",
+      "break_logging_threshold_minutes": 15,
+      "camera_policy": "On during video meetings unless bandwidth constraints prevent it"
+    },
+    "security_requirements": [
+      {
+        "requirement": "Company-issued devices only",
+        "description": "All work exclusively on Company-issued devices. Personal devices prohibited for any work activities including email."
+      },
+      {
+        "requirement": "Mandatory VPN",
+        "description": "Company-provided VPN must be active at all times when accessing Company systems."
+      },
+      {
+        "requirement": "Full-disk encryption",
+        "description": "Must remain enabled on all devices at all times."
+      },
+      {
+        "requirement": "Screen lock",
+        "description": "Auto-engage after maximum 3 minutes of inactivity."
+      },
+      {
+        "requirement": "No local data storage",
+        "description": "Confidential data must reside on Company cloud storage (Azure Blob Storage, EU geo-redundancy)."
+      },
+      {
+        "requirement": "No home printing",
+        "description": "Printing of confidential documents at home strictly prohibited."
+      },
+      {
+        "requirement": "Incident reporting",
+        "description": "Report security incidents within 1 hour to IT Security hotline: +43 316 873 5599 (24/7). GDPR Art. 33 reporting within 72 hours."
+      },
+      {
+        "requirement": "Data sovereignty (EEA)",
+        "description": "All Company data must remain within the EEA. Remote work outside EEA requires DPO approval, limited to 10 business days per year."
+      }
+    ],
+    "expense_limits": {
+      "one_time_setup_allowance_eur": 750.00,
+      "setup_allowance_covers": "Ergonomic desk, office chair, and workspace essentials",
+      "setup_receipt_deadline_days": 90,
+      "monthly_stipend_eur": 60.00,
+      "monthly_stipend_covers": "Internet service, electricity, and heating",
+      "unscheduled_travel_reimbursement_max_eur": 50.00,
+      "unscheduled_travel_notice_threshold_hours": 48,
+      "non_reimbursable": [
+        "Rent or mortgage payments",
+        "Home renovation or decoration",
+        "Furniture beyond initial setup allowance",
+        "Personal phone plans (unless specifically approved)",
+        "Co-working space memberships (unless pre-approved by department head)"
+      ]
+    },
+    "performance_evaluation": {
+      "manager_obligations": [
+        "Weekly one-on-one check-ins (minimum 30 minutes)",
+        "Clear, measurable objectives with defined timelines",
+        "Written feedback at least quarterly",
+        "Prompt addressing of performance concerns with documentation"
+      ],
+      "employee_obligations": [
+        "Proactive communication of progress and blockers",
+        "Regular status updates in team channels",
+        "Active participation in team meetings and Company events",
+        "Completion of mandatory training and professional development"
+      ],
+      "performance_decline_consequences": [
+        "Mandatory return to full-time on-site work for minimum 90 days",
+        "Placement on Performance Improvement Plan (PIP)",
+        "Disciplinary action up to and including termination (subject to ArbVG and Betriebsrat consultation)"
+      ]
+    },
+    "exceptions": {
+      "request_form": "HR-EXC-01",
+      "examples": [
+        "Full-time remote work",
+        "Extended remote work from outside the EEA",
+        "Use of non-standard equipment",
+        "Disability accommodations under Behinderteneinstellungsgesetz"
+      ],
+      "approval_chain": [
+        {
+          "level": 1,
+          "approver": "Direct Manager",
+          "review_period_business_days": 5
+        },
+        {
+          "level": 2,
+          "approver": "Department Head",
+          "review_period_business_days": 5
+        },
+        {
+          "level": 3,
+          "approver": "HR Department",
+          "review_period_business_days": 5
+        },
+        {
+          "level": 4,
+          "approver": "Data Protection Officer",
+          "review_period_business_days": 5,
+          "condition": "Only for exceptions involving data security"
+        }
+      ],
+      "escalation_channels": [
+        "Direct discussion with manager",
+        "Mediation by HR Department",
+        "Works Council (Betriebsrat) involvement per Section 97 ArbVG",
+        "Formal grievance procedure (Employee Handbook Section 12.4)",
+        "Schlichtungsstelle or Arbeits- und Sozialgericht"
+      ],
+      "emergency_provisions": "Company may mandate remote work for all employees in public health emergencies, natural disasters, or extraordinary circumstances. Communicated by Managing Director (Geschäftsführer) in consultation with Betriebsrat."
+    },
+    "revision_history": [
+      {
+        "version": "1.0",
+        "date": "2024-03-15",
+        "author": "Mag. Christina Wieser",
+        "changes": "Initial policy creation, Betriebsrat consultation"
+      },
+      {
+        "version": "1.1",
+        "date": "2025-01-10",
+        "author": "DI Robert Steiner",
+        "changes": "Added data sovereignty requirements (Section 5.5), DACH provisions"
+      },
+      {
+        "version": "1.2",
+        "date": "2025-07-01",
+        "author": "Mag. Christina Wieser",
+        "changes": "Updated expense amounts per Homeoffice-Pauschale, revised eligibility criteria, added emergency provisions"
+      },
+      {
+        "version": "1.3",
+        "date": "2025-09-15",
+        "author": "Mag. Christina Wieser",
+        "changes": "Clarified Core Hours per AZG, updated security audit provisions, added escalation procedures with Betriebsrat"
+      }
+    ]
+  },
+  "summary": "Remote work policy (POL-HR-2025-012, v1.3) for AlpenTech GmbH (Graz), effective July 1, 2025, last revised September 15, 2025. Approved by Mag. Christina Wieser with Betriebsrat consultation. Eligible employees (6+ months tenure, satisfactory performance, completed security training, current background check) may work remotely with minimum 2 office days per week. Core Hours are 09:30-15:30 CET with 30-minute response time. Strict data security requirements include mandatory VPN, Company-device-only usage, no local data storage (Azure Blob Storage EU), no home printing, and 1-hour security incident reporting to +43 316 873 5599. All data must remain within the EEA. Contains sensitive PII including SV-Nr, home addresses, personal emails, DOBs, medical information (chemotherapy treatment, mobility impairment), employee IDs, and whistleblower investigation details (WB-2025-0014, alleging falsified time tracking for Siemens Austria billing)."
+}

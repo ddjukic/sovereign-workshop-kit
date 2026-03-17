@@ -1,0 +1,29 @@
+{
+  "agents": {
+    "defaults": {
+      "verboseDefault": "on"
+    },
+    "list": [
+      {
+        "id": "assistant",
+        "default": true,
+        "name": "AlpenTech Assistant",
+        "model": "openrouter/stepfun/step-3.5-flash:free",
+        "workspace": "~/.openclaw-workshop/workspace",
+        "agentDir": "~/.openclaw-workshop",
+        "identity": {
+          "name": "AlpenTech AI",
+          "emoji": "shield"
+        },
+        "tools": {
+          "profile": "coding"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "fs": {
+      "workspaceOnly": true
+    }
+  }
+}

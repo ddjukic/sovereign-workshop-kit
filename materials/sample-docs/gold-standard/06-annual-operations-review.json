@@ -1,0 +1,2426 @@
+{
+  "document_id": "06-annual-operations-review",
+  "document_type": "annual_operations_review",
+  "extraction_timestamp": "2026-03-15T12:00:00Z",
+  "extracted_by": "claude-opus-4-6-gold-standard",
+  "entities": {
+    "parties": [
+      {
+        "name": "AlpenTech GmbH",
+        "role": "reporting_entity",
+        "registration_number": "FN 423187 k",
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "vat_id": "ATU71483926"
+      },
+      {
+        "name": "SimuTech Salzburg GmbH",
+        "role": "acquisition_target_completed",
+        "registration_number": "FN 612483 s",
+        "address": "Techno-Z, Jakob-Haringer-Straße 5, 5020 Salzburg, Austria",
+        "context": "Acquired December 18, 2025 for EUR 3.6 million (100% share acquisition)"
+      },
+      {
+        "name": "TwinFlow Analytics OG",
+        "role": "acquisition_target_pending",
+        "context": "Early-stage simulation analytics startup, Vienna. Due diligence ongoing. Recommended offer EUR 1.1-1.3 million."
+      },
+      {
+        "name": "Danube Digital Consulting e.U.",
+        "role": "subcontractor",
+        "registration_number": "FN 538741 w",
+        "address": "Anzengruberstrasse 6, 4020 Linz, Austria",
+        "context": "Engaged under FCA-2025-0312; also potential acquisition target (Project Edelweiss)"
+      },
+      {
+        "name": "Voestalpine Stahl GmbH",
+        "role": "customer",
+        "address": "Voestalpine-Straße 3, 4020 Linz, Austria",
+        "context": "Largest client, EUR 4.8M FY 2025 revenue, 3-year framework agreement EUR 1.8M"
+      },
+      {
+        "name": "BMW Motoren GmbH (BMW Werk Steyr)",
+        "role": "customer",
+        "address": "Hinterbergerstraße 2, 4400 Steyr, Austria",
+        "context": "Second largest client, EUR 3.6M FY 2025 revenue, annual contract EUR 720K"
+      },
+      {
+        "name": "Andritz AG",
+        "role": "customer",
+        "address": "Stattegger Straße 18, 8045 Graz, Austria",
+        "context": "Third largest client, EUR 2.9M FY 2025 revenue, 3-year MSA EUR 2.4M total"
+      },
+      {
+        "name": "Siemens AG Österreich",
+        "role": "customer",
+        "address": "Siemensstraße 90, 1210 Wien, Austria",
+        "context": "Fourth largest client, EUR 2.4M FY 2025 revenue, multiple project-based engagements"
+      },
+      {
+        "name": "Rosenbauer International AG",
+        "role": "customer",
+        "address": "Paschinger Straße 90, 4060 Leonding, Austria",
+        "context": "EUR 1.8M FY 2025 revenue, 2-year framework agreement, annual value EUR 430K"
+      },
+      {
+        "name": "Liebherr-Werk Bischofshofen",
+        "role": "customer",
+        "context": "EUR 2.1M FY 2025 revenue, expansion from pilot to full deployment, annual value EUR 520K"
+      },
+      {
+        "name": "AMAG Austria Metall AG",
+        "role": "customer",
+        "context": "EUR 1.5M FY 2025 revenue, annual engagement EUR 380K"
+      },
+      {
+        "name": "Rheinmetall MAN Military Vehicles",
+        "role": "customer",
+        "context": "EUR 1.3M FY 2025 revenue"
+      },
+      {
+        "name": "Kapsch TrafficCom AG",
+        "role": "customer",
+        "context": "EUR 1.1M FY 2025 revenue, engagement mutually terminated June 30, 2025, disputed final invoice EUR 87,400"
+      },
+      {
+        "name": "Plansee Group",
+        "role": "customer",
+        "context": "EUR 0.9M FY 2025 revenue"
+      },
+      {
+        "name": "DataFlow Solutions GmbH",
+        "role": "supplier",
+        "registration_number": "FN 487329 d",
+        "context": "IT infrastructure supplier, dispute over defective server under INV-2025-1087"
+      },
+      {
+        "name": "SecureEdge Systems GmbH",
+        "role": "acquisition_target_exploratory",
+        "registration_number": "FN 714829 m",
+        "context": "Industrial cybersecurity firm, Wien. Market scan stage. Estimated valuation EUR 2.0-3.5M."
+      },
+      {
+        "name": "FedAI Research KG",
+        "role": "acquisition_target_exploratory",
+        "registration_number": "CHE-341.827.149",
+        "context": "Federated learning firm, Zurich. Exploratory stage. Estimated valuation EUR 1.5-2.5M."
+      },
+      {
+        "name": "Deloitte Audit Wirtschaftsprüfung GmbH",
+        "role": "auditor",
+        "context": "Statutory audit for FY 2025, engagement ref AT-AUD-2026-0118"
+      },
+      {
+        "name": "KPMG Austria",
+        "role": "advisor_ma",
+        "context": "M&A due diligence and valuation advisory (SimuTech, Danube Digital)"
+      },
+      {
+        "name": "PwC Austria",
+        "role": "advisor_ma",
+        "context": "Due diligence on TwinFlow Analytics OG"
+      },
+      {
+        "name": "Schönherr Rechtsanwälte",
+        "role": "legal_counsel",
+        "context": "External legal counsel for M&A, EU AI Act advisory, whistleblower investigation"
+      },
+      {
+        "name": "Raiffeisen Bank International AG",
+        "role": "lender",
+        "context": "EUR 1.2M term loan for SimuTech acquisition (5-year, 4.2% fixed rate)"
+      },
+      {
+        "name": "CyberTrust Austria GmbH",
+        "role": "service_provider",
+        "context": "Annual cybersecurity assessment, engagement ref CTA-2025-PEN-0187"
+      },
+      {
+        "name": "TÜV Austria",
+        "role": "service_provider",
+        "context": "GDPR compliance audit (TÜV-DPA-2025-0384) and Functional Safety training"
+      },
+      {
+        "name": "Kienbaum Consultants International",
+        "role": "service_provider",
+        "context": "Planned compensation benchmarking study (Q1 2026, budget EUR 35,000)"
+      },
+      {
+        "name": "Industriellenvereinigung Steiermark Investment GmbH",
+        "role": "shareholder",
+        "context": "5.0% strategic investor since 2022"
+      }
+    ],
+    "persons": [
+      {
+        "name": "DI Dr. Markus Reiter",
+        "title": "Chief Executive Officer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0012",
+        "email": "markus.reiter@alpentech.at",
+        "role": "CEO, founder, 42.0% shareholder, report approver"
+      },
+      {
+        "name": "Mag. Sabine Egger",
+        "title": "Chief Financial Officer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0015",
+        "email": "sabine.egger@alpentech.at",
+        "role": "CFO, co-founder, 18.0% shareholder, report approver; recused from SimuTech discussions due to personal relationship with Dr. Johann Pichler"
+      },
+      {
+        "name": "DI Dr. Andreas Hofer",
+        "title": "VP Engineering & R&D",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0019",
+        "email": "a.hofer@alpentech.at",
+        "role": "VP Eng & R&D, 12.0% shareholder, leads SimuTech integration"
+      },
+      {
+        "name": "Mag. Christina Wieser",
+        "title": "VP People & Organization",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0023",
+        "role": "VP People & Org, policy owner for POL-HR-2025-012"
+      },
+      {
+        "name": "Mag. Daniela Fuchs",
+        "title": "Head of Munich Office & Regional Sales Director, Germany",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0209",
+        "role": "Munich office lead, hired Q3/Q4 2025 from Siemens Digital Industries"
+      },
+      {
+        "name": "DI Maria Holzinger",
+        "title": "Director, Key Accounts",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0078",
+        "email": "maria.holzinger@alpentech.at",
+        "role": "Account lead for Voestalpine, Andritz, Siemens; promoted Apr 2025"
+      },
+      {
+        "name": "DI Thomas Berger",
+        "title": "Senior Account Manager",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0095",
+        "role": "Account lead for BMW Werk Steyr and Liebherr; promoted Oct 2025"
+      },
+      {
+        "name": "Ing. Stefan Hofer",
+        "title": "Account Manager",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0112",
+        "role": "Account lead for Rosenbauer; project manager for Voestalpine"
+      },
+      {
+        "name": "Ing. Julia Wimmer",
+        "title": "Senior Automation Engineer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0149",
+        "role": "Account lead for AMAG; promoted Oct 2025"
+      },
+      {
+        "name": "DI Stefan Brandner",
+        "title": "Head of IT Infrastructure",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0142",
+        "email": "stefan.brandner@alpentech.at"
+      },
+      {
+        "name": "Mag. Peter Schuster",
+        "title": "Compliance Officer / Data Protection Officer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0048",
+        "email": "peter.schuster@alpentech.at",
+        "role": "Dual role as Compliance Officer and DPO; leading whistleblower investigation WB-2025-0014"
+      },
+      {
+        "name": "DI Dr. Elena Kovar",
+        "title": "Head of Predictive Maintenance / Senior R&D Engineer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0201",
+        "role": "Hired Q3/Q4 2025 from Siemens Corporate Technology"
+      },
+      {
+        "name": "MSc. Florian Ertl",
+        "title": "Senior ML Engineer",
+        "organization": "AlpenTech GmbH / TU Graz",
+        "employee_id": "AT-EMP-0205",
+        "role": "Part-time ML Engineer (50% FTE); PhD candidate at TU Graz"
+      },
+      {
+        "name": "DI Alexander Gruber",
+        "title": "Senior Automation Engineer",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0214",
+        "role": "On-site project lead at Andritz; project manager for BMW Steyr"
+      },
+      {
+        "name": "Ing. Sarah Moser",
+        "title": "Project Manager, Predictive Maintenance",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0217",
+        "role": "On-site PM implementation engineer at Andritz"
+      },
+      {
+        "name": "Mag. Sandra Koller",
+        "title": "HR Business Partner",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0163",
+        "role": "HR Business Partner; leading SimuTech cultural integration"
+      },
+      {
+        "name": "DI Robert Steiner",
+        "title": "Principal Engineer (effective Jan 1, 2026)",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0156",
+        "role": "Acting Head of Automation Engineering (after Leitner departure); promoted Jan 2026"
+      },
+      {
+        "name": "Ing. Lisa Mayr",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0189",
+        "role": "Background check renewal completed September 2025"
+      },
+      {
+        "name": "Ing. Katharina Berger",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0091",
+        "role": "Permanent remote work accommodation due to mobility impairment"
+      },
+      {
+        "name": "DI Markus Novak",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0134",
+        "role": "Temporary full-time remote work for chemotherapy treatment (extended to March 2026)"
+      },
+      {
+        "name": "DI Georg Leitner",
+        "title": "Senior Automation Engineer (departed)",
+        "organization": "AlpenTech GmbH (former)",
+        "employee_id": "AT-EMP-0067",
+        "role": "Resigned October 31, 2025; joined Siemens Austria; 17 years tenure"
+      },
+      {
+        "name": "Ing. Peter Winkler",
+        "title": "Field Service Engineer (terminated)",
+        "organization": "AlpenTech GmbH (former)",
+        "employee_id": "AT-EMP-0083",
+        "role": "Terminated August 15, 2025 for data security policy violation"
+      },
+      {
+        "name": "Dipl.-Ing. Helmut Stadler",
+        "title": "Principal Engineer (retired)",
+        "organization": "AlpenTech GmbH (former)",
+        "employee_id": "AT-EMP-0029",
+        "role": "Retired December 31, 2025 after 28 years; advisory services agreement"
+      },
+      {
+        "name": "Ing. Matthias Bauer",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0178",
+        "role": "Long-term sick leave for burnout (Sep 15 - Nov 28, 2025)"
+      },
+      {
+        "name": "Ing. Michael Brunner",
+        "title": null,
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0203",
+        "role": "Core Hours non-compliance; verbal warning issued November 10, 2025"
+      },
+      {
+        "name": "MSc. Nina Schreiber",
+        "title": "Senior Data Scientist / Head of R&D Lab",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0168",
+        "role": "Promoted to Senior Data Scientist Oct 2025"
+      },
+      {
+        "name": "Mag. Petra Huber",
+        "title": "Head of Controlling",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0031"
+      },
+      {
+        "name": "Anna Schindler",
+        "title": "Head of Accounting",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0035"
+      },
+      {
+        "name": "Laura Steinbach",
+        "title": "Recruiter",
+        "organization": "AlpenTech GmbH",
+        "employee_id": "AT-EMP-0187"
+      },
+      {
+        "name": "Dr. Johann Pichler",
+        "title": "Head of Digital Twin Division (formerly SimuTech founder/owner)",
+        "organization": "AlpenTech GmbH (formerly SimuTech Salzburg GmbH)",
+        "employee_id": "AT-EMP-0220",
+        "role": "SimuTech founder, retained with 3-year employment contract"
+      },
+      {
+        "name": "DI Michael Auer",
+        "title": "Former employee",
+        "organization": "SimuTech Salzburg GmbH (former)",
+        "role": "Filed wrongful termination claim (case ref 17 Cga 42/25k)"
+      },
+      {
+        "name": "DI Laura Steininger",
+        "title": "Co-founder",
+        "organization": "TwinFlow Analytics OG",
+        "role": "Co-founder; personal banking details on file for potential escrow"
+      },
+      {
+        "name": "MSc. David Kainz",
+        "title": "Co-founder",
+        "organization": "TwinFlow Analytics OG",
+        "role": "Co-founder; personal banking details on file for potential escrow"
+      },
+      {
+        "name": "Ing. Friedrich Müller",
+        "title": "Managing Director / Lead Consultant",
+        "organization": "Danube Digital Consulting e.U.",
+        "email": "friedrich.mueller@danube-digital.at",
+        "role": "Lead consultant under FCA-2025-0312; potential acquisition target principal"
+      },
+      {
+        "name": "DI Bernhard Steindl",
+        "title": "Senior Consultant, Industrial IoT",
+        "organization": "Danube Digital Consulting e.U.",
+        "role": "Key personnel under FCA-2025-0312"
+      },
+      {
+        "name": "Dr. Claudia Wallner",
+        "title": "Senior Consultant, ML & Data Engineering",
+        "organization": "Danube Digital Consulting e.U.",
+        "role": "Key personnel under FCA-2025-0312; provided ML customization for Andritz hydropower"
+      },
+      {
+        "name": "Dr. Katharina Moser",
+        "title": "Legal Counsel",
+        "organization": "Schönherr Rechtsanwälte",
+        "role": "External legal counsel for Project Edelweiss, SimuTech dispute, whistleblower advisory"
+      },
+      {
+        "name": "Mag. Dr. Stefan Halbwidl",
+        "title": "Engagement Partner",
+        "organization": "Deloitte Audit Wirtschaftsprüfung GmbH",
+        "role": "Statutory audit engagement partner (AT-AUD-2026-0118)"
+      },
+      {
+        "name": "Mag. Veronika Lechner",
+        "title": "Engagement Lead",
+        "organization": "PwC Austria",
+        "role": "TwinFlow Analytics due diligence lead"
+      },
+      {
+        "name": "DI Mag. Wolfgang Eder",
+        "title": "VP Manufacturing Technology",
+        "organization": "Voestalpine Stahl GmbH",
+        "email": "wolfgang.eder@voestalpine.com",
+        "role": "Primary client contact"
+      },
+      {
+        "name": "DI Markus Ziegler",
+        "title": "Head of Production Engineering",
+        "organization": "BMW Motoren GmbH (BMW Werk Steyr)",
+        "email": "markus.ziegler@bmw.at",
+        "role": "Primary client contact"
+      },
+      {
+        "name": "DI Dr. Franz Mittermayer",
+        "title": "CTO Hydro Division",
+        "organization": "Andritz AG",
+        "email": "franz.mittermayer@andritz.com",
+        "role": "Primary client contact"
+      },
+      {
+        "name": "Mag. Dr. Claudia Berghammer",
+        "title": "VP Digital Industries",
+        "organization": "Siemens AG Österreich",
+        "email": "claudia.berghammer@siemens.com",
+        "role": "Primary client contact"
+      },
+      {
+        "name": "DI Stefan Wallner",
+        "title": "Head of Production",
+        "organization": "Rosenbauer International AG",
+        "email": "stefan.wallner@rosenbauer.com",
+        "role": "Primary client contact"
+      },
+      {
+        "name": "Dr. Ingrid Schober",
+        "title": "Chairwoman (Beirat)",
+        "organization": "AlpenTech GmbH",
+        "role": "Board chairwoman; leading succession planning initiative"
+      },
+      {
+        "name": "Mag. Thomas Pfeiffer",
+        "title": "Deputy Chairman (Beirat)",
+        "organization": "AlpenTech GmbH",
+        "role": "Board deputy chair; dissented on Munich office and TwinFlow acquisition votes"
+      },
+      {
+        "name": "Univ.-Prof. DI Dr. Harald Kirchmayr",
+        "title": "Member (Beirat)",
+        "organization": "TU Graz / AlpenTech GmbH",
+        "role": "Board member; TU Graz professor; academic supervisor for MSc. Florian Ertl (conflict disclosed)"
+      },
+      {
+        "name": "Mag. Elisabeth Gruber",
+        "title": "Member (Beirat)",
+        "organization": "WKO / AlpenTech GmbH",
+        "role": "Board member; WKO representative"
+      },
+      {
+        "name": "Mag. Dr. Kurt Langmaier",
+        "title": "Member (Beirat)",
+        "organization": "AlpenTech GmbH",
+        "role": "Board member; external investor (8.0% shareholder since 2020)"
+      },
+      {
+        "name": "Dr. Michael Brandstätter",
+        "title": "Founder",
+        "organization": "SecureEdge Systems GmbH",
+        "role": "Preliminary M&A target contact; founded SecureEdge Systems in 2019"
+      },
+      {
+        "name": "Dr. Elisabeth Kern",
+        "title": "Physician, Department of Oncology",
+        "organization": "LKH-Universitätsklinikum Graz",
+        "role": "Treating physician for DI Markus Novak (chemotherapy)"
+      },
+      {
+        "name": "Dr. Anna Schwarz",
+        "title": "Fachärztin für Psychiatrie",
+        "organization": "Private practice, Graz",
+        "role": "Treating physician for Ing. Matthias Bauer (burnout diagnosis)"
+      },
+      {
+        "name": "Assoc. Prof. Dr. Nina Holzmann",
+        "title": "Associate Professor",
+        "organization": "TU Wien, Institute for Information Systems Engineering",
+        "role": "Research project lead for privacy-preserving anomaly detection collaboration"
+      }
+    ],
+    "dates": [
+      {
+        "date": "2026-01-15",
+        "type": "report_date",
+        "description": "Date the Annual Operations Review was prepared"
+      },
+      {
+        "date": "2025-01-01",
+        "type": "period_start",
+        "description": "Start of FY 2025 fiscal year"
+      },
+      {
+        "date": "2025-12-31",
+        "type": "period_end",
+        "description": "End of FY 2025 fiscal year"
+      },
+      {
+        "date": "2025-12-18",
+        "type": "acquisition_closing",
+        "description": "SimuTech Salzburg GmbH acquisition closing date"
+      },
+      {
+        "date": "2025-07-01",
+        "type": "product_launch",
+        "description": "AlpenPredict Edge platform launch"
+      },
+      {
+        "date": "2025-08-01",
+        "type": "office_opening",
+        "description": "Munich representative office opened"
+      },
+      {
+        "date": "2026-01-01",
+        "type": "office_opening",
+        "description": "Zurich liaison office operations commenced"
+      },
+      {
+        "date": "2025-09-01",
+        "type": "contract_start",
+        "description": "Danube Digital Consulting framework agreement FCA-2025-0312 effective date"
+      },
+      {
+        "date": "2025-07-15",
+        "type": "contract_signed",
+        "description": "Voestalpine framework agreement VAS-FA-2025-001 signed"
+      },
+      {
+        "date": "2025-08-01",
+        "type": "contract_signed",
+        "description": "Rosenbauer framework agreement ROS-FA-2025-009 signed (approximate)"
+      },
+      {
+        "date": "2025-10-01",
+        "type": "contract_signed",
+        "description": "Andritz MSA ANDRITZ-MSA-2025-003 signed (approximate)"
+      },
+      {
+        "date": "2025-03-14",
+        "type": "board_meeting",
+        "description": "Beirat meeting 1 (regular) — approved CEO comp plan, FY 2025 budget, Munich office"
+      },
+      {
+        "date": "2025-06-18",
+        "type": "board_meeting",
+        "description": "Beirat meeting 2 (regular) — approved AlpenPredict Edge launch, cyber insurance"
+      },
+      {
+        "date": "2025-10-22",
+        "type": "board_meeting",
+        "description": "Beirat meeting 3 (regular) — approved SimuTech/TwinFlow due diligence"
+      },
+      {
+        "date": "2025-12-12",
+        "type": "board_meeting",
+        "description": "Beirat meeting 4 (extraordinary) — approved SimuTech acquisition and Zurich office"
+      },
+      {
+        "date": "2026-01-10",
+        "type": "board_meeting",
+        "description": "Beirat meeting 5 (regular) — approved FY 2026 guidance, ISO 27001 project"
+      },
+      {
+        "date": "2025-08-03",
+        "type": "whistleblower_report",
+        "description": "Whistleblower report WB-2025-0014 received (falsified time tracking)"
+      },
+      {
+        "date": "2025-11-12",
+        "type": "whistleblower_report",
+        "description": "Whistleblower report WB-2025-0023 received (safety protocol violation)"
+      },
+      {
+        "date": "2025-07-18",
+        "type": "data_breach",
+        "description": "Data security incident — employee stored client drawings on personal cloud storage"
+      },
+      {
+        "date": "2026-03-31",
+        "type": "annual_report_deadline",
+        "description": "Full audited annual financial statements publication deadline"
+      },
+      {
+        "date": "2026-03-12",
+        "type": "court_hearing",
+        "description": "First hearing in DI Michael Auer wrongful termination case (17 Cga 42/25k)"
+      },
+      {
+        "date": "2025-02-28",
+        "type": "shareholder_meeting",
+        "description": "Shareholders' meeting — approved board compensation and ESOP (SHM-2025-003)"
+      },
+      {
+        "date": "2026-02-06",
+        "type": "strategic_planning",
+        "description": "Strategic planning session scheduled (Feb 6-7, 2026, Graz)"
+      }
+    ],
+    "monetary_values": [
+      {
+        "amount": 48200000,
+        "currency": "EUR",
+        "type": "revenue",
+        "period": "FY 2025",
+        "description": "Consolidated revenue FY 2025"
+      },
+      {
+        "amount": 41300000,
+        "currency": "EUR",
+        "type": "revenue",
+        "period": "FY 2024",
+        "description": "Consolidated revenue FY 2024"
+      },
+      {
+        "amount": 9800000,
+        "currency": "EUR",
+        "type": "ebitda",
+        "period": "FY 2025",
+        "description": "EBITDA FY 2025"
+      },
+      {
+        "amount": 5700000,
+        "currency": "EUR",
+        "type": "net_income",
+        "period": "FY 2025",
+        "description": "Net income FY 2025"
+      },
+      {
+        "amount": 9400000,
+        "currency": "EUR",
+        "type": "cash_position",
+        "period": "FY 2025",
+        "description": "Cash and cash equivalents as of December 31, 2025"
+      },
+      {
+        "amount": 36400000,
+        "currency": "EUR",
+        "type": "total_assets",
+        "period": "FY 2025",
+        "description": "Total assets as of December 31, 2025"
+      },
+      {
+        "amount": 24100000,
+        "currency": "EUR",
+        "type": "total_equity",
+        "period": "FY 2025",
+        "description": "Total equity as of December 31, 2025"
+      },
+      {
+        "amount": 3600000,
+        "currency": "EUR",
+        "type": "acquisition_price",
+        "description": "SimuTech Salzburg GmbH acquisition purchase price"
+      },
+      {
+        "amount": 600000,
+        "currency": "EUR",
+        "type": "earnout",
+        "description": "SimuTech earnout (payable over 24 months if revenue targets met)"
+      },
+      {
+        "amount": 2400000,
+        "currency": "EUR",
+        "type": "acquisition_funding_cash",
+        "description": "SimuTech acquisition funded from cash reserves"
+      },
+      {
+        "amount": 1200000,
+        "currency": "EUR",
+        "type": "acquisition_funding_debt",
+        "description": "SimuTech acquisition term loan from Raiffeisen Bank (5-year, 4.2%)"
+      },
+      {
+        "amount": 3200000,
+        "currency": "EUR",
+        "type": "product_revenue",
+        "period": "FY 2025 (Q3-Q4)",
+        "description": "AlpenPredict Edge revenue in first two full quarters"
+      },
+      {
+        "amount": 1800000,
+        "currency": "EUR",
+        "type": "contract_value",
+        "description": "Voestalpine framework agreement total value (3-year)"
+      },
+      {
+        "amount": 720000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "BMW Werk Steyr annual contract value"
+      },
+      {
+        "amount": 2400000,
+        "currency": "EUR",
+        "type": "contract_value",
+        "description": "Andritz AG MSA total value (3-year, EUR 800K per annum)"
+      },
+      {
+        "amount": 430000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "Rosenbauer International AG annual contract value"
+      },
+      {
+        "amount": 380000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "AMAG Austria Metall AG annual engagement value"
+      },
+      {
+        "amount": 520000,
+        "currency": "EUR",
+        "type": "annual_contract_value",
+        "description": "Liebherr-Werk Bischofshofen annual value"
+      },
+      {
+        "amount": 4800000,
+        "currency": "EUR",
+        "type": "valuation_low",
+        "description": "Revised low-end valuation of Danube Digital Consulting (Project Edelweiss, KPMG AT-DD-2025-0441-R2)"
+      },
+      {
+        "amount": 6200000,
+        "currency": "EUR",
+        "type": "valuation_high",
+        "description": "Revised high-end valuation of Danube Digital Consulting (Project Edelweiss)"
+      },
+      {
+        "amount": 1100000,
+        "currency": "EUR",
+        "type": "valuation_low",
+        "description": "Recommended offer low-end for TwinFlow Analytics OG"
+      },
+      {
+        "amount": 1300000,
+        "currency": "EUR",
+        "type": "valuation_high",
+        "description": "Recommended offer high-end for TwinFlow Analytics OG"
+      },
+      {
+        "amount": 218000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "CEO total compensation FY 2025 (base EUR 160,000 + bonus EUR 58,000)"
+      },
+      {
+        "amount": 178000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "CFO total compensation FY 2025 (base EUR 138,000 + bonus EUR 40,000)"
+      },
+      {
+        "amount": 172000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "VP Engineering & R&D total compensation FY 2025"
+      },
+      {
+        "amount": 128000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "VP People & Organization total compensation FY 2025"
+      },
+      {
+        "amount": 130000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "Head of Munich Office total compensation FY 2025"
+      },
+      {
+        "amount": 826000,
+        "currency": "EUR",
+        "type": "executive_compensation",
+        "description": "Total executive compensation FY 2025"
+      },
+      {
+        "amount": 135000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "Dr. Johann Pichler base salary (Head of Digital Twin Division)"
+      },
+      {
+        "amount": 88000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "DI Dr. Elena Kovar annual salary"
+      },
+      {
+        "amount": 112000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "Mag. Daniela Fuchs annual salary"
+      },
+      {
+        "amount": 76000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "DI Alexander Gruber annual salary"
+      },
+      {
+        "amount": 62000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "Ing. Sarah Moser annual salary"
+      },
+      {
+        "amount": 42000,
+        "currency": "EUR",
+        "type": "salary",
+        "description": "MSc. Florian Ertl annual salary (50% FTE)"
+      },
+      {
+        "amount": 92000,
+        "currency": "EUR",
+        "type": "board_compensation_total",
+        "description": "Total annual board compensation FY 2025"
+      },
+      {
+        "amount": 34200,
+        "currency": "EUR",
+        "type": "billing_irregularity",
+        "description": "Potential over-billing to Siemens Austria on SA-2025-PMI (WB-2025-0014)"
+      },
+      {
+        "amount": 87400,
+        "currency": "EUR",
+        "type": "disputed_invoice",
+        "description": "Disputed final invoice from Kapsch TrafficCom AG"
+      },
+      {
+        "amount": 83184,
+        "currency": "EUR",
+        "type": "disputed_invoice",
+        "description": "DataFlow Solutions invoice INV-2025-1087 (defective server dispute)"
+      },
+      {
+        "amount": 55000,
+        "currency": "EUR",
+        "type": "litigation_provision",
+        "description": "Provision for DI Michael Auer wrongful termination claim"
+      },
+      {
+        "amount": 380000,
+        "currency": "EUR",
+        "type": "compliance_cost",
+        "description": "Estimated EU AI Act compliance costs (2026-2027)"
+      },
+      {
+        "amount": 7800000,
+        "currency": "EUR",
+        "type": "rd_expenditure",
+        "period": "FY 2025",
+        "description": "Total R&D expenditure FY 2025 (16.2% of revenue)"
+      },
+      {
+        "amount": 482000,
+        "currency": "EUR",
+        "type": "training_investment",
+        "period": "FY 2025",
+        "description": "Total training investment FY 2025"
+      },
+      {
+        "amount": 114900,
+        "currency": "EUR",
+        "type": "insurance_premium",
+        "description": "Total annual insurance premium"
+      },
+      {
+        "amount": 4230000,
+        "currency": "EUR",
+        "type": "technology_investment",
+        "period": "2026-2027",
+        "description": "Total planned technology investment (2026-2027)"
+      },
+      {
+        "amount": 136900,
+        "currency": "EUR",
+        "type": "subcontractor_cost",
+        "period": "FY 2025 (Sep-Dec)",
+        "description": "Danube Digital Consulting FY 2025 costs (74 consultant-days at EUR 1,850)"
+      }
+    ],
+    "locations": [
+      {
+        "address": "Inffeldgasse 25, 8010 Graz, Austria",
+        "entity": "AlpenTech GmbH",
+        "context": "Headquarters, 162 FTE"
+      },
+      {
+        "address": "Hafenstraße 47-51, 4020 Linz, Austria",
+        "entity": "AlpenTech GmbH",
+        "context": "Linz Engineering Office, 24 FTE"
+      },
+      {
+        "address": "Landsberger Straße 302, 80687 München, Germany",
+        "entity": "AlpenTech GmbH",
+        "context": "Munich Representative Office, 18 FTE"
+      },
+      {
+        "address": "Techno-Z, Jakob-Haringer-Straße 5, 5020 Salzburg, Austria",
+        "entity": "AlpenTech GmbH (SimuTech)",
+        "context": "Salzburg Digital Twin Division, 14 FTE"
+      },
+      {
+        "address": "Badenerstrasse 549, 8048 Zürich, Switzerland",
+        "entity": "AlpenTech GmbH",
+        "context": "Zurich Liaison Office (opening January 2026)"
+      },
+      {
+        "address": "Roseggerweg 5, 8010 Graz",
+        "entity": "DI Dr. Markus Reiter",
+        "context": "CEO home address"
+      },
+      {
+        "address": "Schillerstraße 28/3, 8010 Graz",
+        "entity": "Mag. Sabine Egger",
+        "context": "CFO home address"
+      },
+      {
+        "address": "Mariatroster Straße 42, 8043 Graz",
+        "entity": "DI Dr. Andreas Hofer",
+        "context": "VP Eng & R&D home address"
+      },
+      {
+        "address": "Herrengasse 14/7, 8010 Graz",
+        "entity": "Mag. Christina Wieser",
+        "context": "VP People & Org home address"
+      },
+      {
+        "address": "Hilmgasse 8, 8010 Graz",
+        "entity": "Dipl.-Ing. Helmut Stadler",
+        "context": "Retired employee home address"
+      },
+      {
+        "address": "Neutorgasse 19/4, 8010 Graz",
+        "entity": "DI Georg Leitner",
+        "context": "Departed employee home address"
+      },
+      {
+        "address": "Kärntner Ring 15/2, 8010 Graz",
+        "entity": "DI Maria Holzinger",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Grabenstraße 41, 8010 Graz",
+        "entity": "Ing. Peter Winkler",
+        "context": "Terminated employee home address"
+      },
+      {
+        "address": "Babenbergerstraße 72/1, 8020 Graz",
+        "entity": "Ing. Katharina Berger",
+        "context": "Employee home address (mobility impairment accommodation)"
+      },
+      {
+        "address": "Schörgelgasse 44/3, 8010 Graz",
+        "entity": "DI Thomas Berger",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Kaiserfeldgasse 7, 8010 Graz",
+        "entity": "Ing. Stefan Hofer",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Brockmanngasse 60/2, 8010 Graz",
+        "entity": "DI Markus Novak",
+        "context": "Employee home address (chemotherapy accommodation)"
+      },
+      {
+        "address": "Keplerstraße 93/5, 8010 Graz",
+        "entity": "DI Stefan Brandner",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Grieskai 26/4, 8020 Graz",
+        "entity": "Ing. Julia Wimmer",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Ragnitzstraße 18, 8047 Graz",
+        "entity": "DI Robert Steiner",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Leonhardstraße 42/7, 8010 Graz",
+        "entity": "Mag. Sandra Koller",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Moserhofgasse 16/2, 8010 Graz",
+        "entity": "Ing. Lisa Mayr",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Glacisstraße 17/2, 8010 Graz",
+        "entity": "DI Dr. Elena Kovar",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Münzgrabenstraße 58/14, 8010 Graz",
+        "entity": "MSc. Florian Ertl",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Maximilianstraße 12/3, 80539 München, Germany",
+        "entity": "Mag. Daniela Fuchs",
+        "context": "Employee home address (Munich)"
+      },
+      {
+        "address": "Landstraße 81/2/15, 4020 Linz",
+        "entity": "DI Alexander Gruber",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Annenstraße 34/6, 8020 Graz",
+        "entity": "Ing. Sarah Moser",
+        "context": "Employee home address"
+      },
+      {
+        "address": "Riedenburgstraße 22/4, 5020 Salzburg",
+        "entity": "Dr. Johann Pichler",
+        "context": "SimuTech founder home address"
+      },
+      {
+        "address": "Triester Straße 105/3, 8020 Graz",
+        "entity": "Ing. Matthias Bauer",
+        "context": "Employee home address (burnout sick leave)"
+      },
+      {
+        "address": "Roseggergasse 14/3, 4020 Linz",
+        "entity": "Ing. Friedrich Müller",
+        "context": "Danube Digital Managing Director home address"
+      },
+      {
+        "address": "Nikolaiplatz 3/5, 8020 Graz",
+        "entity": "Dr. Ingrid Schober",
+        "context": "Board chairwoman home address"
+      },
+      {
+        "address": "Attemsgasse 7, 1220 Wien",
+        "entity": "Mag. Thomas Pfeiffer",
+        "context": "Board deputy chair home address"
+      },
+      {
+        "address": "Stremayrgasse 16, 8010 Graz",
+        "entity": "Univ.-Prof. DI Dr. Harald Kirchmayr",
+        "context": "Board member home address"
+      },
+      {
+        "address": "Wollzeile 33/2, 1010 Wien",
+        "entity": "Mag. Elisabeth Gruber",
+        "context": "Board member home address"
+      },
+      {
+        "address": "Linzer Gasse 49, 5020 Salzburg",
+        "entity": "Mag. Dr. Kurt Langmaier",
+        "context": "Board member/investor home address"
+      },
+      {
+        "address": "Voestalpine-Straße 3, 4020 Linz, Austria",
+        "entity": "Voestalpine Stahl GmbH",
+        "context": "Client registered office"
+      },
+      {
+        "address": "Hinterbergerstraße 2, 4400 Steyr, Austria",
+        "entity": "BMW Motoren GmbH (BMW Werk Steyr)",
+        "context": "Client registered office"
+      },
+      {
+        "address": "Stattegger Straße 18, 8045 Graz, Austria",
+        "entity": "Andritz AG",
+        "context": "Client registered office"
+      },
+      {
+        "address": "Siemensstraße 90, 1210 Wien, Austria",
+        "entity": "Siemens AG Österreich",
+        "context": "Client registered office"
+      },
+      {
+        "address": "Paschinger Straße 90, 4060 Leonding, Austria",
+        "entity": "Rosenbauer International AG",
+        "context": "Client registered office"
+      },
+      {
+        "address": "Anzengruberstrasse 6, 4020 Linz, Austria",
+        "entity": "Danube Digital Consulting e.U.",
+        "context": "Subcontractor registered office"
+      }
+    ]
+  },
+  "pii_items": [
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "1523 040372",
+      "person": "DI Dr. Markus Reiter",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "2871 150575",
+      "person": "Mag. Sabine Egger",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "3614 100678",
+      "person": "DI Dr. Andreas Hofer",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "4287 220880",
+      "person": "Mag. Christina Wieser",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "1847 050365",
+      "person": "Dipl.-Ing. Helmut Stadler",
+      "context": "Employee PII register (Section 3.8) and Section 3.3 (departure)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "4293 180781",
+      "person": "DI Georg Leitner",
+      "context": "Employee PII register (Section 3.8) and Section 3.3 (departure)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "5641 120184",
+      "person": "DI Maria Holzinger",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "5871 090688",
+      "person": "Ing. Peter Winkler",
+      "context": "Employee PII register (Section 3.8) and Section 3.3 (termination)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "6293 140586",
+      "person": "Ing. Katharina Berger",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "5923 230882",
+      "person": "DI Thomas Berger",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "6127 170490",
+      "person": "Ing. Stefan Hofer",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "7418 050285",
+      "person": "DI Markus Novak",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "6842 110979",
+      "person": "DI Stefan Brandner",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "7293 081191",
+      "person": "Ing. Julia Wimmer",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "7614 230384",
+      "person": "DI Robert Steiner",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "4827 120388",
+      "person": "Mag. Sandra Koller",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "8142 040993",
+      "person": "Ing. Lisa Mayr",
+      "context": "Employee PII register (Section 3.8)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "7182 030589",
+      "person": "DI Dr. Elena Kovar",
+      "context": "Employee PII register (Section 3.8) and Section 3.2 (hiring)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "9314 120196",
+      "person": "MSc. Florian Ertl",
+      "context": "Employee PII register (Section 3.8) and Section 3.2 (hiring)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "4158 280783",
+      "person": "Mag. Daniela Fuchs",
+      "context": "Employee PII register (Section 3.8) and Section 3.2 (hiring)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "3592 140487",
+      "person": "DI Alexander Gruber",
+      "context": "Employee PII register (Section 3.8) and Section 3.2 (hiring)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "6847 220994",
+      "person": "Ing. Sarah Moser",
+      "context": "Employee PII register (Section 3.8) and Section 3.2 (hiring)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "2947 140368",
+      "person": "Dr. Johann Pichler",
+      "context": "SimuTech acquisition details (Section 2.6)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "6718 250990",
+      "person": "DI Michael Auer",
+      "context": "SimuTech employment dispute (Sections 2.6, 5.2)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "8241 071192",
+      "person": "DI Laura Steininger",
+      "context": "TwinFlow Analytics due diligence (Section 2.7)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "5673 190490",
+      "person": "MSc. David Kainz",
+      "context": "TwinFlow Analytics due diligence (Section 2.7)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "8493 160892",
+      "person": "Ing. Matthias Bauer",
+      "context": "Medical leave record (Section 3.9)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "3782 150673",
+      "person": "Ing. Friedrich Müller",
+      "context": "Project Edelweiss attorney-client privileged section (Section 4.6)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "1294 150962",
+      "person": "Dr. Ingrid Schober",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "2847 081270",
+      "person": "Mag. Thomas Pfeiffer",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "1738 220465",
+      "person": "Univ.-Prof. DI Dr. Harald Kirchmayr",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "3182 031174",
+      "person": "Mag. Elisabeth Gruber",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "sozialversicherungsnummer",
+      "value": "2413 190768",
+      "person": "Mag. Dr. Kurt Langmaier",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 7293841",
+      "person": "Dr. Johann Pichler",
+      "context": "SimuTech acquisition details (Section 2.6), issued Salzburg, expires 2029"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 6284931",
+      "person": "Dr. Ingrid Schober",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 5173842",
+      "person": "Mag. Thomas Pfeiffer",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 4928173",
+      "person": "Univ.-Prof. DI Dr. Harald Kirchmayr",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 7412839",
+      "person": "Mag. Elisabeth Gruber",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 3847291",
+      "person": "Mag. Dr. Kurt Langmaier",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 8341726",
+      "person": "Dr. Michael Brandstätter",
+      "context": "M&A target pipeline (Section 7.5)"
+    },
+    {
+      "type": "passport_number",
+      "value": "P 4821673",
+      "person": "Ing. Friedrich Müller",
+      "context": "Project Edelweiss attorney-client privileged section (Section 4.6)"
+    },
+    {
+      "type": "iban",
+      "value": "AT89 1200 0515 7834 9012",
+      "person": "DI Laura Steininger",
+      "bank": "Bank Austria (UniCredit)",
+      "bic": "BKAUATWW",
+      "context": "TwinFlow Analytics escrow arrangement (Section 2.7)"
+    },
+    {
+      "type": "iban",
+      "value": "AT32 2011 1297 4568 3100",
+      "person": "MSc. David Kainz",
+      "bank": "Erste Bank der oesterreichischen Sparkassen AG",
+      "bic": "GIBAATWWXXX",
+      "context": "TwinFlow Analytics escrow arrangement (Section 2.7)"
+    },
+    {
+      "type": "iban",
+      "value": "AT44 3400 0001 0827 4519",
+      "person": "Ing. Friedrich Müller",
+      "bank": "Raiffeisenbank Oberösterreich",
+      "bic": "RZOOAT2L",
+      "context": "Project Edelweiss attorney-client privileged section (Section 4.6)"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 412 7839",
+      "person": "DI Dr. Markus Reiter",
+      "context": "Employee PII register and appendix emergency contacts"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 823 1456",
+      "person": "Mag. Sabine Egger",
+      "context": "Employee PII register and appendix emergency contacts"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 482 9173",
+      "person": "DI Dr. Andreas Hofer",
+      "context": "Employee PII register and appendix emergency contacts"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 676 941 3287",
+      "person": "Mag. Christina Wieser",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 312 4578",
+      "person": "Dipl.-Ing. Helmut Stadler",
+      "context": "Employee PII register and departure record"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 718 2394",
+      "person": "DI Georg Leitner",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 519 3847",
+      "person": "DI Maria Holzinger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 699 471 2839",
+      "person": "Ing. Peter Winkler",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 291 7843",
+      "person": "Ing. Katharina Berger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 676 512 8934",
+      "person": "DI Thomas Berger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 893 2147",
+      "person": "Ing. Stefan Hofer",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 347 9128",
+      "person": "DI Markus Novak",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 650 773 2198",
+      "person": "DI Stefan Brandner",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 712 4893",
+      "person": "Ing. Julia Wimmer",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 676 284 1937",
+      "person": "DI Robert Steiner",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 893 2471",
+      "person": "Mag. Sandra Koller",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 217 9483",
+      "person": "Ing. Lisa Mayr",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 741 2893",
+      "person": "DI Dr. Elena Kovar",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 660 519 8274",
+      "person": "MSc. Florian Ertl",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+49 151 234 5678",
+      "person": "Mag. Daniela Fuchs",
+      "context": "Employee PII register (German number)"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 676 812 3947",
+      "person": "DI Alexander Gruber",
+      "context": "Employee PII register and Andritz on-site coordination"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 664 321 7849",
+      "person": "Ing. Sarah Moser",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 662 841 2739",
+      "person": "Dr. Johann Pichler",
+      "context": "SimuTech founder personal mobile (Section 2.6)"
+    },
+    {
+      "type": "personal_phone",
+      "value": "+43 676 831 4502",
+      "person": "Ing. Friedrich Müller",
+      "context": "Danube Digital Managing Director mobile (Section 4.6)"
+    },
+    {
+      "type": "personal_email",
+      "value": "johann.pichler@gmx.at",
+      "person": "Dr. Johann Pichler",
+      "context": "SimuTech founder personal email (Section 2.6)"
+    },
+    {
+      "type": "client_contact_phone",
+      "value": "+43 664 832 9147",
+      "person": "DI Mag. Wolfgang Eder",
+      "context": "Voestalpine primary contact mobile"
+    },
+    {
+      "type": "client_contact_phone",
+      "value": "+43 664 741 2893",
+      "person": "DI Markus Ziegler",
+      "context": "BMW Werk Steyr primary contact mobile"
+    },
+    {
+      "type": "client_contact_phone",
+      "value": "+43 676 812 3947",
+      "person": "DI Dr. Franz Mittermayer",
+      "context": "Andritz AG primary contact mobile"
+    },
+    {
+      "type": "client_contact_phone",
+      "value": "+43 664 623 8471",
+      "person": "Mag. Dr. Claudia Berghammer",
+      "context": "Siemens Austria primary contact mobile"
+    },
+    {
+      "type": "client_contact_phone",
+      "value": "+43 664 481 7293",
+      "person": "DI Stefan Wallner",
+      "context": "Rosenbauer primary contact mobile"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "04.03.1972",
+      "person": "DI Dr. Markus Reiter",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "15.05.1975",
+      "person": "Mag. Sabine Egger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "10.06.1978",
+      "person": "DI Dr. Andreas Hofer",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "22.08.1980",
+      "person": "Mag. Christina Wieser",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "05.03.1965",
+      "person": "Dipl.-Ing. Helmut Stadler",
+      "context": "Employee PII register and departure record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "18.07.1981",
+      "person": "DI Georg Leitner",
+      "context": "Employee PII register and departure record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "12.01.1984",
+      "person": "DI Maria Holzinger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "09.06.1988",
+      "person": "Ing. Peter Winkler",
+      "context": "Employee PII register and termination record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "14.05.1986",
+      "person": "Ing. Katharina Berger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "23.08.1982",
+      "person": "DI Thomas Berger",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "17.04.1990",
+      "person": "Ing. Stefan Hofer",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "05.02.1985",
+      "person": "DI Markus Novak",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "11.09.1979",
+      "person": "DI Stefan Brandner",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "08.11.1991",
+      "person": "Ing. Julia Wimmer",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "23.03.1984",
+      "person": "DI Robert Steiner",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "12.03.1988",
+      "person": "Mag. Sandra Koller",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "04.09.1993",
+      "person": "Ing. Lisa Mayr",
+      "context": "Employee PII register"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "03.05.1989",
+      "person": "DI Dr. Elena Kovar",
+      "context": "Employee PII register and hiring record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "12.01.1996",
+      "person": "MSc. Florian Ertl",
+      "context": "Employee PII register and hiring record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "28.07.1983",
+      "person": "Mag. Daniela Fuchs",
+      "context": "Employee PII register and hiring record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "14.04.1987",
+      "person": "DI Alexander Gruber",
+      "context": "Employee PII register and hiring record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "22.09.1994",
+      "person": "Ing. Sarah Moser",
+      "context": "Employee PII register and hiring record"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "14.03.1968",
+      "person": "Dr. Johann Pichler",
+      "context": "SimuTech acquisition details (Section 2.6)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "25.09.1990",
+      "person": "DI Michael Auer",
+      "context": "SimuTech employment dispute (Section 2.6)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "07.11.1992",
+      "person": "DI Laura Steininger",
+      "context": "TwinFlow Analytics due diligence (Section 2.7)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "19.04.1990",
+      "person": "MSc. David Kainz",
+      "context": "TwinFlow Analytics due diligence (Section 2.7)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "16.08.1992",
+      "person": "Ing. Matthias Bauer",
+      "context": "Medical leave record (Section 3.9)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "15.09.1962",
+      "person": "Dr. Ingrid Schober",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "08.12.1970",
+      "person": "Mag. Thomas Pfeiffer",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "22.04.1965",
+      "person": "Univ.-Prof. DI Dr. Harald Kirchmayr",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "03.11.1974",
+      "person": "Mag. Elisabeth Gruber",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "19.07.1968",
+      "person": "Mag. Dr. Kurt Langmaier",
+      "context": "Board member details (Section 8.2)"
+    },
+    {
+      "type": "date_of_birth",
+      "value": "27.06.1980",
+      "person": "Dr. Michael Brandstätter",
+      "context": "M&A target pipeline (Section 7.5)"
+    },
+    {
+      "type": "medical_information",
+      "person": "Ing. Katharina Berger",
+      "description": "Permanent remote work accommodation due to mobility impairment following workplace accident (August 2024). Ongoing physiotherapy 2x/week.",
+      "references": ["AMZ-2024-0847", "GZ-2024-31847"],
+      "context": "Section 3.9"
+    },
+    {
+      "type": "medical_information",
+      "person": "DI Markus Novak",
+      "description": "Ongoing chemotherapy treatment. Temporary full-time remote work, reduced hours 30h/week. Extended to March 2026. Prognosis: good response to treatment, gradual return expected Q2 2026.",
+      "references": ["MED-2025-4192", "MED-2026-0042"],
+      "context": "Section 3.9"
+    },
+    {
+      "type": "medical_information",
+      "person": "Ing. Matthias Bauer",
+      "description": "Burnout diagnosis. Long-term sick leave September 15 to November 28, 2025 (53 business days). Return-to-work program, currently at 80% capacity.",
+      "references": ["MED-2025-5871"],
+      "context": "Section 3.9"
+    },
+    {
+      "type": "api_credential",
+      "value": "glrt-Kx7mR4vQ2nL9wZj3yB8c",
+      "description": "GitLab CI Runner Token (staging)",
+      "context": "Section 6.2.2 (Technology Infrastructure Credentials)"
+    },
+    {
+      "type": "api_credential",
+      "value": "8f3a91d2-47b6-4e8c-a152-6c3e8d9f0b74",
+      "description": "Azure Service Principal Client ID (sp-alpenpredict-cicd)",
+      "context": "Section 6.2.2"
+    },
+    {
+      "type": "api_credential",
+      "value": "aTP~Kx8.mR4vQ2nL7wZj9yB1cF5gH3dS6",
+      "description": "Azure Service Principal Client Secret (sp-alpenpredict-cicd)",
+      "context": "Section 6.2.2"
+    },
+    {
+      "type": "api_credential",
+      "value": "mlf_ak_7Gx2Wp9RtY4mKqN8vL3jB6hD1sF5cA0e",
+      "description": "MLflow Tracking API Key",
+      "context": "Section 6.2.2"
+    },
+    {
+      "type": "api_credential",
+      "value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.staging_fleet_admin",
+      "description": "Edge Device Fleet Manager Admin Token",
+      "context": "Section 6.2.2"
+    },
+    {
+      "type": "api_credential",
+      "value": "Grf!stg_2025#AlpEnT3ch",
+      "description": "Grafana staging admin password",
+      "context": "Section 6.2.2"
+    },
+    {
+      "type": "api_credential",
+      "value": "Ts!db_stg$2025_rW#4pN",
+      "description": "PostgreSQL staging TimescaleDB password",
+      "context": "Section 6.2.2"
+    }
+  ],
+  "sensitivity_flags": [
+    {
+      "type": "do_not_distribute",
+      "marker_text": "*** DO NOT DISTRIBUTE — BOARD & EXECUTIVE TEAM ONLY — DO NOT DISTRIBUTE ***",
+      "location": "Document header and footer",
+      "count": 2
+    },
+    {
+      "type": "confidential",
+      "marker_text": "CONFIDENTIAL",
+      "location": "Document header classification",
+      "context": "Classification: CONFIDENTIAL — Executive Leadership & Board Only"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — BOARD & EXECUTIVE TEAM ONLY ***",
+      "location": "Section 2.6 (SimuTech acquisition details)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — BOARD & EXECUTIVE TEAM ONLY ***",
+      "location": "Section 2.7 (TwinFlow Analytics status)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "COMPENSATION BENCHMARKS (CONFIDENTIAL — HR/FINANCE/BOARD ONLY)",
+      "location": "Section 2.1 (compensation benchmarks)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — HR & COMPLIANCE ONLY ***",
+      "location": "Section 3.8 (Employee PII Register)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — HR ONLY ***",
+      "location": "Section 3.9 (Medical Leave and Health Information)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — COMPLIANCE OFFICER & BOARD ONLY ***",
+      "location": "Section 5.4 (Whistleblower Reports)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — ENGINEERING & R&D ONLY ***",
+      "location": "Section 6.2.2 (AlpenPredict Edge technical architecture and credentials)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL ***",
+      "location": "Section 7.4 (Insurance Coverage)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — BOARD ONLY ***",
+      "location": "Section 7.5 (Acquisition Strategy)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** DO NOT DISTRIBUTE — BOARD MEMBERS ONLY ***",
+      "location": "Section 8 (Board Resolutions & Minutes)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — DO NOT DISTRIBUTE ***",
+      "location": "Section 8.2 (Board Member Details)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — BOARD ONLY — DO NOT DISTRIBUTE ***",
+      "location": "Section 8.3 (Executive Compensation Details)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL ***",
+      "location": "Section 8.4 (Shareholder Structure)"
+    },
+    {
+      "type": "confidential",
+      "marker_text": "*** CONFIDENTIAL — ENGINEERING & R&D ONLY ***",
+      "location": "Section 6.8 (Technology Roadmap 2026-2027)"
+    },
+    {
+      "type": "attorney_client_privilege",
+      "marker_text": "*** ATTORNEY-CLIENT PRIVILEGE — DO NOT DISCLOSE ***",
+      "location": "Section 4.6 (Danube Digital, Project Edelweiss)",
+      "attorney": "Dr. Katharina Moser, Schönherr Rechtsanwälte",
+      "legal_basis": "§ 9 RAO — Verschwiegenheitspflicht des Rechtsanwaltes"
+    },
+    {
+      "type": "whistleblower_protection",
+      "reference": "WB-2025-0014",
+      "description": "Falsified time tracking in Engineering Consulting division affecting Siemens Austria billing (SA-2025-PMI). Investigation ongoing.",
+      "legal_basis": "HinweisgeberInnenschutzgesetz (HSchG)",
+      "location": "Sections 4.4, 5.4"
+    },
+    {
+      "type": "whistleblower_protection",
+      "reference": "WB-2025-0023",
+      "description": "Safety protocol violation (lockout-tagout bypass) at Liebherr-Werk Bischofshofen. Investigation completed January 8, 2026.",
+      "legal_basis": "HinweisgeberInnenschutzgesetz (HSchG)",
+      "location": "Section 5.4"
+    }
+  ],
+  "key_facts": [
+    {
+      "fact": "Document ID is AOR-2026-001, classified CONFIDENTIAL for Executive Leadership & Board Only",
+      "source_section": "Header",
+      "confidence": "high"
+    },
+    {
+      "fact": "FY 2025 consolidated revenue was EUR 48.2 million, up 16.7% from EUR 41.3 million in FY 2024",
+      "source_section": "Section 1: Executive Summary / Section 2: Financial Performance",
+      "confidence": "high"
+    },
+    {
+      "fact": "EBITDA was EUR 9.8 million (20.3% margin) in FY 2025",
+      "source_section": "Section 2.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Net income was EUR 5.7 million (11.8% margin), up 22.6% from EUR 4.65 million",
+      "source_section": "Section 2.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Cash and cash equivalents reached EUR 9.4 million as of December 31, 2025",
+      "source_section": "Section 2.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total headcount was 218 FTE at year-end (up 22.5% from 178), including 14 from SimuTech acquisition",
+      "source_section": "Sections 1, 2.1, 3.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "94 active enterprise clients at year-end (up 25.3% from 75)",
+      "source_section": "Section 2.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Q4 2025 was strongest quarter (EUR 13.4M revenue, +21.3% YoY, 21.6% EBITDA margin)",
+      "source_section": "Section 2.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "Industrial Automation segment revenue EUR 21.8M (45.2% of total, +25.3% YoY) with 62 active customers",
+      "source_section": "Section 2.3.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Predictive Maintenance segment revenue EUR 16.4M (34.0% of total, +24.2% YoY), including EUR 3.2M from AlpenPredict Edge",
+      "source_section": "Section 2.3.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "Engineering Consulting segment revenue EUR 10.0M (20.8% of total, -6.5% YoY, planned decline), average daily rate EUR 1,780 (+12.7%)",
+      "source_section": "Section 2.3.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "Top-5 client concentration improved to 33.0% (from 38% in Q3 2025), target sub-30% by Q4 2026",
+      "source_section": "Section 2.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "Revenue exceeded budget by EUR 0.7M (+1.5%); CapEx was EUR 1.9M below budget (-54.3%) due to Munich office savings and deferred purchases",
+      "source_section": "Section 2.5",
+      "confidence": "high"
+    },
+    {
+      "fact": "SimuTech Salzburg GmbH acquired December 18, 2025 for EUR 3.6M (below EUR 3.8M preliminary valuation); funded EUR 2.4M cash + EUR 1.2M term loan from Raiffeisen Bank",
+      "source_section": "Section 2.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "SimuTech earnout of EUR 600K over 24 months contingent on EUR 1.8M cumulative digital twin revenue by December 2027",
+      "source_section": "Section 2.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "SimuTech due diligence identified pending wrongful termination claim (DI Michael Auer, EUR 45K-65K exposure, case 17 Cga 42/25k)",
+      "source_section": "Section 2.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "TwinFlow Analytics OG due diligence ongoing; recommended offer reduced to EUR 1.1-1.3M from EUR 1.4M preliminary valuation; decision expected at February 2026 board meeting",
+      "source_section": "Section 2.7",
+      "confidence": "high"
+    },
+    {
+      "fact": "TwinFlow Analytics revenue FY 2025: EUR 420K; burn rate EUR 35K/month; cash runway ~5 months",
+      "source_section": "Section 2.7",
+      "confidence": "high"
+    },
+    {
+      "fact": "63 new hires in FY 2025 (excl. 14 SimuTech transfers); average time-to-fill for technical positions: 68 days",
+      "source_section": "Section 3.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "23 departures in FY 2025 (16 voluntary, 5 involuntary, 2 retirement); voluntary turnover rate 8.9%",
+      "source_section": "Section 3.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "71.6% of employees had approved remote work arrangements; average 2.4 remote days/week; 94.7% anchor day compliance",
+      "source_section": "Section 3.5",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total training investment EUR 482K (1.0% of revenue); average 42 training hours per employee",
+      "source_section": "Section 3.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "Employee satisfaction survey: overall 3.9/5.0 (up from 3.7); eNPS +32 (up from +24)",
+      "source_section": "Section 3.7",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenPredict Edge deployed at 14 client sites monitoring 187 industrial assets; 99.87% uptime; 3.2 billion sensor readings/day",
+      "source_section": "Section 6.2.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "GDPR compliance audit: overall SATISFACTORY; 6 findings (2 medium, 4 low); DPIA for AlpenPredict Edge not completed (medium finding)",
+      "source_section": "Section 5.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "One data breach in FY 2025 (July 18): field engineer stored client drawings on personal Google Drive; Datenschutzbehörde notified (DSB-2025-AT-00847); employee terminated",
+      "source_section": "Section 5.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "Whistleblower WB-2025-0014: ~18.5 consultant-days falsified overtime (~EUR 34,200 impact); Siemens Austria proactively informed; credit note offered",
+      "source_section": "Sections 4.4, 5.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "Whistleblower WB-2025-0023: field engineer bypassed LOTO safety procedure at Liebherr; formal written warning issued; investigation completed",
+      "source_section": "Section 5.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "EU AI Act: AlpenPredict Edge and Vision Quality Inspection classified as High-Risk (Annex III); compliance roadmap through Q1 2027; estimated cost EUR 380K",
+      "source_section": "Section 5.5",
+      "confidence": "high"
+    },
+    {
+      "fact": "2 patents filed in FY 2025 (edge inference AT-2025-PA-04817, adaptive quantization AT-2025-PA-05192); 3 trade secrets registered",
+      "source_section": "Section 6.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Cybersecurity assessment: overall B+ (improved from B); 3 critical/high vulnerabilities found and remediated; phishing click rate reduced to 12% from 18%",
+      "source_section": "Section 6.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "M&A strategy 2026-2027: total budget EUR 8-12M; pipeline includes TwinFlow (due diligence), SecureEdge Systems (market scan), FedAI Research (exploratory)",
+      "source_section": "Section 7.5",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total litigation provisions: EUR 55,000 (Auer v SimuTech/AlpenTech only)",
+      "source_section": "Section 5.6",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total annual insurance premium: EUR 114,900 across 7 policy types; cyber liability doubled to EUR 2M in July 2025",
+      "source_section": "Section 7.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "5 Beirat meetings held in FY 2025; key resolutions include CEO comp plan, product launch, Munich office, SimuTech acquisition approval, Zurich office",
+      "source_section": "Section 8.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "CEO compensation: EUR 218K total (EUR 160K base + EUR 58K bonus for 4 performance targets achieved); holds 42.0% equity",
+      "source_section": "Sections 8.3, 8.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "Total executive compensation: EUR 826K across 5 executives; total 6.0% equity allocated under ESOP",
+      "source_section": "Section 8.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "Sabine Egger (CFO) recused from SimuTech discussions due to personal relationship with Dr. Johann Pichler (disclosed per Section 25 GmbHG)",
+      "source_section": "Sections 8.1, 8.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "FY 2026 revenue guidance: EUR 56.0-60.0M; EBITDA margin target: 20.0-22.0% (approved BR-2026-001)",
+      "source_section": "Sections 1, 8.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Project Edelweiss: revised Danube Digital Consulting valuation EUR 4.8-6.2M (up from EUR 4.2-5.8M); recommended LOI in Q1 2026, target closing Q3 2026, anticipated price EUR 5.0-5.5M",
+      "source_section": "Section 4.6 (Attorney-Client Privilege)",
+      "confidence": "high"
+    },
+    {
+      "fact": "Danube Digital has outstanding tax audit by Finanzamt Linz (ref FA-2025-StNr-3847/2918) covering FY 2022-2024; potential exposure EUR 35K-80K",
+      "source_section": "Section 4.6 (Attorney-Client Privilege)",
+      "confidence": "high"
+    },
+    {
+      "fact": "22 employee PII records listed with SV-Nr, DOB, home address, and phone numbers; 5 board member records with passport numbers",
+      "source_section": "Sections 3.8, 8.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "7 API credentials/passwords embedded in Section 6.2.2 (staging environment) including Azure, MLflow, Fleet Manager, Grafana, and PostgreSQL",
+      "source_section": "Section 6.2.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenPredict Edge platform pricing: EUR 2,400 per asset/year license, EUR 8,500 per asset implementation, 18% annual support",
+      "source_section": "Section 6.2.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "AlpenTwin product launch planned Q3 2026; expected to generate EUR 2.0-3.0M revenue in first full year (2027)",
+      "source_section": "Section 6.3",
+      "confidence": "high"
+    },
+    {
+      "fact": "Technology roadmap 2026-2027: total planned investment EUR 4.23M across 10 initiatives",
+      "source_section": "Section 6.8",
+      "confidence": "high"
+    },
+    {
+      "fact": "R&D expenditure EUR 7.8M (16.2% of revenue); 38 R&D FTE; FFG grant EUR 400K recognized; EU Horizon Europe grant EUR 200K recognized",
+      "source_section": "Section 6.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "Shareholder structure: CEO 42%, CFO 18%, VP Eng 12%, ESOP 10%, Langmaier 8%, IV Steiermark 5%, Other 5%",
+      "source_section": "Section 8.4",
+      "confidence": "high"
+    },
+    {
+      "fact": "Succession planning initiative for CEO and VP Engineering positions launched Q4 2025 (BR-2025-023), led by Dr. Ingrid Schober",
+      "source_section": "Section 8.1",
+      "confidence": "high"
+    },
+    {
+      "fact": "DataFlow Solutions GmbH supplier dispute: EUR 8,450 withheld for defective Dell PowerEdge R760 server (SN FXTGH29714); pre-litigation negotiation",
+      "source_section": "Section 5.2.2",
+      "confidence": "high"
+    },
+    {
+      "fact": "Kapsch TrafficCom AG contract dispute: disputed final invoice EUR 87,400; mediation at WKO (WKO-MED-2025-0471)",
+      "source_section": "Section 5.2.3",
+      "confidence": "high"
+    }
+  ],
+  "structured_data": {
+    "document_id": "AOR-2026-001",
+    "company": {
+      "name": "AlpenTech GmbH",
+      "registration_number": "FN 423187 k",
+      "address": "Inffeldgasse 25, 8010 Graz, Austria",
+      "vat_id": "ATU71483926"
+    },
+    "reporting_period": {
+      "fiscal_year": 2025,
+      "start_date": "2025-01-01",
+      "end_date": "2025-12-31"
+    },
+    "report_date": "2026-01-15",
+    "approved_by": [
+      "DI Dr. Markus Reiter, Chief Executive Officer",
+      "Mag. Sabine Egger, Chief Financial Officer"
+    ],
+    "accounting_standard": "Austrian GAAP (UGB)",
+    "audited": false,
+    "auditor": "Deloitte Audit Wirtschaftsprüfung GmbH",
+    "financial_summary": {
+      "revenue_eur": 48200000,
+      "revenue_yoy_growth_percent": 16.7,
+      "cost_of_revenue_eur": 23100000,
+      "gross_profit_eur": 25100000,
+      "gross_margin_percent": 52.1,
+      "ebitda_eur": 9800000,
+      "ebitda_margin_percent": 20.3,
+      "depreciation_amortization_eur": 1700000,
+      "ebit_eur": 8100000,
+      "ebit_margin_percent": 16.8,
+      "net_income_eur": 5700000,
+      "net_margin_percent": 11.8,
+      "total_assets_eur": 36400000,
+      "total_equity_eur": 24100000,
+      "equity_ratio_percent": 66.2,
+      "cash_and_equivalents_eur": 9400000,
+      "total_debt_eur": 4200000,
+      "headcount_fte": 218,
+      "revenue_per_employee_eur": 221100,
+      "dso_days": 42,
+      "active_enterprise_clients": 94,
+      "net_revenue_retention_percent": 112,
+      "recurring_revenue_share_percent": 34
+    },
+    "quarterly_performance": [
+      {
+        "quarter": "Q1 2025",
+        "revenue_eur": 10800000,
+        "yoy_growth_percent": 14.7,
+        "ebitda_eur": 2000000,
+        "ebitda_margin_percent": 18.5
+      },
+      {
+        "quarter": "Q2 2025",
+        "revenue_eur": 11600000,
+        "yoy_growth_percent": 15.2,
+        "ebitda_eur": 2300000,
+        "ebitda_margin_percent": 19.8
+      },
+      {
+        "quarter": "Q3 2025",
+        "revenue_eur": 12400000,
+        "yoy_growth_percent": 15.8,
+        "ebitda_eur": 2600000,
+        "ebitda_margin_percent": 21.0
+      },
+      {
+        "quarter": "Q4 2025",
+        "revenue_eur": 13400000,
+        "yoy_growth_percent": 21.3,
+        "ebitda_eur": 2900000,
+        "ebitda_margin_percent": 21.6
+      }
+    ],
+    "revenue_by_segment": [
+      {
+        "segment": "Industrial Automation & Engineering Consulting",
+        "revenue_fy2025_eur": 21800000,
+        "revenue_fy2024_eur": 17400000,
+        "yoy_growth_percent": 25.3,
+        "share_of_total_percent": 45.2,
+        "gross_margin_percent": 54.1,
+        "active_customers": 62,
+        "new_customers": 27,
+        "contract_backlog_eur": 14200000
+      },
+      {
+        "segment": "Predictive Maintenance & R&D",
+        "revenue_fy2025_eur": 16400000,
+        "revenue_fy2024_eur": 13200000,
+        "yoy_growth_percent": 24.2,
+        "share_of_total_percent": 34.0,
+        "gross_margin_percent": 55.8,
+        "alpenpredict_edge_revenue_eur": 3200000,
+        "custom_implementations_eur": 11400000,
+        "rd_funded_projects_eur": 1800000,
+        "new_implementation_projects": 34,
+        "average_project_value_eur": 335000,
+        "implementation_backlog_eur": 6900000
+      },
+      {
+        "segment": "Engineering Consulting & Professional Services",
+        "revenue_fy2025_eur": 10000000,
+        "revenue_fy2024_eur": 10700000,
+        "yoy_growth_percent": -6.5,
+        "share_of_total_percent": 20.8,
+        "gross_margin_percent": 40.2,
+        "average_daily_rate_eur": 1780,
+        "utilization_rate_percent": 78.4,
+        "active_consulting_mandates": 41
+      }
+    ],
+    "top_clients": [
+      {"rank": 1, "name": "Voestalpine Stahl GmbH", "revenue_eur": 4800000, "share_percent": 10.0},
+      {"rank": 2, "name": "BMW Werk Steyr", "revenue_eur": 3600000, "share_percent": 7.5},
+      {"rank": 3, "name": "Andritz AG", "revenue_eur": 2900000, "share_percent": 6.0},
+      {"rank": 4, "name": "Siemens Austria", "revenue_eur": 2400000, "share_percent": 5.0},
+      {"rank": 5, "name": "Liebherr-Werk Bischofshofen", "revenue_eur": 2100000, "share_percent": 4.4},
+      {"rank": 6, "name": "Rosenbauer International AG", "revenue_eur": 1800000, "share_percent": 3.7},
+      {"rank": 7, "name": "AMAG Austria Metall AG", "revenue_eur": 1500000, "share_percent": 3.1},
+      {"rank": 8, "name": "Rheinmetall MAN Military", "revenue_eur": 1300000, "share_percent": 2.7},
+      {"rank": 9, "name": "Kapsch TrafficCom AG", "revenue_eur": 1100000, "share_percent": 2.3},
+      {"rank": 10, "name": "Plansee Group", "revenue_eur": 900000, "share_percent": 1.9}
+    ],
+    "acquisitions": [
+      {
+        "target": "SimuTech Salzburg GmbH",
+        "status": "completed",
+        "closing_date": "2025-12-18",
+        "purchase_price_eur": 3600000,
+        "funding": "EUR 2.4M cash + EUR 1.2M term loan (Raiffeisen Bank, 5yr, 4.2%)",
+        "earnout_eur": 600000,
+        "employees_transferred": 14,
+        "key_asset": "SimuTwin digital twin platform"
+      },
+      {
+        "target": "TwinFlow Analytics OG",
+        "status": "due_diligence",
+        "recommended_offer_range_eur": {"low": 1100000, "high": 1300000},
+        "preliminary_valuation_eur": 1400000,
+        "employees": 6,
+        "decision_date": "February 2026 board meeting"
+      },
+      {
+        "target": "Danube Digital Consulting e.U.",
+        "status": "strategic_planning",
+        "code_name": "Project Edelweiss",
+        "revised_valuation_range_eur": {"low": 4800000, "high": 6200000},
+        "anticipated_price_range_eur": {"low": 5000000, "high": 5500000},
+        "target_loi": "Q1 2026",
+        "target_closing": "Q3 2026",
+        "classification": "attorney_client_privilege"
+      }
+    ],
+    "hr_summary": {
+      "headcount_fy_end": 218,
+      "headcount_fy_start": 169,
+      "new_hires": 63,
+      "simutech_transfers": 14,
+      "departures_total": 23,
+      "departures_voluntary": 16,
+      "departures_involuntary": 5,
+      "departures_retirement": 2,
+      "voluntary_turnover_rate_percent": 8.9,
+      "average_time_to_fill_technical_days": 68,
+      "offer_acceptance_rate_percent": 82,
+      "remote_work_adoption_percent": 71.6,
+      "training_investment_eur": 482000,
+      "average_training_hours": 42,
+      "employee_satisfaction_overall": 3.9,
+      "enps": 32
+    },
+    "litigation": [
+      {
+        "case_ref": "17 Cga 42/25k",
+        "parties": "DI Michael Auer vs. SimuTech/AlpenTech",
+        "nature": "Employment (wrongful termination)",
+        "status": "Pending",
+        "provision_eur": 55000
+      },
+      {
+        "case_ref": "WKO-MED-2025-0471",
+        "parties": "Kapsch TrafficCom AG vs. AlpenTech",
+        "nature": "Contract dispute (incomplete deliverables)",
+        "status": "Mediation",
+        "provision_eur": 0
+      },
+      {
+        "case_ref": "INV-2025-1087",
+        "parties": "DataFlow Solutions GmbH vs. AlpenTech",
+        "nature": "Supplier dispute (defective hardware)",
+        "status": "Pre-litigation negotiation",
+        "provision_eur": 0
+      }
+    ],
+    "cybersecurity": {
+      "overall_rating": "B+ (Good)",
+      "critical_high_vulnerabilities": 3,
+      "all_remediated": true,
+      "phishing_click_rate_percent": 12,
+      "planned_investments_2026": [
+        "Zero Trust Network Architecture (EUR 180,000)",
+        "EDR solution deployment",
+        "SOC capability",
+        "ISO 27001 certification (target Q4 2026)"
+      ]
+    },
+    "outlook_2026": {
+      "revenue_guidance_eur": {"low": 56000000, "high": 60000000},
+      "ebitda_margin_target_percent": {"low": 20.0, "high": 22.0},
+      "key_drivers": [
+        "Full-year AlpenPredict Edge contribution",
+        "SimuTech/digital twin integration and AlpenTwin launch",
+        "German and Swiss market expansion (Munich, Zurich offices)",
+        "EU AI Act compliance demand",
+        "Potential TwinFlow Analytics acquisition"
+      ]
+    },
+    "shareholder_structure": [
+      {"shareholder": "DI Dr. Markus Reiter (CEO)", "share_percent": 42.0},
+      {"shareholder": "Mag. Sabine Egger (CFO)", "share_percent": 18.0},
+      {"shareholder": "DI Dr. Andreas Hofer (VP Eng.)", "share_percent": 12.0},
+      {"shareholder": "AlpenTech ESOP Trust", "share_percent": 10.0},
+      {"shareholder": "Mag. Dr. Kurt Langmaier", "share_percent": 8.0},
+      {"shareholder": "Industriellenvereinigung Steiermark Investment GmbH", "share_percent": 5.0},
+      {"shareholder": "Other (3 minority shareholders)", "share_percent": 5.0}
+    ]
+  },
+  "summary": "AlpenTech GmbH Annual Operations Review 2025 (AOR-2026-001), a comprehensive internal report prepared January 15, 2026 for Board and Executive Leadership. FY 2025 consolidated revenue EUR 48.2 million (+16.7% YoY), EBITDA EUR 9.8 million (20.3% margin), net income EUR 5.7 million (11.8% margin). 218 FTE with 94 active enterprise clients. Three strategic pillars: (1) AlpenPredict Edge product launch (EUR 3.2M revenue, 14 sites, 187 assets); (2) Geographic expansion (Munich office Aug 2025, Zurich Jan 2026); (3) SimuTech Salzburg acquisition completed Dec 18, 2025 for EUR 3.6M (digital twin capabilities, 14 engineers). TwinFlow Analytics OG due diligence ongoing (recommended EUR 1.1-1.3M offer). Attorney-client privileged section reveals Project Edelweiss: potential acquisition of Danube Digital Consulting with revised valuation EUR 4.8-6.2M. Contains extensive PII: 28+ SV-Nr, 8 passport numbers, 3 IBANs, 22+ home addresses, 25+ personal phone numbers, 3 medical records, 7 API credentials/passwords, executive compensation details, shareholder structure, board member personal details, and confidential M&A strategy. Two whistleblower investigations documented (WB-2025-0014 falsified billing EUR 34,200, WB-2025-0023 safety violation). Multiple CONFIDENTIAL and DO NOT DISTRIBUTE markers throughout. EU AI Act compliance roadmap with High-Risk classification for AlpenPredict Edge. FY 2026 guidance: EUR 56-60M revenue."
+}
