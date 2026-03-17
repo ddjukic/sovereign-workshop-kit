@@ -10,8 +10,8 @@ Build, configure, and secure autonomous AI agents using [OpenClaw](https://docs.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/ddjukic/sovereign-workshop-kit.git
-   cd sovereign-workshop-kit
+   git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+   cd agentic-workshop-kit-aiat
    ```
 
 2. **Get a free OpenRouter API key** at [openrouter.ai/keys](https://openrouter.ai/keys)
@@ -74,8 +74,8 @@ Replace `YOUR_USERNAME` with your actual Windows username. You can also use `Dow
 ### 5. Clone and Run
 
 ```bash
-git clone https://github.com/ddjukic/sovereign-workshop-kit.git
-cd sovereign-workshop-kit
+git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+cd agentic-workshop-kit-aiat
 chmod +x setup.sh
 ./setup.sh --openrouter YOUR_OPENROUTER_KEY
 ```
@@ -96,8 +96,8 @@ The script prints a URL at the end (e.g., `http://127.0.0.1:18789/?token=...`). 
 ### Setup
 
 ```bash
-git clone https://github.com/ddjukic/sovereign-workshop-kit.git
-cd sovereign-workshop-kit
+git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+cd agentic-workshop-kit-aiat
 chmod +x setup.sh
 ./setup.sh --openrouter YOUR_OPENROUTER_KEY
 ```
@@ -198,8 +198,8 @@ If you cloned onto a Windows filesystem path (e.g., `/mnt/c/...`), file permissi
 
 ```bash
 cd ~
-git clone https://github.com/ddjukic/sovereign-workshop-kit.git
-cd sovereign-workshop-kit
+git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+cd agentic-workshop-kit-aiat
 chmod +x setup.sh
 ./setup.sh --openrouter YOUR_KEY
 ```
@@ -219,7 +219,7 @@ Use it for guided exercises, real-time progress tracking, and mission briefings 
 ## What's in the Kit
 
 ```
-sovereign-workshop-kit/
+agentic-workshop-kit-aiat/
   setup.sh                        # Automated setup script (idempotent, safe to re-run)
   README.txt                      # Quick-start text reference
   materials/
