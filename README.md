@@ -41,11 +41,19 @@ Sign up at [lightning.ai/sign-up](https://lightning.ai/sign-up) (free, no credit
 
 ### 2. Create a new Studio
 
-Go to [lightning.ai](https://lightning.ai), click **New Studio**, and select a free CPU instance.
+Go to [lightning.ai](https://lightning.ai), click **New Studio**, select **Python** as the type, and choose **Default (CPU)** as the machine. This is free. Click **Start**.
 
-### 3. Install Node.js and clone the kit
+### 3. Open the VS Code IDE and terminal
 
-In the Studio terminal:
+Once the Studio is running:
+
+1. Click the **VS Code** tab at the top of your Studio (next to "Jupyter")
+2. Open a terminal: press **Ctrl+\`** (backtick) or go to **Terminal > New Terminal** in the menu bar
+3. You should see a command prompt like `⚡ ~ `
+
+All commands below go in this terminal.
+
+### 4. Install Node.js and clone the kit
 
 ```bash
 nvm install --lts
@@ -53,34 +61,45 @@ git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
 cd agentic-workshop-kit-aiat
 ```
 
-### 4. Run setup with `--lightning`
+### 5. Run setup with `--lightning`
 
 ```bash
 ./setup.sh --openrouter YOUR_OPENROUTER_KEY --lightning
 ```
 
+Replace `YOUR_OPENROUTER_KEY` with the key from [openrouter.ai/keys](https://openrouter.ai/keys).
+
 The `--lightning` flag automatically:
-- Reads your `$LIGHTNING_API_KEY` from the Studio environment
 - Binds the gateway to LAN so Lightning's proxy can reach it
 - Registers port 18789 with Lightning for external access
+- Enables auto-start so visiting the URL wakes a sleeping Studio
+- Installs an `on_start.sh` so the gateway restarts after Studio sleep
 
-### 5. Open the dashboard
+### 6. Open the dashboard
 
-The script prints a URL like:
+The script prints a URL at the end like:
 ```
 https://18789-XXXX.cloudspaces.litng.ai/?token=...
 ```
 
-Open it in your browser. **Note:** it may take up to 30 seconds for Lightning's proxy to start routing — if you see a 404, wait and refresh.
+**Copy this URL and open it in a new browser tab.** It may take up to 30 seconds for Lightning's proxy to start routing -- if you see a 404, wait and refresh.
 
-If the dashboard shows **"pairing required"**, run in your Studio terminal:
+### 7. Approve device pairing
 
-```bash
-openclaw devices list
-openclaw devices approve <request-id>
-```
+The first time you open the dashboard, it will show **"Pairing required"**. This is a one-time security step:
 
-Then refresh the dashboard.
+1. Go back to your **Studio VS Code terminal**
+2. Run this command to see the pending request:
+   ```bash
+   openclaw devices list
+   ```
+3. You will see a table with a **Request** column containing an ID like `cad7dd4a-9345-...`. Copy it.
+4. Approve it:
+   ```bash
+   openclaw devices approve cad7dd4a-9345-...
+   ```
+   (paste the full Request ID from the table)
+5. Go back to your **dashboard browser tab** and refresh -- you should now be connected.
 
 ---
 
