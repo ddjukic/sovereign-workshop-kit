@@ -821,7 +821,8 @@ try:
             body = EndpointServiceUpdateEndpointBody(
                 cloudspace={'auto_start': True, 'cloudspace_id': p.cloudspace.cloudspace_id,
                             'port': '18789', 'type': 'ENDPOINT_PLUGIN_PORT'},
-                name='openclaw'
+                name='openclaw',
+                ports=['18789']
             )
             client.endpoint_service_update_endpoint(body=body, project_id=project_id, id=p.id)
             print('  \033[0;32m\u2713\033[0m Auto-start enabled (visiting dashboard URL wakes Studio)')
