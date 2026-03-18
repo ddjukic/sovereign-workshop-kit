@@ -10,8 +10,8 @@ Build, configure, and secure autonomous AI agents using [OpenClaw](https://docs.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/ddjukic/sovereign-workshop-kit.git
-   cd sovereign-workshop-kit
+   git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+   cd agentic-workshop-kit-aiat
    ```
 
 2. **Get a free OpenRouter API key** at [openrouter.ai/keys](https://openrouter.ai/keys)
@@ -71,7 +71,9 @@ The script prints a URL like:
 https://18789-XXXX.cloudspaces.litng.ai/?token=...
 ```
 
-Open it in your browser. If the dashboard shows **"pairing required"**, run in your Studio terminal:
+Open it in your browser. **Note:** it may take up to 30 seconds for Lightning's proxy to start routing — if you see a 404, wait and refresh.
+
+If the dashboard shows **"pairing required"**, run in your Studio terminal:
 
 ```bash
 openclaw devices list
@@ -282,7 +284,7 @@ Guided exercises, real-time progress tracking, and mission briefings during the 
 ## What's in the Kit
 
 ```
-sovereign-workshop-kit/
+agentic-workshop-kit-aiat/
   setup.sh                        # Day 1: single-agent setup (idempotent, safe to re-run)
   sovereign_multi_agents.sh       # Day 2: 3-agent sovereign orchestration setup
   materials/

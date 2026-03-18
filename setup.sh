@@ -6,11 +6,11 @@
 # IDEMPOTENT: Safe to re-run. Updates config and auth in place.
 #
 # Usage:
-#   ./validate-day1.sh --openrouter sk-or-v1-...                 # Required
-#   ./validate-day1.sh --openrouter sk-or-... --langdock ld-...   # + EU sovereign agent
-#   ./validate-day1.sh --dry-run --openrouter sk-or-...           # Preview only
-#   ./validate-day1.sh --restore                                  # Restore personal config
-#   ./validate-day1.sh --status                                   # Check current state
+#   ./setup.sh --openrouter sk-or-v1-...                 # Required
+#   ./setup.sh --openrouter sk-or-... --langdock ld-...   # + EU sovereign agent
+#   ./setup.sh --dry-run --openrouter sk-or-...           # Preview only
+#   ./setup.sh --restore                                  # Restore personal config
+#   ./setup.sh --status                                   # Check current state
 #
 # The claw-lab/ directory is self-contained for teaching file/folder
 # permissions management with OpenClaw:
@@ -275,7 +275,7 @@ if [[ "$DRY_RUN" == true ]]; then
     dry "Would restart gateway and print tokenized dashboard URL"
 
     echo ""
-    echo -e "  To run for real:  ${BOLD}./validate-day1.sh --openrouter <key>${NC}"
+    echo -e "  To run for real:  ${BOLD}./setup.sh --openrouter <key>${NC}"
     echo ""
     exit 0
 fi
@@ -289,11 +289,11 @@ if [[ -z "$OPENROUTER_KEY" ]]; then
     echo ""
     fail "OpenRouter API key required."
     echo ""
-    echo "  Usage: ./validate-day1.sh --openrouter sk-or-v1-..."
+    echo "  Usage: ./setup.sh --openrouter sk-or-v1-..."
     echo "  Get a free key at: https://openrouter.ai/keys"
     echo ""
     echo "  Optional — add EU sovereign agent:"
-    echo "  ./validate-day1.sh --openrouter sk-or-... --langdock ld-..."
+    echo "  ./setup.sh --openrouter sk-or-... --langdock ld-..."
     echo ""
     exit 1
 fi
@@ -970,6 +970,6 @@ echo "    configs/                 ← OUTSIDE workspace — CANNOT access"
 echo "    gold-standard/           ← OUTSIDE workspace — CANNOT access"
 echo ""
 echo -e "  ══════════════════════════════════════════════════════════════"
-echo -e "  RESTORE: ${BOLD}./validate-day1.sh --restore${NC}"
+echo -e "  RESTORE: ${BOLD}./setup.sh --restore${NC}"
 echo -e "  ══════════════════════════════════════════════════════════════"
 echo ""
