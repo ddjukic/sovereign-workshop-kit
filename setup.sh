@@ -78,7 +78,7 @@ while [[ $# -gt 0 ]]; do
                 echo ""
                 fail "--lightning requires an API key."
                 echo ""
-                echo "  Generate one at: https://lightning.ai/settings/keys"
+                echo "  Generate one at: https://lightning.ai/docs/litserve/features/authentication?settings=keys"
                 echo "  Usage: ./setup.sh --openrouter sk-or-... --lightning lt-..."
                 echo ""
                 exit 1
@@ -93,7 +93,7 @@ while [[ $# -gt 0 ]]; do
             echo "  --openrouter <key>   OpenRouter API key (required)"
             echo "  --langdock <key>     Langdock API key (optional, adds EU sovereign agent)"
             echo "  --lightning <key>    Lightning.ai API key (optional, exposes gateway on LAN)"
-            echo "                       Generate at: https://lightning.ai/settings/keys"
+            echo "                       Generate at: https://lightning.ai/docs/litserve/features/authentication?settings=keys"
             echo "  --dry-run            Preview changes without applying"
             echo "  --restore            Restore personal OpenClaw config from backup"
             echo "  --status             Show current setup state"
