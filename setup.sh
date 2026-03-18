@@ -797,6 +797,11 @@ fi
 # Register port with Lightning.ai and enable auto-start
 if [[ "$LIGHTNING" == true ]]; then
     LIGHTNING_PYTHON="${LIGHTNING_PYTHON:-/system/conda/miniconda3/envs/cloudspace/bin/python3}"
+    LIGHTNING_PIP="${LIGHTNING_PIP:-/system/conda/miniconda3/envs/cloudspace/bin/pip}"
+    # Ensure lightning-sdk is installed (not pre-installed on fresh Studios)
+    if [ -x "$LIGHTNING_PIP" ]; then
+        "$LIGHTNING_PIP" install -q lightning-sdk 2>/dev/null || true
+    fi
     if [ -x "$LIGHTNING_PYTHON" ]; then
         "$LIGHTNING_PYTHON" << 'PYEOF'
 from lightning_sdk import Studio
