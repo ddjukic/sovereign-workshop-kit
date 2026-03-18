@@ -31,58 +31,54 @@ That's it. The script installs OpenClaw, creates a sandboxed `claw-lab/` workspa
 
 ---
 
-## Windows (WSL) -- Step-by-Step Instructions
+## Lightning.ai Cloud Setup (Recommended)
 
-If you are on Windows, you need to run this kit inside **Windows Subsystem for Linux (WSL)**. Follow every step below carefully.
+**No local installation required.** Lightning.ai provides a free browser-based IDE with terminal access -- ideal for workshop participants who want to skip local setup entirely.
 
-### 1. Install WSL
+### 1. Create a Lightning.ai account
 
-Open **PowerShell as Administrator** (right-click the Start menu, select "Terminal (Admin)" or "PowerShell (Admin)") and run:
+Sign up at [lightning.ai/sign-up](https://lightning.ai/sign-up) (free, no credit card required). Do this **at least 3 days before the workshop** -- account verification can take time.
 
-```powershell
-wsl --install
-```
+### 2. Create a new Studio
 
-This installs Ubuntu by default. **Restart your computer** when prompted.
+Go to [lightning.ai](https://lightning.ai), click **New Studio**, and select a free CPU instance.
 
-### 2. First Launch -- Create Your Linux User
+### 3. Install Node.js and clone the kit
 
-After restarting, open **Ubuntu** from the Start menu. It will finish installing and ask you to create a username and password. Pick something simple -- you will need the password occasionally.
-
-### 3. Install Node.js 22+
-
-Inside the Ubuntu terminal, run:
+In the Studio terminal:
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
-sudo apt-get install -y nodejs git
-node --version   # Should print v22.x.x or higher
-```
-
-### 4. Navigate to a Convenient Folder
-
-To keep the kit on your Windows Desktop (so you can also see it in File Explorer):
-
-```bash
-cd /mnt/c/Users/YOUR_USERNAME/Desktop
-```
-
-Replace `YOUR_USERNAME` with your actual Windows username. You can also use `Downloads` instead of `Desktop`.
-
-> **Tip:** To find your username, run `ls /mnt/c/Users/` and look for your name.
-
-### 5. Clone and Run
-
-```bash
+nvm install --lts
 git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
 cd agentic-workshop-kit-aiat
-chmod +x setup.sh
-./setup.sh --openrouter YOUR_OPENROUTER_KEY
 ```
 
-### 6. Open the Dashboard
+### 4. Run setup with `--lightning`
 
-The script prints a URL at the end (e.g., `http://127.0.0.1:18789/?token=...`). Open that URL in your **Windows browser** (Chrome, Edge, etc.) -- WSL shares the network with Windows, so `127.0.0.1` works directly.
+```bash
+./setup.sh --openrouter YOUR_OPENROUTER_KEY --lightning
+```
+
+The `--lightning` flag automatically:
+- Reads your `$LIGHTNING_API_KEY` from the Studio environment
+- Binds the gateway to LAN so Lightning's proxy can reach it
+- Registers port 18789 with Lightning for external access
+
+### 5. Open the dashboard
+
+The script prints a URL like:
+```
+https://18789-XXXX.cloudspaces.litng.ai/?token=...
+```
+
+Open it in your browser. If the dashboard shows **"pairing required"**, run in your Studio terminal:
+
+```bash
+openclaw devices list
+openclaw devices approve <request-id>
+```
+
+Then refresh the dashboard.
 
 ---
 
@@ -103,6 +99,48 @@ chmod +x setup.sh
 ```
 
 Open the dashboard URL printed at the end of the script output.
+
+---
+
+## Windows (WSL)
+
+If you are on Windows, you need to run this kit inside **Windows Subsystem for Linux (WSL)**. If WSL setup feels cumbersome, use the [Lightning.ai cloud setup](#lightningai-cloud-setup-recommended) instead.
+
+### 1. Install WSL
+
+Open **PowerShell as Administrator** and run:
+
+```powershell
+wsl --install
+```
+
+**Restart your computer** when prompted.
+
+### 2. First Launch
+
+Open **Ubuntu** from the Start menu. Create a username and password when prompted.
+
+### 3. Install Node.js 22+
+
+```bash
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt-get install -y nodejs git
+node --version   # Should print v22.x.x or higher
+```
+
+### 4. Clone and Run
+
+```bash
+cd /mnt/c/Users/YOUR_USERNAME/Desktop
+git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
+cd agentic-workshop-kit-aiat
+chmod +x setup.sh
+./setup.sh --openrouter YOUR_OPENROUTER_KEY
+```
+
+### 5. Open the Dashboard
+
+The script prints a URL (e.g., `http://127.0.0.1:18789/?token=...`). Open it in your **Windows browser** -- WSL shares the network with Windows.
 
 ---
 
@@ -130,41 +168,41 @@ Once setup completes, try these in the OpenClaw dashboard:
 
 ## Troubleshooting
 
-### Gateway won't start (WSL)
+### Gateway won't start (WSL / Lightning)
 
-WSL without systemd cannot use `launchctl` or `systemd` daemons. The setup script handles this automatically by starting the gateway as a background process. If it still fails:
+WSL and Lightning Studios lack systemd. The setup script handles this automatically by starting the gateway as a background process. If it still fails:
 
 ```bash
-# Start the gateway manually in the foreground:
 openclaw gateway --port 18789
+```
 
-# Or in the background:
-nohup openclaw gateway --port 18789 > ~/.openclaw/logs/gateway.log 2>&1 &
+### Lightning: "Nothing running here yet"
+
+The port may not be registered with Lightning. Run:
+
+```bash
+python3 -c "from lightning_sdk import Studio; Studio().add_ports(18789)"
+```
+
+### Lightning: "pairing required"
+
+After opening the dashboard, approve the device from your Studio terminal:
+
+```bash
+openclaw devices list
+openclaw devices approve <request-id>
 ```
 
 ### "model_not_found" or API errors
 
-- Verify your OpenRouter key is valid: go to [openrouter.ai/keys](https://openrouter.ai/keys) and check the key is active.
-- Re-run setup to update the key:
-  ```bash
-  ./setup.sh --openrouter YOUR_NEW_KEY
-  ```
-- The default model (`stepfun/step-3.5-flash:free`) is a free-tier model. If it becomes unavailable, check the [OpenRouter models page](https://openrouter.ai/models) for alternatives.
+- Verify your OpenRouter key at [openrouter.ai/keys](https://openrouter.ai/keys)
+- Re-run setup: `./setup.sh --openrouter YOUR_NEW_KEY`
 
 ### Node.js version too old
 
-The kit requires Node.js 22 or later. Check your version:
-
-```bash
-node --version
-```
-
-If it's below v22, upgrade:
-
 ```bash
 # Using nvm (recommended):
-nvm install 22
-nvm use 22
+nvm install 22 && nvm use 22
 
 # Or on Ubuntu/Debian:
 curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
@@ -173,46 +211,25 @@ sudo apt-get install -y nodejs
 
 ### Port 18789 already in use
 
-Another process is using the gateway port. Find and stop it:
-
 ```bash
-lsof -i :18789          # macOS/Linux
-kill <PID>               # Replace <PID> with the process ID shown
-openclaw gateway start   # Restart the gateway
+lsof -i :18789
+kill <PID>
+openclaw gateway start
 ```
 
 ### Dashboard opens but agent doesn't respond
 
-1. Check the gateway is running: `openclaw gateway status`
-2. Check auth is configured: `cat claw-lab/auth-profiles.json`
+1. Check the gateway: `openclaw gateway status`
+2. Check auth: `cat claw-lab/auth-profiles.json`
 3. Check logs: `cat ~/.openclaw/logs/gateway.log`
-
-### WSL: "Permission denied" when running setup.sh
-
-```bash
-chmod +x setup.sh
-./setup.sh --openrouter YOUR_KEY
-```
-
-If you cloned onto a Windows filesystem path (e.g., `/mnt/c/...`), file permissions can be tricky. Try cloning into your WSL home directory instead:
-
-```bash
-cd ~
-git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
-cd agentic-workshop-kit-aiat
-chmod +x setup.sh
-./setup.sh --openrouter YOUR_KEY
-```
 
 ---
 
 ## Companion App
 
-The workshop companion app is available at:
-
 **[https://agentic-workshop-aiat.vercel.app](https://agentic-workshop-aiat.vercel.app)**
 
-Use it for guided exercises, real-time progress tracking, and mission briefings during the workshop.
+Guided exercises, real-time progress tracking, and mission briefings during the workshop.
 
 ---
 
@@ -221,7 +238,6 @@ Use it for guided exercises, real-time progress tracking, and mission briefings 
 ```
 agentic-workshop-kit-aiat/
   setup.sh                        # Automated setup script (idempotent, safe to re-run)
-  README.txt                      # Quick-start text reference
   materials/
     sample-docs/                  # 5 business documents for extraction exercises
       gold-standard/              # Reference extraction outputs for comparison
