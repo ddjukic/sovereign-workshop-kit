@@ -756,6 +756,7 @@ fi
 if [ "$GW_DAEMON" = false ]; then
     warn "Daemon install not available (WSL/Linux without systemd)"
     info "Starting gateway in background..."
+    mkdir -p "$OPENCLAW_HOME/logs"
     nohup openclaw gateway --port 18789 > "$OPENCLAW_HOME/logs/gateway.log" 2>&1 &
     GW_PID=$!
     sleep 3
