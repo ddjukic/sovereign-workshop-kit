@@ -459,7 +459,10 @@ if [ -n "$LIGHTNING_KEY" ]; then
     "port": 18789,
     "mode": "local",
     "bind": "lan",
-    "controlUi": { "allowInsecureAuth": true },
+    "controlUi": {
+      "allowInsecureAuth": true,
+      "allowedOrigins": ["*"]
+    },
     "auth": { "mode": "token", "token": "$LIGHTNING_KEY" },
     "trustedProxies": ["any", "*"]
   },
