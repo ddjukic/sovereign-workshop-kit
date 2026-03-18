@@ -230,8 +230,9 @@ if [[ "$DRY_RUN" == true ]]; then
         [ -f "$DOCS_SRC/$f" ] && ok "$f" || fail "MISSING: $f"
     done
 
-    step "Phase 5: Config + Auth"
-    dry "Would write ~/.openclaw/openclaw.json"
+    step "Phase 5: Config + Auth + Provider"
+    dry "Would write ~/.openclaw/openclaw.json (with models.providers.openrouter)"
+    dry "Would write ~/.openclaw/agents/assistant/agent/models.json"
     echo "    Agent 1: AlpenTech Assistant (openrouter/step-3.5-flash:free)"
     if [ -n "$LANGDOCK_KEY" ]; then
         echo "    Agent 2: Sovereign Analyst (langdock/claude-sonnet-4-6, sandbox: network:none)"
@@ -429,12 +430,31 @@ if [ -n "$LANGDOCK_KEY" ]; then
     # Two agents: OpenRouter assistant + Langdock sovereign analyst
     cat > "$OPENCLAW_HOME/openclaw.json" << OCJSON
 {
+  "env": {
+    "OPENROUTER_API_KEY": "$OPENROUTER_KEY"
+  },
   "gateway": {
     "mode": "local",
     "bind": "loopback"
   },
   "models": {
     "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "openai-completions",
+        "apiKey": "$OPENROUTER_KEY",
+        "models": [
+          {
+            "id": "stepfun/step-3.5-flash:free",
+            "name": "StepFun Step 3.5 Flash (free)",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          }
+        ]
+      },
       "langdock": {
         "baseUrl": "https://api.langdock.com/v1",
         "apiKey": "$LANGDOCK_KEY",
@@ -506,9 +526,32 @@ else
     # Single agent: OpenRouter only
     cat > "$OPENCLAW_HOME/openclaw.json" << OCJSON
 {
+  "env": {
+    "OPENROUTER_API_KEY": "$OPENROUTER_KEY"
+  },
   "gateway": {
     "mode": "local",
     "bind": "loopback"
+  },
+  "models": {
+    "providers": {
+      "openrouter": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "api": "openai-completions",
+        "apiKey": "$OPENROUTER_KEY",
+        "models": [
+          {
+            "id": "stepfun/step-3.5-flash:free",
+            "name": "StepFun Step 3.5 Flash (free)",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+            "contextWindow": 256000,
+            "maxTokens": 8192
+          }
+        ]
+      }
+    }
   },
   "agents": {
     "defaults": {
@@ -544,6 +587,43 @@ OCJSON
 fi
 info "  Workspace: $CLAW_LAB/workspace/"
 info "  tools.fs.workspaceOnly: true"
+
+# ── Write agent-level models.json for direct OpenRouter routing ──────────────
+# OpenClaw resolves models from ~/.openclaw/agents/<id>/agent/models.json
+AGENT_MODELS_DIR="$OPENCLAW_HOME/agents/assistant/agent"
+mkdir -p "$AGENT_MODELS_DIR"
+cat > "$AGENT_MODELS_DIR/models.json" << MODEOF
+{
+  "providers": {
+    "openrouter": {
+      "baseUrl": "https://openrouter.ai/api/v1",
+      "api": "openai-completions",
+      "apiKey": "$OPENROUTER_KEY",
+      "models": [
+        {
+          "id": "stepfun/step-3.5-flash:free",
+          "name": "StepFun Step 3.5 Flash (free)",
+          "reasoning": true,
+          "input": ["text"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 256000,
+          "maxTokens": 8192
+        },
+        {
+          "id": "nvidia/nemotron-3-super-120b-a12b:free",
+          "name": "NVIDIA Nemotron 3 Super (free)",
+          "reasoning": false,
+          "input": ["text"],
+          "cost": { "input": 0, "output": 0, "cacheRead": 0, "cacheWrite": 0 },
+          "contextWindow": 131072,
+          "maxTokens": 8192
+        }
+      ]
+    }
+  }
+}
+MODEOF
+ok "Wrote agent-level models.json (OpenRouter provider + model catalog)"
 
 # ── Write auth-profiles.json to agentDir (claw-lab/) ─────────────────────────
 AUTH_PROFILES="$CLAW_LAB/auth-profiles.json"
