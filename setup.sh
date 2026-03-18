@@ -62,6 +62,7 @@ mask_key() { echo "${1:0:12}...${1: -4}"; }
 # ─── Argument Parsing ─────────────────────────────────────────────────────────
 OPENROUTER_KEY=""
 LANGDOCK_KEY=""
+LIGHTNING_KEY=""
 DRY_RUN=false
 ACTION="setup"
 
@@ -72,10 +73,30 @@ while [[ $# -gt 0 ]]; do
         --dry-run)    DRY_RUN=true; shift ;;
         --openrouter) OPENROUTER_KEY="$2"; shift 2 ;;
         --langdock)   LANGDOCK_KEY="$2"; shift 2 ;;
+        --lightning)
+            if [[ -z "${2:-}" ]] || [[ "$2" == --* ]]; then
+                echo ""
+                fail "--lightning requires an API key."
+                echo ""
+                echo "  Generate one at: https://lightning.ai/settings/keys"
+                echo "  Usage: ./setup.sh --openrouter sk-or-... --lightning lt-..."
+                echo ""
+                exit 1
+            fi
+            LIGHTNING_KEY="$2"; shift 2 ;;
         -h|--help)
-            echo "Usage: ./validate-day1.sh --openrouter <key> [--langdock <key>] [--dry-run]"
-            echo "       ./validate-day1.sh --restore"
-            echo "       ./validate-day1.sh --status"
+            echo "Usage: ./setup.sh --openrouter <key> [--langdock <key>] [--lightning <key>] [--dry-run]"
+            echo "       ./setup.sh --restore"
+            echo "       ./setup.sh --status"
+            echo ""
+            echo "Options:"
+            echo "  --openrouter <key>   OpenRouter API key (required)"
+            echo "  --langdock <key>     Langdock API key (optional, adds EU sovereign agent)"
+            echo "  --lightning <key>    Lightning.ai API key (optional, exposes gateway on LAN)"
+            echo "                       Generate at: https://lightning.ai/settings/keys"
+            echo "  --dry-run            Preview changes without applying"
+            echo "  --restore            Restore personal OpenClaw config from backup"
+            echo "  --status             Show current setup state"
             exit 0 ;;
         *) echo -e "  ${RED}✗${NC} Unknown argument: $1"; exit 1 ;;
     esac
@@ -200,6 +221,11 @@ if [[ "$DRY_RUN" == true ]]; then
     else
         info "Langdock: not provided (optional)"
     fi
+    if [ -n "$LIGHTNING_KEY" ]; then
+        ok "Lightning: $(mask_key "$LIGHTNING_KEY") (gateway bind=lan, trustedProxies=any)"
+    else
+        info "Lightning: not provided (gateway bind=loopback)"
+    fi
 
     step "Phase 1: Backup"
     if [ -d "$PERSONAL_BACKUP" ]; then
@@ -276,6 +302,7 @@ echo "╚═══════════════════════�
 echo ""
 echo "  OpenRouter key: $(mask_key "$OPENROUTER_KEY")"
 [ -n "$LANGDOCK_KEY" ] && echo "  Langdock key:   $(mask_key "$LANGDOCK_KEY") (sovereign analyst enabled)"
+[ -n "$LIGHTNING_KEY" ] && echo "  Lightning key:  $(mask_key "$LIGHTNING_KEY") (LAN gateway mode)"
 echo ""
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -426,6 +453,28 @@ mkdir -p "$OPENCLAW_HOME"
 
 # ── Build openclaw.json ───────────────────────────────────────────────────────
 # Base config: single agent on OpenRouter free model
+if [ -n "$LIGHTNING_KEY" ]; then
+    GW_BLOCK=$(cat <<GWEOF
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": { "allowInsecureAuth": true },
+    "auth": { "mode": "token", "token": "$LIGHTNING_KEY" },
+    "trustedProxies": ["any", "*"]
+  },
+GWEOF
+)
+else
+    GW_BLOCK=$(cat <<GWEOF
+  "gateway": {
+    "mode": "local",
+    "bind": "loopback"
+  },
+GWEOF
+)
+fi
+
 if [ -n "$LANGDOCK_KEY" ]; then
     # Two agents: OpenRouter assistant + Langdock sovereign analyst
     cat > "$OPENCLAW_HOME/openclaw.json" << OCJSON
@@ -433,10 +482,7 @@ if [ -n "$LANGDOCK_KEY" ]; then
   "env": {
     "OPENROUTER_API_KEY": "$OPENROUTER_KEY"
   },
-  "gateway": {
-    "mode": "local",
-    "bind": "loopback"
-  },
+$GW_BLOCK
   "models": {
     "providers": {
       "openrouter": {
@@ -529,10 +575,7 @@ else
   "env": {
     "OPENROUTER_API_KEY": "$OPENROUTER_KEY"
   },
-  "gateway": {
-    "mode": "local",
-    "bind": "loopback"
-  },
+$GW_BLOCK
   "models": {
     "providers": {
       "openrouter": {
@@ -587,6 +630,9 @@ OCJSON
 fi
 info "  Workspace: $CLAW_LAB/workspace/"
 info "  tools.fs.workspaceOnly: true"
+if [ -n "$LIGHTNING_KEY" ]; then
+    ok "Gateway configured for Lightning.ai (bind=lan, trustedProxies=any)"
+fi
 
 # ── Write agent-level models.json for direct OpenRouter routing ──────────────
 # OpenClaw resolves models from ~/.openclaw/agents/<id>/agent/models.json
@@ -805,7 +851,14 @@ echo -e "  ═══════════════════════
 echo -e "  ${BOLD}OPEN YOUR DASHBOARD:${NC}"
 echo -e "  ══════════════════════════════════════════════════════════════"
 echo ""
-if [ -n "$GW_TOKEN" ]; then
+if [ -n "$LIGHTNING_KEY" ]; then
+    echo -e "  ${BOLD}Local:${NC}  http://127.0.0.1:18789/?token=${LIGHTNING_KEY}"
+    echo ""
+    echo -e "  ${BOLD}Lightning.ai:${NC} Open port 18789 in your Studio, then visit:"
+    echo -e "  ${BOLD}https://<your-studio>.studios.lightning.ai:18789/?token=${LIGHTNING_KEY}${NC}"
+    echo ""
+    echo -e "  ${DIM}To expose the port: click the plug icon in the Studio sidebar → Add Port → 18789${NC}"
+elif [ -n "$GW_TOKEN" ]; then
     echo -e "  ${BOLD}http://127.0.0.1:18789/?token=${GW_TOKEN}${NC}"
 else
     echo -e "  ${BOLD}http://127.0.0.1:18789/${NC}"
