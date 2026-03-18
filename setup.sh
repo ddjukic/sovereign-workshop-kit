@@ -779,10 +779,13 @@ done
 rm -rf "$CLAW_LAB/workspace/.git" "$CLAW_LAB/workspace/.openclaw" "$CLAW_LAB/workspace/memory" 2>/dev/null
 ok "Cleaned OpenClaw bootstrap files from workspace"
 
-# Read the gateway token from config (gateway auto-generates on first start)
+# Read the gateway token from config
 GW_TOKEN=""
-if [ -f "$OPENCLAW_HOME/openclaw.json" ]; then
-    GW_TOKEN=$(grep '"token"' "$OPENCLAW_HOME/openclaw.json" 2>/dev/null | grep -v '"mode"' | head -1 | sed 's/.*"token"[[:space:]]*:[[:space:]]*"//' | sed 's/".*//')
+if [[ "$LIGHTNING" == true ]]; then
+    GW_TOKEN="$LIGHTNING_KEY"
+elif [ -f "$OPENCLAW_HOME/openclaw.json" ]; then
+    # Extract token value, handling both single-line and multi-line JSON formats
+    GW_TOKEN=$(python3 -c "import json; c=json.load(open('$OPENCLAW_HOME/openclaw.json')); print(c.get('gateway',{}).get('auth',{}).get('token',''))" 2>/dev/null || true)
 fi
 
 if [ -n "$GW_TOKEN" ]; then
