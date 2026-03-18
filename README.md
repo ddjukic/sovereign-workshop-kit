@@ -10,8 +10,8 @@ Build, configure, and secure autonomous AI agents using [OpenClaw](https://docs.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/ddjukic/agentic-workshop-kit-aiat.git
-   cd agentic-workshop-kit-aiat
+   git clone https://github.com/ddjukic/sovereign-workshop-kit.git
+   cd sovereign-workshop-kit
    ```
 
 2. **Get a free OpenRouter API key** at [openrouter.ai/keys](https://openrouter.ai/keys)
@@ -154,6 +154,52 @@ The script prints a URL (e.g., `http://127.0.0.1:18789/?token=...`). Open it in 
 
 ---
 
+## Day 2: Sovereign Multi-Agent Setup
+
+After completing the Day 1 single-agent missions, upgrade to a 3-agent sovereign architecture:
+
+```bash
+chmod +x sovereign_multi_agents.sh
+./sovereign_multi_agents.sh --openrouter YOUR_OPENROUTER_KEY --langdock YOUR_LANGDOCK_KEY
+```
+
+This creates three agents with **data sovereignty by design**:
+
+| Agent | Provider | Role |
+|-------|----------|------|
+| **Orchestrator** | Langdock EU (Claude Sonnet 4.6) | Routes tasks to sub-agents, never reads files directly |
+| **Sovereign Analyst** | Langdock EU (Claude Sonnet 4.6) | Processes sensitive documents, PII extraction, contracts |
+| **Web Researcher** | OpenRouter (StepFun 3.5 Flash) | Public web searches, non-sensitive research only |
+
+**Why this architecture?** The orchestrator sees all sub-agent results via `sessions_spawn`, making it the *sovereignty ceiling*. It must run on Langdock EU so sensitive data returned by the analyst never leaves EU jurisdiction. The web researcher runs on OpenRouter (free tier) but only handles public, non-sensitive tasks.
+
+### Usage
+
+```bash
+# Preview what will be configured (no changes)
+./sovereign_multi_agents.sh --dry-run --openrouter sk-or-... --langdock sk-...
+
+# Full setup
+./sovereign_multi_agents.sh --openrouter sk-or-... --langdock sk-...
+
+# Help
+./sovereign_multi_agents.sh --help
+```
+
+### Verification
+
+After setup, open the dashboard and try:
+
+| Test | What to Type |
+|------|-------------|
+| **Delegation to analyst** | *"Analyze the consulting agreement in sample-docs/"* |
+| **Delegation to researcher** | *"Search for the latest NVIDIA GTC announcements"* |
+| **Sovereignty routing** | Use `/sovereign-route` to auto-classify and route any task |
+
+Check agent status: `openclaw agents list`
+
+---
+
 ## Workshop Missions
 
 Once setup completes, try these in the OpenClaw dashboard:
@@ -236,8 +282,9 @@ Guided exercises, real-time progress tracking, and mission briefings during the 
 ## What's in the Kit
 
 ```
-agentic-workshop-kit-aiat/
-  setup.sh                        # Automated setup script (idempotent, safe to re-run)
+sovereign-workshop-kit/
+  setup.sh                        # Day 1: single-agent setup (idempotent, safe to re-run)
+  sovereign_multi_agents.sh       # Day 2: 3-agent sovereign orchestration setup
   materials/
     sample-docs/                  # 5 business documents for extraction exercises
       gold-standard/              # Reference extraction outputs for comparison
