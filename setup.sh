@@ -794,24 +794,62 @@ else
     warn "Could not read gateway token — check ~/.openclaw/openclaw.json"
 fi
 
-# Register port with Lightning.ai (so their proxy routes to it)
+# Register port with Lightning.ai and enable auto-start
 if [[ "$LIGHTNING" == true ]]; then
     LIGHTNING_PYTHON="${LIGHTNING_PYTHON:-/system/conda/miniconda3/envs/cloudspace/bin/python3}"
     if [ -x "$LIGHTNING_PYTHON" ]; then
-        "$LIGHTNING_PYTHON" -c "
+        "$LIGHTNING_PYTHON" << 'PYEOF'
 from lightning_sdk import Studio
+from lightning_sdk.lightning_cloud.openapi.models import EndpointServiceUpdateEndpointBody
 s = Studio()
+# Register port
 try:
     s.add_ports(18789)
-    print('  \033[0;32m✓\033[0m Registered port 18789 with Lightning.ai')
+    print('  \033[0;32m\u2713\033[0m Registered port 18789 with Lightning.ai')
 except Exception as e:
     if '409' in str(e) or 'already exists' in str(e):
-        print('  \033[0;32m✓\033[0m Port 18789 already registered with Lightning.ai')
+        print('  \033[0;32m\u2713\033[0m Port 18789 already registered with Lightning.ai')
     else:
-        print('  \033[1;33m⚠\033[0m Could not register port:', e)
-" 2>/dev/null || warn "Could not register port with Lightning SDK"
+        print('  \033[1;33m\u26a0\033[0m Could not register port:', e)
+# Enable auto-start (wakes Studio when dashboard URL is visited)
+try:
+    client = s._studio_api._client
+    project_id = s._teamspace.id
+    ports = s.list_ports()
+    for p in ports:
+        if '18789' in (p.ports or []):
+            body = EndpointServiceUpdateEndpointBody(
+                cloudspace={'auto_start': True, 'cloudspace_id': p.cloudspace.cloudspace_id,
+                            'port': '18789', 'type': 'ENDPOINT_PLUGIN_PORT'},
+                name='openclaw'
+            )
+            client.endpoint_service_update_endpoint(body=body, project_id=project_id, id=p.id)
+            print('  \033[0;32m\u2713\033[0m Auto-start enabled (visiting dashboard URL wakes Studio)')
+            break
+except Exception as e:
+    print('  \033[1;33m\u26a0\033[0m Could not enable auto-start:', e)
+PYEOF
     else
         warn "Lightning SDK not found — register port 18789 manually in your Studio"
+    fi
+
+    # Write on_start.sh so gateway restarts when Studio wakes from sleep
+    ONSTARTSH="/teamspace/studios/this_studio/.lightning_studio/on_start.sh"
+    if [ -d "$(dirname "$ONSTARTSH")" ]; then
+        cat > "$ONSTARTSH" << 'STARTEOF'
+#!/bin/bash
+# Auto-start OpenClaw gateway when Studio wakes up
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+nvm use --lts >/dev/null 2>&1
+
+if command -v openclaw &>/dev/null && [ -f "$HOME/.openclaw/openclaw.json" ]; then
+    mkdir -p "$HOME/.openclaw/logs"
+    nohup openclaw gateway --port 18789 > "$HOME/.openclaw/logs/gateway.log" 2>&1 &
+    echo "OpenClaw gateway started (PID $!)"
+fi
+STARTEOF
+        ok "on_start.sh installed (gateway auto-starts on Studio wake)"
     fi
 fi
 
